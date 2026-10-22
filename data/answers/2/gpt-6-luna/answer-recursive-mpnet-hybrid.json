@@ -1,0 +1,2096 @@
+{
+  "iteration": 2,
+  "config": {
+    "chunk_method": "recursive",
+    "embedding_model": "all-mpnet-base-v2",
+    "retrieval_method": "hybrid",
+    "top_k": 5,
+    "reranker": "none",
+    "hybrid_alpha": 0.5
+  },
+  "generator": "openai/gpt-6-luna",
+  "created_at": "2026-10-22T22:27:51.107782+00:00",
+  "entries": [
+    {
+      "query_id": "49a35154-5dec-4f9c-b0cf-3ed778cf144f",
+      "query": "What is the concept of unambiguous efficiency in allocation models?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "ee8ae5df-7e93-5101-88ae-ca506cec5ce5",
+          "score": 0.8076974286302855,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 1,
+          "section_title": "Front matter"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "b8f17c99-5ca7-589c-a74c-ba84eb12b230",
+          "score": 0.7715043051008488,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 10,
+          "section_title": "Efficiency"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "6762c522-6c34-565b-b8db-0d7ca410d3ae",
+          "score": 0.75060178608814,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 10,
+          "section_title": "Unambiguous efficiency"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "00baac51-41b8-5aac-9bc1-344d9d050b05",
+          "score": 0.740146204135798,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 5,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "3ff45e4a-bf34-5fc7-806f-ee70cdf49529",
+          "score": 0.6870108726963474,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 5,
+          "section_title": "Introduction"
+        }
+      ],
+      "response": {
+        "query": "What is the concept of unambiguous efficiency in allocation models?",
+        "answer": "Unambiguous efficiency means an allocation is efficient for every lottery preference profile consistent with the agents’ known ordinal rankings over objects—not merely for one possible profile [2][3]. Equivalently, there is no alternative allocation that is at least as good for every agent under stochastic dominance and strictly better for at least one [3].",
+        "citations": [
+          {
+            "chunk_id": "b8f17c99-5ca7-589c-a74c-ba84eb12b230",
+            "source": "2401.11899v3.pdf",
+            "page_number": 10,
+            "text_snippet": "To be certain that the allocation is truly efficient it has to be efficient for every u that induces P.",
+            "relevance_score": 0.7715043051008488
+          },
+          {
+            "chunk_id": "6762c522-6c34-565b-b8db-0d7ca410d3ae",
+            "source": "2401.11899v3.pdf",
+            "page_number": 10,
+            "text_snippet": "if π is unambiguously efficient at P then for each π′ ∈Π \\ {π}, there is some i ∈N such that πi P sd i π′i.",
+            "relevance_score": 0.75060178608814
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "ee8ae5df-7e93-5101-88ae-ca506cec5ce5",
+            "content": "Unambiguous Efficiency of Random Allocations\n\nEun Jeong Heo\n\nUniversity of Seoul\n\neunjheo@uos.ac.kr\n\nVikram Manjunath\n\nUniversity of Ottawa\n\nvikram@dosamobile.com\n\nSamson Alva\n\nUniversity of Texas\n\nat San Antonio samson.alva@gmail.com\n\nJanuary 2025\n\nAbstract\n\nIn the problem of allocating indivisible objects via lottery, a social planner often knows only agents’ ordinal preferences over objects, but not their complete preferences over lotteries. Such an informationally constrained planner cannot distinguish between different utility profiles that induce the same rankings over the objects. In this context, we ask what it means to adjudge an allocation as efficient.\n\nWe introduce the concept of unambiguous efficiency, which guarantees no further Pareto improvement regardless of how agents’ ordinal preferences extend to lotteries. We compare this concept with the predominant formulation of efficiency in the random allocation literature and explore some structural properties. As an application to mechanism design, we characterize the class of efficient and strategy-proof ordinal mechanisms that satisfy certain regularity conditions.\n\nJEL classification: C70, D61, D63.\n\nKeywords: probabilistic assignment; efficiency; strategy-proofness; ordinality\n\n1",
+            "metadata": {
+              "document_id": "5f33ef98-60c2-5a70-888b-4cfd4ef8eb2f",
+              "source": "2401.11899v3.pdf",
+              "arxiv_id": "2401.11899v3",
+              "page_number": 1,
+              "end_page_number": 1,
+              "start_char": 0,
+              "end_char": 1264,
+              "chunk_index": 0,
+              "section_index": 0,
+              "section_title": "Front matter",
+              "method": "recursive",
+              "token_count": 236
+            },
+            "embedding": null
+          },
+          {
+            "id": "b8f17c99-5ca7-589c-a74c-ba84eb12b230",
+            "content": "2.3 Efficiency\n\nNow, we may ask: If individuals have preferences over lotteries, but the planner/analyst only knows their ordinal preferences over objects, what should they consider efficient?\n\nWhen they see the preference profile P ∈P N, they only know that the agents’ actual preferences are some u ∈U N that induces P . To be certain that the allocation is truly efficient it has to be efficient for every u that induces P . We call such an allocation unambiguously efficient.\n\nOn the other hand, the planner or analyst might use the existential quantifier by only asking that there is some u that induces P for which their chosen allocation is efficient. While they could point to this possible utility profile as justification for their choice, there is no guarantee that it is efficient with regard to the agents’ actual preferences. We call such an allocation ambiguously efficient.\n\nIn what follows, we start by discussing unambiguous efficiency and consider some of its implications. We then compare it to ambiguous efficiency. Since the only useful information that the planner has is summarized by the stochastic dominance relation for each agent, we define them in terms of these relations.\n\n",
+            "metadata": {
+              "document_id": "5f33ef98-60c2-5a70-888b-4cfd4ef8eb2f",
+              "source": "2401.11899v3.pdf",
+              "arxiv_id": "2401.11899v3",
+              "page_number": 10,
+              "end_page_number": 10,
+              "start_char": 23612,
+              "end_char": 24816,
+              "chunk_index": 27,
+              "section_index": 5,
+              "section_title": "Efficiency",
+              "method": "recursive",
+              "token_count": 232
+            },
+            "embedding": null
+          },
+          {
+            "id": "6762c522-6c34-565b-b8db-0d7ca410d3ae",
+            "content": "2.3.1 Unambiguous efficiency\n\nAs discussed above, an unambiguously efficient allocation is one that is efficient no matter what the agents’ fine-grained preferences over lotteries are.\n\nStated in terms of stochastic dominance: π ∈Π is unambiguously efficient at P ∈P N\n\nif there is no π′ ∈Π \\ {π} such that for each i ∈N, either π′\n\ni Rsd\n\ni πi or π′\n\ni N sd\n\ni πi. It is equivalent to say that switching from an unambiguously efficient allocation to any other makes at least one agent comparably worse off per their stochastic dominance relation. So, if π is unambiguously efficient at P then for each π′ ∈Π \\ {π}, there is some i ∈N such that πi P sd\n\ni π′\n\ni. This formulation guarantees that we can find no Pareto improvement from an unambiguously efficient allocation even if we can fully access the agents’ preferences over lotteries.\n\nThis notion was first proposed by Gibbard (1977) in the context of ordinal voting mechanisms and we adapt it to our allocation model.\n\n10",
+            "metadata": {
+              "document_id": "5f33ef98-60c2-5a70-888b-4cfd4ef8eb2f",
+              "source": "2401.11899v3.pdf",
+              "arxiv_id": "2401.11899v3",
+              "page_number": 10,
+              "end_page_number": 10,
+              "start_char": 24816,
+              "end_char": 25795,
+              "chunk_index": 28,
+              "section_index": 6,
+              "section_title": "Unambiguous efficiency",
+              "method": "recursive",
+              "token_count": 240
+            },
+            "embedding": null
+          },
+          {
+            "id": "00baac51-41b8-5aac-9bc1-344d9d050b05",
+            "content": "In this paper we explore some implications of unambiguous efficiency. To the best of our knowledge this approach to efficiency has not been pursued in the random allocation setting. However, a corresponding formulation of efficiency has been studied in the literature on fair division of indivisible goods (Brams et al., 2003; Aziz et al., 2016; Manjunath and Westkamp, 2024). Since agents’ preferences are over sets of objects, like ordinality in our setting one may wish to compute fair divisions using only agents’ marginal preferences over objects. A notion of dominance analogous to the first order stochastic dominance gives a partial order, and there are again two ways to define efficiency.\n\nOur contributions are as follows. First, we formally define unambiguous efficiency as discussed above. We provide a necessary condition on allocations for them to be unambiguously efficient. Moreover, we show that unambiguously efficient allocations are combinatorial (Aziz et al., 2015), meaning that whether or not an allocation is efficient is determined by which objects each agent receives with positive probability regardless\n\n5",
+            "metadata": {
+              "document_id": "5f33ef98-60c2-5a70-888b-4cfd4ef8eb2f",
+              "source": "2401.11899v3.pdf",
+              "arxiv_id": "2401.11899v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 11645,
+              "end_char": 12779,
+              "chunk_index": 13,
+              "section_index": 1,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 223
+            },
+            "embedding": null
+          },
+          {
+            "id": "3ff45e4a-bf34-5fc7-806f-ee70cdf49529",
+            "content": "i is not comparable by stochastic dominance to πi, even though i prefers it. On the other hand, the only way an allocation can be efficient for every ordinally equivalent profile of utility functions is if any change, say to π′′, moves some agent into the region corresponding to (B) as shown in the figure. This yields an alternative definition of unambiguous efficiency based on stochastic dominance that is decidedly stronger than ambiguous efficiency. An advantage to this definition of efficiency is that even if agents do not have vNM preferences, as long as actual preferences are completions of the stochastic dominance relation, it does not allow any further improvement with regards to their actual preferences.",
+            "metadata": {
+              "document_id": "5f33ef98-60c2-5a70-888b-4cfd4ef8eb2f",
+              "source": "2401.11899v3.pdf",
+              "arxiv_id": "2401.11899v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 10922,
+              "end_char": 11643,
+              "chunk_index": 12,
+              "section_index": 1,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 135
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.98
+      },
+      "error": null,
+      "retrieval_seconds": 0.01,
+      "generation_seconds": 1.938,
+      "prompt_tokens": 1550,
+      "completion_tokens": 170
+    },
+    {
+      "query_id": "75314235-5943-4a14-8a89-ce52cae14bd3",
+      "query": "Does a larger bandgap energy ($E_g \\gg k_B T_h$) result in higher efficiency at maximum power?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "acbac01e-81fc-5aa6-8f2e-28922e965727",
+          "score": 0.8391615128923979,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 9,
+          "section_title": "Variation of maximum power and related efficiency with bandgap"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "9f23e98f-56a6-5cd9-ac6c-ae034ab59e97",
+          "score": 0.8220582879870757,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 5,
+          "section_title": "Dual radiative heat engines"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "29fa2ad2-505f-53a7-a405-17446d024a09",
+          "score": 0.7101527903226521,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 5,
+          "section_title": "Dual radiative heat engines"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "74f3b735-77ef-53ed-bb8f-a79bb36ed25a",
+          "score": 0.7003363727088128,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 10,
+          "section_title": "Dependency of the optimum bandgap on the quantum efficiency"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "c37eefdf-237a-5d16-8813-b1081c5e22b6",
+          "score": 0.6737040537726809,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 6,
+          "section_title": "Performance bounds at maximum power"
+        }
+      ],
+      "response": {
+        "query": "Does a larger bandgap energy ($E_g \\gg k_B T_h$) result in higher efficiency at maximum power?",
+        "answer": "Yes, in the large-bandgap regime: the paper gives a limiting expression for efficiency at maximum power when $E_g \\gg k_B T_h$, and says it estimates standard-bandgap efficiencies well [5]. It does not imply efficiency rises without bound; the efficiency approaches a limit as the bandgap becomes very large [3].",
+        "citations": [
+          {
+            "chunk_id": "c37eefdf-237a-5d16-8813-b1081c5e22b6",
+            "source": "2402.07527v3.pdf",
+            "page_number": 6,
+            "text_snippet": "It also gives a good estimate of the efficiency obtained for standard bandgaps, as long as Eg ≫kBTh",
+            "relevance_score": 0.6737040537726809
+          },
+          {
+            "chunk_id": "29fa2ad2-505f-53a7-a405-17446d024a09",
+            "source": "2402.07527v3.pdf",
+            "page_number": 5,
+            "text_snippet": "with maximum efficiency approaching the Carnot limit for infinitely large bandgap.",
+            "relevance_score": 0.7101527903226521
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "acbac01e-81fc-5aa6-8f2e-28922e965727",
+            "content": "Variation of maximum power and\n\nrelated efficiency with bandgap\n\nWe provide in Fig. 16 the variations of the maximum power and related efficiency as a function of the bandgap, for the complete dual engine (thick black line) and for each individual engine. For a heat source temperature of 600 K, the dual-engine MPP moves from the TRPV quadrant for low bandgaps to the TPX quadrant for higher bandgaps. In this case, the transition between the two quadrants occurs around Eg/kBTh = 0.7. Dual engines become especially attractive when Eg > kBTh ≈ 0.05 eV, their power output increasing with Eg and being already 50% larger than that of single engines for Eg = 1.9kBTh. In practice, this condition is satisfied by any realistic bandgap at the temperature considered.\n\nNote how, when TPX or TRPV engines do not maximise the power output, they operate as TPV devices. This is what causes the sudden change in slope indicated by arrows in panel (b): around Eg/kBTh = 0.7, there\n\n10\n\nFIG. 14: η −P plots obtained for dual radiative engines",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 9,
+              "end_page_number": 10,
+              "start_char": 34318,
+              "end_char": 35351,
+              "chunk_index": 42,
+              "section_index": 9,
+              "section_title": "Variation of maximum power and related efficiency with bandgap",
+              "method": "recursive",
+              "token_count": 247
+            },
+            "embedding": null
+          },
+          {
+            "id": "9f23e98f-56a6-5cd9-ac6c-ae034ab59e97",
+            "content": "When operating in TPX regime, dual engines can reach higher power outputs than TPV even when non-radiative losses are included. However, quantum efficiencies of at least 0.75 are required to obtain a noticeable improvement compared to TPV. In addition, the optimal bandgap (in terms of power output) remains quite low even for QE = 0.9, being equal to 5kBTh = 0.26 eV. To make materials with bandgaps in the near-infrared and the visible range attractive, larger QEs should be achieved. For instance, for Eg = 20kBTh ≈1 eV, a QE of at least 0.94 is required to deliver an electrical power output larger than that of TPV. However, the dual engine maximum power quickly increases for larger QEs, rising to 6σT 4\n\nh at the radiative limit for this bandgap energy.",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 19280,
+              "end_char": 20040,
+              "chunk_index": 23,
+              "section_index": 2,
+              "section_title": "Dual radiative heat engines",
+              "method": "recursive",
+              "token_count": 190
+            },
+            "embedding": null
+          },
+          {
+            "id": "29fa2ad2-505f-53a7-a405-17446d024a09",
+            "content": "as long as QE < 1, there is an optimal bandgap that allows the power output to be maximised: the optimum bandgap is close to Eg = 5kBTh for Th = 600 K and QE = 0.9, and decreases for the two lower QEs considered. The complete variations of the optimum bandgap with QE are further analysed in Appendix E.\n\nBecause the maximum power no longer diverges with Eg, we can trace the η −P envelope of dual engines obtained over the whole bandgap space, indicating the best operating conditions achievable for a certain quantum efficiency. These are illustrated in Fig. 6 for three different quantum efficiencies, along with the TPV envelope in dashed line for comparison. In all three scenarios, the performance of dual radiative engines at high efficiency is similar to those of TPV engines, with maximum efficiency approaching the Carnot limit for infinitely large bandgap. This originates from the fact that ̇Nh/ ̇Nc →∞ when Eg →∞, making the influence of QE in Eq. (7) negligible for very high bandgaps. When operating in TPX regime, dual engines can reach higher power outputs than TPV even when non-radiative losses are included.",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 18280,
+              "end_char": 19407,
+              "chunk_index": 22,
+              "section_index": 2,
+              "section_title": "Dual radiative heat engines",
+              "method": "recursive",
+              "token_count": 256
+            },
+            "embedding": null
+          },
+          {
+            "id": "74f3b735-77ef-53ed-bb8f-a79bb36ed25a",
+            "content": "Dependency of the optimum bandgap\n\non the quantum efficiency\n\nWe show in Fig. 17 how the bandgap leading to maximum power varies with the quantum efficiency, along with the variation of the maximum power itself. First, as mentioned in Section II, the optimum bandgap diverges when QE approaches 1, that is, when the engine approaches the radiative limit. Close to the divergence, the optimum bandgap and the maximum power have been\n\nobserved to vary as 1/(1 −QE) and 1/(1 −QE)2, respectively. In Section III, we highlighted that the power output enhancement obtained by using dual engines (in the TPX regime) over TPV devices was only significant for large enough QEs. This can clearly be observed here, with the optimum bandgap and the maximum power of dual engines deviating from those of TPV for QEs above 0.5 and 0.75, respectively. This deviation becomes especially prominent for QE ≥0.9. As opposed to TPV, the optimum bandgap of dual engines actually varies nonmonotonically with QE: it reaches a minimum close to QE = 0.5, and then starts increasing.\n\nAppendix F: ",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 10,
+              "end_page_number": 10,
+              "start_char": 36016,
+              "end_char": 37088,
+              "chunk_index": 44,
+              "section_index": 10,
+              "section_title": "Dependency of the optimum bandgap on the quantum efficiency",
+              "method": "recursive",
+              "token_count": 250
+            },
+            "embedding": null
+          },
+          {
+            "id": "c37eefdf-237a-5d16-8813-b1081c5e22b6",
+            "content": "The efficiency at maximum power can be written as\n\nηEg≫kBTh\n\nMPP = ηC 1 + (2 −ηC)χ, (9)\n\nχ being a constant equal to 1 2( 1 6( π ln(2))2 −1) ≈1.21.\n\nThe temperature variation of ηEg≫kBTh\n\nMPP is provided in Fig. 7 (black line), and matches well the numerical results obtained for bandgaps larger than 100kBTh. It also gives a good estimate of the efficiency obtained for standard bandgaps, as long as Eg ≫kBTh: for Th = 600 K,\n\nηEg≫kBTh\n\nMPP = 17.7% while η1 eV\n\nMPP = 17.1% and η0.52 eV",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 22643,
+              "end_char": 23130,
+              "chunk_index": 27,
+              "section_index": 3,
+              "section_title": "Performance bounds at maximum power",
+              "method": "recursive",
+              "token_count": 179
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.86
+      },
+      "error": null,
+      "retrieval_seconds": 0.013,
+      "generation_seconds": 5.087,
+      "prompt_tokens": 1630,
+      "completion_tokens": 573
+    },
+    {
+      "query_id": "829c817c-5bc5-4a66-ba56-64b93c94ad98",
+      "query": "How do different biological pathway datasets compare in terms of distortion when using Euclidean versus mixed-curvature embeddings?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "aa326fdd-6a91-5853-aacc-ee6c04d59a7e",
+          "score": 0.9373190020888936,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 5,
+          "section_title": "4.1. Pathway Embeddings"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "741db00d-4f59-5ce1-a78e-84fd4286f403",
+          "score": 0.896040172579978,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 5,
+          "section_title": "4.1. Pathway Embeddings"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "daf332df-622f-5359-8eec-e4cdd7f6caf1",
+          "score": 0.8956160576043137,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 13,
+          "section_title": "C. Supplementary Figures"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "76dc7fb8-86ae-58c8-8201-e97a09a30128",
+          "score": 0.8851281246403646,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 6,
+          "section_title": "4.1. Pathway Embeddings"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "4544600b-6680-523f-84c0-5f80ad9a91fa",
+          "score": 0.7157651072482334,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 8,
+          "section_title": "5. Discussion and Conclusion"
+        }
+      ],
+      "response": {
+        "query": "How do different biological pathway datasets compare in terms of distortion when using Euclidean versus mixed-curvature embeddings?",
+        "answer": "Across the five pathway datasets—PathBank, NCI, KEGG, Reactome, and HumanCyc—mixed-curvature embeddings reduce distortion compared with Euclidean embeddings, and many graphs show reductions greater than 50% [1][3]. The provided text does not report dataset-by-dataset magnitudes or rank the datasets by improvement; it only points to scatterplots for individual datasets [3].",
+        "citations": [
+          {
+            "chunk_id": "aa326fdd-6a91-5853-aacc-ee6c04d59a7e",
+            "source": "2401.15478v2.pdf",
+            "page_number": 5,
+            "text_snippet": "We observe that mixed-curvature product spaces provide marked reductions in distortion relative to the standard Euclidean embedding, with many graphs achieving a greater than 50% reduction in distortion.",
+            "relevance_score": 0.9373190020888936
+          },
+          {
+            "chunk_id": "daf332df-622f-5359-8eec-e4cdd7f6caf1",
+            "source": "2401.15478v2.pdf",
+            "page_number": 13,
+            "text_snippet": "(a) PathBank dataset (b) NCI dataset (c) KEGG dataset (d) Reactome dataset (e) HumanCyc (f) All datasets",
+            "relevance_score": 0.8956160576043137
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "aa326fdd-6a91-5853-aacc-ee6c04d59a7e",
+            "content": "Next, for each pathway graph, we determine the best combi-\n\nnation of hyperbolic, Euclidean, and spherical components as determined by lowest distortion. Figure 2(a) demonstrates the reductions in distortion gained from learning the non-Euclidean embeddings over all graphs in each of the five pathway datasets we studied. The red diagonal indicates the position at which the distortions of the Euclidean embeddings and mixed-curvature product embeddings would be equal. Points lying below this line indicate graphs for which a product representation yielded a reduction in distortion over a Euclidean representation. Because a fully Euclidean embedding is a special case of the mixed-curvature product embedding, the best mixed-curvature product embedding should always have better distortion than the best Euclidean embedding. The question is whether the improvement is marginal or substantial on biological pathways. We observe that mixed-curvature product spaces provide marked reductions in distortion relative to the standard Euclidean embedding, with many graphs achieving a greater than 50% reduction in distortion.",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 20953,
+              "end_char": 22076,
+              "chunk_index": 26,
+              "section_index": 13,
+              "section_title": "4.1. Pathway Embeddings",
+              "method": "recursive",
+              "token_count": 199
+            },
+            "embedding": null
+          },
+          {
+            "id": "741db00d-4f59-5ce1-a78e-84fd4286f403",
+            "content": "We further compare our mixed-curvature embeddings against two common graph embedding baselines. The first is node2vec (Grover & Leskovec, 2016), a popular graph embedding method which uses an algorithm analogous to word2vec (Mikolov et al., 2013) trained on random walks taken from the graph. We also compare against a standard embedding method formed by taking eigenvectors of the graph Laplacian matrix (Bonald, 2019). For both methods, we embed the pathway graphs from all datasets and compute distortions for each pathway embedding in each dataset. Because node2vec and the graph Laplacian embedding do not directly minimize distortion in their loss functions, they can arbitrarily scale embedding vectors, causing them to perform poorly on a naive calculation of the distortion metric. Therefore, we perform a scaling optimization for the node2vec and graph Laplacian embeddings, finding for each\n\nProduct Manifold Representations for Learning on Biological Pathways\n\n(a) Best overall versus Euclidean distortions\n\n(b) Pathway distortion distributions\n\nFigure 2. Best overall mixed-curvature versus best Euclidean distortions across all pathway datasets (a). See Figure 4 for individual",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 5,
+              "end_page_number": 6,
+              "start_char": 22078,
+              "end_char": 23269,
+              "chunk_index": 27,
+              "section_index": 13,
+              "section_title": "4.1. Pathway Embeddings",
+              "method": "recursive",
+              "token_count": 241
+            },
+            "embedding": null
+          },
+          {
+            "id": "daf332df-622f-5359-8eec-e4cdd7f6caf1",
+            "content": "C. Supplementary Figures\n\nProduct Manifold Representations for Learning on Biological Pathways\n\n(a) PathBank dataset (b) NCI dataset\n\n(c) KEGG dataset (d) Reactome dataset\n\n(e) HumanCyc (f) All datasets\n\nFigure 4. Scatterplots of distortion in the Euclidean embedding versus distortion in the mixed-curvature embedding for pathway datasets.\n\nPoints are colored by local density, with yellow indicating the highest density.\n\nProduct Manifold Representations for Learning on Biological Pathways\n\n",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 13,
+              "end_page_number": 15,
+              "start_char": 52675,
+              "end_char": 53169,
+              "chunk_index": 71,
+              "section_index": 31,
+              "section_title": "C. Supplementary Figures",
+              "method": "recursive",
+              "token_count": 104
+            },
+            "embedding": null
+          },
+          {
+            "id": "76dc7fb8-86ae-58c8-8201-e97a09a30128",
+            "content": "(b) Pathway distortion distributions\n\nFigure 2. Best overall mixed-curvature versus best Euclidean distortions across all pathway datasets (a). See Figure 4 for individual\n\npathway datasets. Distortions across all datasets for the graph Laplacian, node2vec, and mixed-curvature embedding methods (b).\n\ndataset and embedding type the constant c which minimizes the below objective\n\nmin c∈R+\n\nX\n\ni<j\n\nc · d(xi, xj)\n\ndG(ni, nj) −1\n\nwhere d(xi, xj) is the distance between the embeddings of nodes i and j, and dG(ni, nj) is the shortest-path graph distance between nodes i and j. After calculating the optimal scaling factor, c, we scale the embeddings by this factor and recalculate the distortions for all pathways in the dataset. We summarize the distortions in Figure 2(b). The mixed-curvature embeddings exhibit significantly lower mean distortion and variance than the node2vec and Laplacian baselines.",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 23098,
+              "end_char": 24002,
+              "chunk_index": 28,
+              "section_index": 13,
+              "section_title": "4.1. Pathway Embeddings",
+              "method": "recursive",
+              "token_count": 206
+            },
+            "embedding": null
+          },
+          {
+            "id": "4544600b-6680-523f-84c0-5f80ad9a91fa",
+            "content": "5. Discussion and Conclusion\n\nWe find that performing representation learning in non- Euclidean and mixed-curvature spaces yields notable improvements in distortion and downstream in-distribution edge prediction performance. In all cases, a mixed-curvature representation yields an embedding with lower distortion than a simple Euclidean embedding. However, the exact decomposition of the product space into its mixture of components is highly dependent on the graph topology. Thus, it is beneficial to perform a hyperparameter sweep over the number and types of components, as well as their dimen-\n\nsionalities, when learning a representation for a biological pathway graph. Such a sweep need not be highly time intensive as biological pathway graphs are generally of a modest size.",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 8,
+              "end_page_number": 8,
+              "start_char": 30912,
+              "end_char": 31695,
+              "chunk_index": 37,
+              "section_index": 22,
+              "section_title": "5. Discussion and Conclusion",
+              "method": "recursive",
+              "token_count": 139
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.96
+      },
+      "error": null,
+      "retrieval_seconds": 0.014,
+      "generation_seconds": 3.338,
+      "prompt_tokens": 1402,
+      "completion_tokens": 306
+    },
+    {
+      "query_id": "e42bdcad-f25d-4f02-9425-b4c3656adca9",
+      "query": "Why is time more affected than distance during sailing maneuvers under constant winds?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "832c0be7-f29a-5c1a-a8b0-860c5b17daac",
+          "score": 0.9964221849693646,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 4,
+          "section_title": "Terminology"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "99706890-ccd7-5e77-bd87-03b0f09e8dd1",
+          "score": 0.7162323041874961,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 3,
+          "section_title": "Model"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "ba028f9f-2135-519b-a25e-951cceee6a9a",
+          "score": 0.6912969202916779,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 4,
+          "section_title": "Terminology"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "997fecc4-4ff6-55a9-afc7-8bf1cd87b06b",
+          "score": 0.5891293596413594,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "866b4fdf-5940-5f35-84b5-afa900796171",
+          "score": 0.5,
+          "retriever_type": "hybrid",
+          "source": "2401.03305v2.pdf",
+          "page_number": 16,
+          "section_title": "Piece-wise constant reference strategy"
+        }
+      ],
+      "response": {
+        "query": "Why is time more affected than distance during sailing maneuvers under constant winds?",
+        "answer": "In constant winds, different tacking strategies follow zigzags parallel to the laylines, so they cover the same distance to the target. [1][3] But each tack takes time: the boat enters the no-go zone, loses wind propulsion briefly, and slows down, so the number of maneuvers affects time rather than distance. [2][3]",
+        "citations": [
+          {
+            "chunk_id": "832c0be7-f29a-5c1a-a8b0-860c5b17daac",
+            "source": "2404.03773v2.pdf",
+            "page_number": 4,
+            "text_snippet": "A boat starting at the same point and following any other zigzag parallel to the laylines, would travel the same distance up to the target.",
+            "relevance_score": 0.9964221849693646
+          },
+          {
+            "chunk_id": "ba028f9f-2135-519b-a25e-951cceee6a9a",
+            "source": "2404.03773v2.pdf",
+            "page_number": 4,
+            "text_snippet": "In a constant wind, this does not affect the total distance traveled. However, each tack (resp. jibe) impacts the time required.",
+            "relevance_score": 0.6912969202916779
+          },
+          {
+            "chunk_id": "99706890-ccd7-5e77-bd87-03b0f09e8dd1",
+            "source": "2404.03773v2.pdf",
+            "page_number": 3,
+            "text_snippet": "During a tacking, the yacht enters the no-go zone and hence for a few seconds, it is no longer propelled by the wind.",
+            "relevance_score": 0.7162323041874961
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "832c0be7-f29a-5c1a-a8b0-860c5b17daac",
+            "content": "In a fluctuating wind, but with the reference frame attached to the wind, the wind is still represented by a constant vector that is parallel to the vector (1, 1) ∈R2, and it is the boat which is subject both to the displacement induced by sailing and to a Brownian rotation.In this description, a clockwise change of wind direction corresponds to a counterclockwise rotation of the boat’s position, and vice-versa.\n\n4\n\n1\n\n2\n\n3\n\nS P\n\nP\n\nP\n\nS\n\nS\n\n3 1\n\n2\n\nFigure 3: On the left hand side is an example of a tacking strategy for a boat beating upwind under a constant wind. A boat starting at the same point and following any other zigzag parallel to the laylines, would travel the same distance up to the target (dotted trajectory). On the right hand side is an example of a possible trajectory of the boat when the wind direction changes over time as indicated by the arrows at the top of the figure. The right-hand wings (resp. left-hand wings) of the butterfly shaped regions correspond to the feasible directions which can be achieved by sailing on port tack (resp. starboard tack).\n\nMotion on port tack d-1 Motion on starboard tack\n\nd1",
+            "metadata": {
+              "document_id": "b25b60ce-f876-5d93-87a8-ff9889522706",
+              "source": "2404.03773v2.pdf",
+              "arxiv_id": "2404.03773v2",
+              "page_number": 4,
+              "end_page_number": 5,
+              "start_char": 11276,
+              "end_char": 12414,
+              "chunk_index": 15,
+              "section_index": 3,
+              "section_title": "Terminology",
+              "method": "recursive",
+              "token_count": 251
+            },
+            "embedding": null
+          },
+          {
+            "id": "99706890-ccd7-5e77-bd87-03b0f09e8dd1",
+            "content": "2 Model\n\nIn this section, we first explain some basic terminology of sailing that will be used throughout the paper. We then present our model and derive the equations of the position process in both polar and Cartesian coordinates.\n\n2.1 Terminology\n\nIf the angle between the boat’s heading and the direction of the wind (see Fig. 1) is too narrow, then the boat cannot move forward in this direction. The set of all the angles for which the boat cannot advance is called the no go zone. When the wind enters the sails from the right (resp. left) side of the yacht, the yacht is sailing on starboard tack (resp. port tack). A boat sailing upwind can switch from starboard to port tack, or vice versa, by tacking. During a tacking, the yacht enters the no-go zone and hence for a few seconds, it is no longer propelled by the wind. The yacht slows down and it is its inertia that allows it to turn to the other tack. Similarly, if the boat is sailing downwind, then the switch from one tack to the other is called a jibe.",
+            "metadata": {
+              "document_id": "b25b60ce-f876-5d93-87a8-ff9889522706",
+              "source": "2404.03773v2.pdf",
+              "arxiv_id": "2404.03773v2",
+              "page_number": 3,
+              "end_page_number": 3,
+              "start_char": 6842,
+              "end_char": 7862,
+              "chunk_index": 10,
+              "section_index": 2,
+              "section_title": "Model",
+              "method": "recursive",
+              "token_count": 228
+            },
+            "embedding": null
+          },
+          {
+            "id": "ba028f9f-2135-519b-a25e-951cceee6a9a",
+            "content": "tack, then tack (resp. jibe), continue at angle α0 on the other tack and repeat this again until the target is reached (see Fig. 3). Many possible tacking strategies can be employed, and in a constant wind, this does not affect the total distance traveled. However, each tack (resp. jibe) impacts the time required. In the present work the exact definition of a strategy and of a best “on average” strategy is going to be given.\n\nIn general, both the wind speed and the wind direction change over time. It turns out that moderate fluctuations of wind speed are less relevant than those of wind direction, so we assume that the wind speed is constant. For the wind direction, following [2], we assume that it follows a Brownian motion.",
+            "metadata": {
+              "document_id": "b25b60ce-f876-5d93-87a8-ff9889522706",
+              "source": "2404.03773v2.pdf",
+              "arxiv_id": "2404.03773v2",
+              "page_number": 4,
+              "end_page_number": 4,
+              "start_char": 9565,
+              "end_char": 10299,
+              "chunk_index": 13,
+              "section_index": 3,
+              "section_title": "Terminology",
+              "method": "recursive",
+              "token_count": 162
+            },
+            "embedding": null
+          },
+          {
+            "id": "997fecc4-4ff6-55a9-afc7-8bf1cd87b06b",
+            "content": "For a sailboat traveling upwind, one of the most critical choices is deciding when to tack, that is, to change course in such a way that, if the wind was coming from one side of the boat before the tack, it will come from the opposite side afterward. Since this maneuver slows down the yacht, it is natural to model the time lost during a tacking by a “tacking penalty” denoted by c in the sequel. We consider a circular target-buoy that has positive radius η > 0 and tacking penalty that may be strictly positive or null. In our model, the wind direction fluctuates as a Brownian motion with a fixed volatility σ. The wind speed is assumed constant during the whole race, so is the boat speed, denoted by v.",
+            "metadata": {
+              "document_id": "b25b60ce-f876-5d93-87a8-ff9889522706",
+              "source": "2404.03773v2.pdf",
+              "arxiv_id": "2404.03773v2",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 3890,
+              "end_char": 4598,
+              "chunk_index": 6,
+              "section_index": 1,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 162
+            },
+            "embedding": null
+          },
+          {
+            "id": "866b4fdf-5940-5f35-84b5-afa900796171",
+            "content": "4.4 Piece-wise constant reference strategy\n\nWe consider in this section the reference strategies that are piece-wise constant across time. The consideration\n\nis that, to possibly account for real time market environments during the entire reallocation process, the\n\nbroker’s strategies may be subject to interval TWAP or VWAP strategies. For example, in an intraday\n\ntrading activity, it is documented that the market trades much more actively at the times close to opening\n\nand closing than that in the middle of common trading days. Also, in the case where trading horizon across\n\nmultiple days, the broker is most likely treating each trading day individually. In these regards, a piece-wise\n\nconstant reference strategy is considered plausible.\n\nTheoretically, as will be demonstrated, optimal trajectories subject to piece-wise constant reference strate-\n\ngies exhibit an elegant algebraic structure, derived from the unit IS and unit TC orders discussed in Sections\n\n",
+            "metadata": {
+              "document_id": "42c562f4-43ac-55f2-90fa-edd3df99ddb5",
+              "source": "2401.03305v2.pdf",
+              "arxiv_id": "2401.03305v2",
+              "page_number": 16,
+              "end_page_number": 16,
+              "start_char": 35072,
+              "end_char": 36045,
+              "chunk_index": 46,
+              "section_index": 15,
+              "section_title": "Piece-wise constant reference strategy",
+              "method": "recursive",
+              "token_count": 184
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.98
+      },
+      "error": null,
+      "retrieval_seconds": 0.012,
+      "generation_seconds": 2.94,
+      "prompt_tokens": 1473,
+      "completion_tokens": 279
+    },
+    {
+      "query_id": "676f3e5b-df04-4358-83c5-af77ba49cf99",
+      "query": "What is the optimization problem faced by a representative agent in the limiting game?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "7c78be32-23fc-580f-bce6-6da6133454b9",
+          "score": 0.953195075340141,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 11,
+          "section_title": "Limiting Game in Hilbert Spaces"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "5bd4ec29-32f4-579a-89fc-0da663a002e7",
+          "score": 0.7813611007281649,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 20,
+          "section_title": "Nash Equilibrium"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "ca5efb42-d48b-58d7-8d6b-09f8587f2753",
+          "score": 0.5561999967573081,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 24,
+          "section_title": "-Nash Equilibrium"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "59ff1582-70a1-51e5-b0c0-518276724499",
+          "score": 0.4590152623676807,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 11,
+          "section_title": "N-Player Game in Hilbert Space"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "45a44c2e-9b06-551d-b9a5-02aaeba92469",
+          "score": 0.3705579776877778,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 9,
+          "section_title": "Generalized Principal-Agent Problem with Approximate Best Response"
+        }
+      ],
+      "response": {
+        "query": "What is the optimization problem faced by a representative agent in the limiting game?",
+        "answer": "A representative agent chooses an admissible control \\(u_i\\) to minimize the expected quadratic cost \\(J_i^\\infty(u_i)\\), with running and terminal penalties measuring the agent’s state relative to the mean-field terms \\(\\bar F_1\\bar x(t)\\) and \\(\\bar F_2\\bar x(T)\\), respectively, plus a running control-cost penalty \\(|u_i(t)|^2\\). [1] The choice is subject to the agent’s stochastic dynamics \\(dx_i=(Ax_i+Bu_i+F_1\\bar x)dt+(Dx_i+Eu_i+F_2\\bar x+\\sigma)dW_i\\), with initial state \\(x_i(0)=\\xi_i\\); in the limit, this is a single-agent optimal-control problem because the cost is independent of other agents’ strategies. [1][2]",
+        "citations": [
+          {
+            "chunk_id": "7c78be32-23fc-580f-bce6-6da6133454b9",
+            "source": "2403.01012v4.pdf",
+            "page_number": 11,
+            "text_snippet": "and the cost functional to be minimized by agent i by",
+            "relevance_score": 0.953195075340141
+          },
+          {
+            "chunk_id": "5bd4ec29-32f4-579a-89fc-0da663a002e7",
+            "source": "2403.01012v4.pdf",
+            "page_number": 20,
+            "text_snippet": "the high-dimensional optimization problem faced by agent i, i ∈N, turns into a single-agent optimal control problem",
+            "relevance_score": 0.7813611007281649
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "7c78be32-23fc-580f-bce6-6da6133454b9",
+            "content": "4.2. Limiting Game in Hilbert Spaces\n\nIn this section we present the limiting game which reflects the scenario where, in system (4.1)- (4.2), the number of agents N tends to infinity. In this case, the optimization problem faced by a representative agent i is described as follows. Specifically, the dynamics of a representative agent, indexed by i, is given by\n\ndxi(t) = (Axi(t) + Bui(t) + F1 ̄x(t))dt + (Dxi(t) + Eui(t) + F2 ̄x(t) + σ)dWi(t), (4.3)\n\nxi(0) = ξi,\n\nand the cost functional to be minimized by agent i by\n\nJ∞\n\ni (ui) = E\n\nZ T\n\n0\n\nM\n\n1 2\n\nxi(t) −bF1 ̄x(t)\n\n2 + |ui(t)|2\n\ndt + E\n\nG\n\n1 2\n\nxi(T) −bF2 ̄x(T)\n\n2 , (4.4)",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 11,
+              "end_page_number": 11,
+              "start_char": 31076,
+              "end_char": 31703,
+              "chunk_index": 43,
+              "section_index": 8,
+              "section_title": "Limiting Game in Hilbert Spaces",
+              "method": "recursive",
+              "token_count": 219
+            },
+            "embedding": null
+          },
+          {
+            "id": "5bd4ec29-32f4-579a-89fc-0da663a002e7",
+            "content": "i , u◦\n\n−i) = inf\n\nui∈Ui J∞\n\ni (ui, u◦\n\n−i), ∀i ∈N. (4.56)\n\nThis is because, in the limit when the number of agents N goes to infinity, the agents get decoupled from each other and hence the high-dimensional optimization problem faced by agent i, i ∈N, turns into a single-agent optimal control problem for which there is a unique solution. Hence, agent i cannot improve its cost by deviating from the optimal strategy (4.51)-(4.52) and the set of these strategies yields a Nash equilibrium for the limiting system. In other words, the Nash equilibrium property, as defined in (4.56), holds trivially for the set of strategies {u◦\n\ni }i∈N because the limiting cost functional of agent i, given by (4.4), is independent of the strategies of other agents.\n\nSubsequently, the equilibrium state of agent i is given by\n\nx◦\n\ni (t) = S(t)ξi −\n\nZ t\n\n0 S(t −r)\n\nBK−1(T −r)L(T −r)x◦",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 20,
+              "end_page_number": 20,
+              "start_char": 52941,
+              "end_char": 53813,
+              "chunk_index": 85,
+              "section_index": 12,
+              "section_title": "Nash Equilibrium",
+              "method": "recursive",
+              "token_count": 242
+            },
+            "embedding": null
+          },
+          {
+            "id": "ca5efb42-d48b-58d7-8d6b-09f8587f2753",
+            "content": "1 (r) + Bτ(r)\n\n2 dr ≤C\n\nZ t\n\n0 (E\n\nx[N]\n\n1 (r)\n\n2 + 1)dr ≤CN. (4.78)\n\nFrom (4.73) and (4.77)-(4.78), we conclude that\n\nE\n\nyN(t)\n\n2 ≤C\n\nN + C\n\nZ t\n\n0 E\n\nyN(r)\n\n2 dr. (4.79)\n\nThen, by Gr ̈onwall’s inequality, the property (4.68) follows.\n\nProposition 4.10 (Error Bounds for Agent i = 1). Let x1(t) and x[N]\n\n1 (t), respectively, denote the state of agent i = 1 in the limiting game and the N-player game satisfying (4.3) and (4.59). Moreover, let J∞(u◦\n\n1) and J[N](u◦ 1, u◦ −1), respectively, denote the cost functional of agent i = 1 in the limiting game and the N-player game given by (4.4) and (4.61).\n\n(i) If agent i = 1 employs the control law u◦\n\n1 given by (4.51), we have",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 24,
+              "end_page_number": 24,
+              "start_char": 60381,
+              "end_char": 61059,
+              "chunk_index": 100,
+              "section_index": 13,
+              "section_title": "-Nash Equilibrium",
+              "method": "recursive",
+              "token_count": 254
+            },
+            "embedding": null
+          },
+          {
+            "id": "59ff1582-70a1-51e5-b0c0-518276724499",
+            "content": "In general, solving the N-player differential game described in this section becomes challenging, even for moderate values of N and for finite-dimensional cases. The interactions between agents lead to a large-scale optimization problem, where each agent needs to observe the states of all other interacting agents. To address the dimensionality and the information restriction, following the classical MFG methodology, we investigate the limiting problem as the number of agents N tends to infinity. In this limiting model, the average behavior of the agents, known as the mean field, can be mathematically characterized, simplifying the problem. Specifically, in the limiting case, a generic agent interacts with the mean field, rather than a large number of agents. Furthermore, the mean field happens to coincide with the mean state of the agent. In the subsequent sections, we develop the Nash Certainty Equivalence principle and characterize a Nash equilibrium for the limiting game in Hilbert spaces. We then demonstrate that this equilibrium yields an ǫ-Nash equilibrium for the original N-player game.",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 11,
+              "end_page_number": 11,
+              "start_char": 29964,
+              "end_char": 31074,
+              "chunk_index": 42,
+              "section_index": 7,
+              "section_title": "N-Player Game in Hilbert Space",
+              "method": "recursive",
+              "token_count": 205
+            },
+            "embedding": null
+          },
+          {
+            "id": "45a44c2e-9b06-551d-b9a5-02aaeba92469",
+            "content": "Here, we allow the agent to approximately best respond. Let δ ≥0 be a parameter. We define two types of δ-best-responding strategies for the agent: deterministic and randomized.\n\n• A deterministic strategy ρ: for each signal s ∈S, the agent takes an action a that is δ-optimal for xs. Denote this set of strategies by Dδ(π):\n\nDδ(π) =\n\nρ : S →A | v(xs, ρ(s)) ≥v(xs, a′) −δ, ∀a′ ∈A\n\n. (4)\n\n9\n\n• A randomized strategy ρ: for each signals s, the agent can take a randomized action. The expected utility of ρ is at most δ-worst than the best strategy ρ∗.\n\nRδ(π) =\n\nρ : S →∆(A) | V (π, ρ) ≥V (π, ρ∗) −δ\n\n. (5)\n\nEquivalently, Rδ(π) =\n\nρ : S →∆(A) | V (π, ρ) ≥V (π, ρ′) −δ, ∀ρ′ : S →A\n\n.",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 9,
+              "end_page_number": 10,
+              "start_char": 31256,
+              "end_char": 31935,
+              "chunk_index": 38,
+              "section_index": 8,
+              "section_title": "Generalized Principal-Agent Problem with Approximate Best Response",
+              "method": "recursive",
+              "token_count": 244
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.94
+      },
+      "error": null,
+      "retrieval_seconds": 0.012,
+      "generation_seconds": 5.518,
+      "prompt_tokens": 1698,
+      "completion_tokens": 680
+    },
+    {
+      "query_id": "4f4e706f-61cd-4fd1-9665-4ed32afb984d",
+      "query": "What challenges are faced in predicting T-cell responses to specific peptides?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "756456d7-a388-5612-8eac-1ea0d3f62c70",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "f5ff0604-09e4-5763-9ac7-2498bf505f8a",
+          "score": 0.8219723267016479,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "a0090e7e-a52b-5a99-b48f-c3b20217e0d6",
+          "score": 0.7609529448392458,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 4,
+          "section_title": "Domain structure in T-cell response data"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "3f405e8f-20b1-5074-bbf8-2524ffedcc7f",
+          "score": 0.7569888827162414,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 3,
+          "section_title": "Construction of a T-cell response data set"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "7a0353cb-c41d-5649-9f60-5cdcf2c4474f",
+          "score": 0.7476720553696659,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 1,
+          "section_title": "Abstract"
+        }
+      ],
+      "response": {
+        "query": "What challenges are faced in predicting T-cell responses to specific peptides?",
+        "answer": "Predicting T-cell responses remains difficult because there are fewer experimental T-cell assay data than for MHC presentation, and the available training data are limited and heterogeneous [1][5]. Peptides come from different sources and MHC alleles, with source-dependent response rates and allele-specific sequence patterns; this can cause models to learn source characteristics instead of peptide features tied to response [1][3][5].",
+        "citations": [
+          {
+            "chunk_id": "756456d7-a388-5612-8eac-1ea0d3f62c70",
+            "source": "2403.12117v2.pdf",
+            "page_number": 2,
+            "text_snippet": "The second task can, despite some attempts [7, 8], still be considered as an open problem, in part due to fewer experimental data from T-cell assays [9].",
+            "relevance_score": 1.0
+          },
+          {
+            "chunk_id": "7a0353cb-c41d-5649-9f60-5cdcf2c4474f",
+            "source": "2403.12117v2.pdf",
+            "page_number": 1,
+            "text_snippet": "It is a challenging task due to limited, heterogeneous training data featuring a multi-domain structure; such data entail the danger of shortcut learning",
+            "relevance_score": 0.7476720553696659
+          },
+          {
+            "chunk_id": "a0090e7e-a52b-5a99-b48f-c3b20217e0d6",
+            "source": "2403.12117v2.pdf",
+            "page_number": 4,
+            "text_snippet": "the fraction of T-cell response positives varies strongly between sources.",
+            "relevance_score": 0.7609529448392458
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "756456d7-a388-5612-8eac-1ea0d3f62c70",
+            "content": "From a computational perspective, this task can be separated into two subtasks: first predicting whether a peptide is presented on the cell surface by an MHC molecule and afterwards predicting whether a presented peptide induces a T-cell response. For the first task, a large amount of available experimental data has led to accurate machine learning-based predictions [4–6]. The second task can, despite some attempts [7, 8], still be considered as an open problem, in part due to fewer experimental data from T-cell assays [9].\n\nAside from small sample sizes, another challenge arises from peptides in T-cell response data originating from different sources, such as viruses, bacteria, or human proteins. Moreover, peptides feature patterns that are specific to the allele of the MHC molecule they are presented by [10]. Both factors lead to data heterogeneity, which is either unaccounted for by existing approaches [8, 11] or handled by limiting the model to selected MHC alleles and considering small peptides, such that positions that are affected by MHC allele-specific patterns can be identified [7, 12, 13].",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 2661,
+              "end_char": 3777,
+              "chunk_index": 3,
+              "section_index": 3,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 223
+            },
+            "embedding": null
+          },
+          {
+            "id": "f5ff0604-09e4-5763-9ac7-2498bf505f8a",
+            "content": "Introduction\n\nThe human immune system consists of humoral and cell-mediated mechanisms, with T cells playing a significant role in the latter. T cells recognize and eliminate cancerous or infected cells by detecting peptides presented on the cell surface by major histocompatibility complex (MHC) molecules, which can be grouped into two classes, MHC I and MHC II [1].\n\nPeptide-based vaccines are a promising approach for the personalized treatment of cancer [2] and might allow more precise vaccines against infectious diseases [3]. Such vaccines can be developed by selecting peptides that are specific to a pathogen or tumor. Since only a limited number of peptides can be included in the vaccine, their selection should be based on their probability of inducing a T-cell response. Predicting this probability is an important task in the development of peptide vaccines [2].",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 1782,
+              "end_char": 2659,
+              "chunk_index": 2,
+              "section_index": 3,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 166
+            },
+            "embedding": null
+          },
+          {
+            "id": "a0090e7e-a52b-5a99-b48f-c3b20217e0d6",
+            "content": "Domain structure in T-cell response data\n\nBased on the data analysis presented in Figure 1, we identify two domain structures in the T-cell response data set, peptide sources (left column) and MHC alleles (right column). The next paragraphs describe these two domain structures in more detail.\n\nFigure 1a shows that the peptides in the T-cell response data set originate from several sources and that the fraction of T-cell response positives varies strongly between sources. When studying T-cell responses for one peptide source, a protein of that source is often screened by testing a set of largely overlapping peptides that originate from the protein. These overlaps lead to clusters of peptides that make peptides within one source more similar than peptides from a different source.\n\nMotivated by the size of the binding core in peptides [19], we define that peptides correspond to the same cluster if they share a sub-sequence of length nine. The Sankey diagram in Figure 1c confirms that the seven largest peptide clusters typically consist of peptides from only a few sources.",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 4,
+              "end_page_number": 4,
+              "start_char": 8130,
+              "end_char": 9215,
+              "chunk_index": 11,
+              "section_index": 6,
+              "section_title": "Domain structure in T-cell response data",
+              "method": "recursive",
+              "token_count": 204
+            },
+            "embedding": null
+          },
+          {
+            "id": "3f405e8f-20b1-5074-bbf8-2524ffedcc7f",
+            "content": "We assign an allele to a peptide if it is predicted to be a weak binder. NetMHC- pan 4.1 and NetMHCIIpan 4.0 define a peptide as weak binder if its prediction score is within the top 2% of prediction scores for random natural peptides. Peptides that are predicted to not bind to any of the alleles get assigned a default allele for the respective MHC class. This applies to 29.7% of class I peptides and 66.5% of class II peptides. Since the MHC alleles are only relevant for us to identify MHC allele-specific patterns in peptides, the relatively large fraction of default alleles is not problematic because peptides with a default allele likely have no strong allele-specific patterns. Table 1 shows the resulting statistics about the MHC classes, T-cell response labels, and peptide lengths of the T-cell response data.\n\nTable 1 Statistics of the data set. The columns for positives/negatives refer to the number of peptides with the respective T-cell response label.\n\nMHC alleles Positives Negatives Pep. lengths",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 3,
+              "end_page_number": 3,
+              "start_char": 7002,
+              "end_char": 8018,
+              "chunk_index": 9,
+              "section_index": 5,
+              "section_title": "Construction of a T-cell response data set",
+              "method": "recursive",
+              "token_count": 221
+            },
+            "embedding": null
+          },
+          {
+            "id": "7a0353cb-c41d-5649-9f60-5cdcf2c4474f",
+            "content": "Abstract\n\nWe study the prediction of T-cell response for specific given peptides, which could, among other applications, be a crucial step towards the development of personalized cancer vaccines. It is a challenging task due to limited, heterogeneous training data featuring a multi-domain structure; such data entail the danger of shortcut learning, where models learn general characteristics of peptide sources, such as the source organism, rather than specific peptide characteristics associated with T-cell response. Using a transformer model for T-cell response prediction, we show that the danger of inflated predictive performance is not merely theoretical but occurs in practice. Consequently, we propose a domain-aware evaluation scheme. We then study different transfer learning techniques to deal with the multi-domain structure and shortcut learning. We demonstrate a per-source fine tuning approach to be effective across a wide range of peptide sources and further show that our final model is competitive with existing state-of-the-art approaches for predicting T-cell responses for human peptides.\n\nKeywords: T cells, MHC, peptides, shortcut learning, domain adaptation, transformers\n\n1\n\narXiv:2403.12117v2 [q-bio.CB] 26 Feb 2025\n\n",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 1,
+              "end_page_number": 1,
+              "start_char": 535,
+              "end_char": 1782,
+              "chunk_index": 1,
+              "section_index": 2,
+              "section_title": "Abstract",
+              "method": "recursive",
+              "token_count": 231
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.98
+      },
+      "error": null,
+      "retrieval_seconds": 0.011,
+      "generation_seconds": 1.984,
+      "prompt_tokens": 1532,
+      "completion_tokens": 207
+    },
+    {
+      "query_id": "94e00fa4-b4a5-447a-81ed-f18e4f20a5cb",
+      "query": "How does a longer planned lead time affect service levels in scenarios with biased and unbiased forecasts?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "5dd4dde2-3983-56c2-84f7-c7bc2715cb59",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 5,
+          "section_title": "2.2.2. Planned Lead Times"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "87e0045c-2d3e-5bfb-9de9-1a867cebc336",
+          "score": 0.525434587461631,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 6,
+          "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "1ffc9cfe-0680-50e8-a7b9-2190b19657d2",
+          "score": 0.4496728986085097,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 6,
+          "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "08b5bdec-7991-5cca-ac1b-5f3186f98a92",
+          "score": 0.3561937830029399,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 25,
+          "section_title": "6.3.2. Permanent forecast bias"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "8476c444-ecaf-55e2-a5d6-2986a1d243a2",
+          "score": 0.3103000302417009,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 21,
+          "section_title": "6.1.2. Optimal Planning Parameters at Low Utilization"
+        }
+      ],
+      "response": {
+        "query": "How does a longer planned lead time affect service levels in scenarios with biased and unbiased forecasts?",
+        "answer": "In both biased and unbiased forecast scenarios, a longer planned lead time can lead to a higher service level. [1]",
+        "citations": [
+          {
+            "chunk_id": "5dd4dde2-3983-56c2-84f7-c7bc2715cb59",
+            "source": "2403.11010v3.pdf",
+            "page_number": 5,
+            "text_snippet": "Enns (2002) showed that in scenarios with biased and unbiased forecasts, a longer planned lead time can lead to a higher service level.",
+            "relevance_score": 1.0
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "5dd4dde2-3983-56c2-84f7-c7bc2715cb59",
+            "content": "2.2.2. Planned Lead Times\n\nAnother series of papers examines how to set planned lead times under forecast uncertainty. According to Enns (2001), a potential solution to mitigate the impact of demand uncertainty is to\n\n6\n\nincrease the planned lead time. However, the most effective approach may vary, depending on the type of uncertainty. Also, Altendorfer (2019) found higher planned lead times to be advantageous for mitigating forecast uncertainty when shop loads are high. Enns (2002) showed that in scenarios with biased and unbiased forecasts, a longer planned lead time can lead to a higher service level. It is important to note that the lack of forecast evolution in the results of Enns (2002) has an effect similar to that of Enns (2001), where inventory levels increase to mitigate uncertainty.\n\n",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 5,
+              "end_page_number": 6,
+              "start_char": 14715,
+              "end_char": 15521,
+              "chunk_index": 16,
+              "section_index": 7,
+              "section_title": "2.2.2. Planned Lead Times",
+              "method": "recursive",
+              "token_count": 169
+            },
+            "embedding": null
+          },
+          {
+            "id": "87e0045c-2d3e-5bfb-9de9-1a867cebc336",
+            "content": "Again, van Kampen et al. (2010) showed that in negative biased forecast situations with low and high levels of demand quantity uncertainty, a safety lead time leads to a higher service level at a comparable inventory level, which is different from the results of Altendorfer (2019) and Buzacott and Shanthikumar (1994), who suggested increasing safety stock levels. Enns (2002) showed that in underbooking scenarios, setting safety stock is preferable to setting a safety lead time, which is in line with Altendorfer (2019) and Buzacott and Shanthikumar (1994). However, there is no clear evidence from Enns (2002) to determine if this also holds true for overbooking scenarios. In addition, Molinder (1997) found that in the case of low lead time variability, the use of safety stock instead of safety lead time leads to the lowest costs. Overall, these studies provide insights into the complex interrelation between demand uncertainty, safety lead time, and safety stock in production planning systems.",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 16450,
+              "end_char": 17455,
+              "chunk_index": 18,
+              "section_index": 8,
+              "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times",
+              "method": "recursive",
+              "token_count": 220
+            },
+            "embedding": null
+          },
+          {
+            "id": "1ffc9cfe-0680-50e8-a7b9-2190b19657d2",
+            "content": "2.2.3 Interrelation between Safety Stock and Planned Lead Times\n\nWhile one can set a planned lead time or a safety stock to face forecast uncertainty, it is also possible to exchange them. Whybark and Williams (1976) suggested that for demand quantity uncertainty, safety stock is beneficial, while for demand timing uncertainties, safety lead time is preferable in single-product, single-stage production environments. However, this approach may not be suitable for multi-product, multi-stage production systems, as discussed in Enns (2002). Dong and Lee (2003) suggested that higher planned lead times may be preferable in situations with higher demand timing uncertainty, but the results are inconclusive. In systematic biased demand uncertainty situations, Altendorfer (2019) and Buzacott and Shanthikumar (1994) indicated that a higher underbooking behaviour tends to result in less planned lead time and more safety stock.",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 15521,
+              "end_char": 16449,
+              "chunk_index": 17,
+              "section_index": 8,
+              "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times",
+              "method": "recursive",
+              "token_count": 186
+            },
+            "embedding": null
+          },
+          {
+            "id": "08b5bdec-7991-5cca-ac1b-5f3186f98a92",
+            "content": "6.3.2. Permanent forecast bias\n\nTo identify the effect of biased forecasts on MRP performance, this section focuses on permanent forecast biases. In the underbooking case, the long-term forecast is significantly lower than the expected final order amount, i.e., customers underestimate their demand, and each update leads, on average, to a higher forecast value. For overbooking, customers overestimate their demand, and each update leads to a reduction in the forecasted demand. Despite this, each update still provides an information gain. In the overbooking case, production orders are, on average, too high, and in the rolling horizon setting, an undefined buffer stock arises. This buffer stock increases inventory costs but can absorb short-term demand increases from unsystematic uncertainty. In the\n\nSST PLT Lotsize Overall Costs\n\n[CU]\n\nService\n\nLevel SST PLT Lotsize Overall Costs\n\n[CU]\n\nService",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 25,
+              "end_page_number": 25,
+              "start_char": 63322,
+              "end_char": 64226,
+              "chunk_index": 79,
+              "section_index": 29,
+              "section_title": "6.3.2. Permanent forecast bias",
+              "method": "recursive",
+              "token_count": 179
+            },
+            "embedding": null
+          },
+          {
+            "id": "8476c444-ecaf-55e2-a5d6-2986a1d243a2",
+            "content": "We conjecture that this is the reason why FOQ outperforms FOP in all instances. However, for higher forecast uncertainties (≥0.1), PLT=1 and SST=1.5 are optimal for FOQ. This trend is less clear when considering only the service level, as FOP achieves higher service levels at lower forecast uncertainties (≤0.08). However, focusing solely on service level can be misleading. For example, at =0.08, although FOP achieves a better service level, it results in higher backorder costs. This discrepancy arises because service level calculations do not account for the order quantity or the associated tardiness duration, both of which directly impact overall cost performance. In addition to the reported test instances, =0 has also been tested, and the lowest costs there are CU 4.158, which are equal for FOQ and FOP (since both lead to a constant lotsize of 800 pcs). This shows that information uncertainty leads to significant additional costs, even if the uncertainty is very low.",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 21,
+              "end_page_number": 21,
+              "start_char": 53231,
+              "end_char": 54222,
+              "chunk_index": 65,
+              "section_index": 25,
+              "section_title": "6.1.2. Optimal Planning Parameters at Low Utilization",
+              "method": "recursive",
+              "token_count": 239
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.014,
+      "generation_seconds": 1.461,
+      "prompt_tokens": 1511,
+      "completion_tokens": 87
+    },
+    {
+      "query_id": "7dc98320-b491-40cc-875d-b9e8ea5ab3c5",
+      "query": "How does scaling horizontal and vertical distances affect ascent time and \\( P_K\\)?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "5c3990d7-9055-5d0d-8c0e-1afc2c35a645",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 15,
+          "section_title": "Power estimate for changes in kinetic energy"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "c51c316e-edd9-58d8-81a7-d6187689a879",
+          "score": 0.4829399725329985,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 7,
+          "section_title": "Application to arbitrary ascents"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "0c044121-fb84-5877-b944-b87ec6eadae7",
+          "score": 0.4818016509273507,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 19,
+          "section_title": "Constant ascent speed"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "c3acec3d-54a5-566e-b4d6-22ccacae2ca2",
+          "score": 0.4068219931159794,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 7,
+          "section_title": "Ascent"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "4aa50ef0-a4f5-52d5-a50c-bff9a5ff1802",
+          "score": 0.40571780132008917,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 10,
+          "section_title": "Discussion and conclusions"
+        }
+      ],
+      "response": {
+        "query": "How does scaling horizontal and vertical distances affect ascent time and \\( P_K\\)?",
+        "answer": "Scaling both horizontal and vertical distances by 1/2 while keeping the grade and endpoint speeds unchanged halves the ascent time (to 131.8770 s) and doubles P_K (to 32.9764 W). [1] Doubling both distances likewise preserves the grade and endpoint speeds, doubles ascent time (to 527.5078 s), and halves P_K (to 8.2441 W); thus P_K varies inversely with ascent time. [1]",
+        "citations": [
+          {
+            "chunk_id": "5c3990d7-9055-5d0d-8c0e-1afc2c35a645",
+            "source": "2403.03363v6.pdf",
+            "page_number": 15,
+            "text_snippet": "Examining expression (B.1), we see that PK is inversely proportional to the ascent time.",
+            "relevance_score": 1.0
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "5c3990d7-9055-5d0d-8c0e-1afc2c35a645",
+            "content": "Examining expression (B.1), we see that PK is inversely proportional to the ascent time. Hence, neglecting changes in kinetic energy becomes more justifiable for longer ascents.\n\nTo quantify this statement, let us return to ascent (c) and scale the horizontal and vertical distances by 1/2; in other words, we specify xn = 500 m and yn = 50 m, which maintains the overall grade percentage of G = 10%. Also, the speeds at the bottom and top do not change. However, the ascent time is halved to T = 131.8770 s and, hence, the PK is doubled to PK = 32.9764 W. If we double the horizontal and vertical distances, specifying xn = 2000 m and yn = 200 m, which also maintains the overall grade percentage, the speeds at the bottom and top do not change but the ascent time is doubled to T = 527.5078 s and, hence, the PK is halved to PK = 8.2441 W, which is two orders of magnitude less than the specified average power.",
+            "metadata": {
+              "document_id": "ea159d6b-b864-560e-8f77-6c3c84fce1f4",
+              "source": "2403.03363v6.pdf",
+              "arxiv_id": "2403.03363v6",
+              "page_number": 15,
+              "end_page_number": 15,
+              "start_char": 31525,
+              "end_char": 32438,
+              "chunk_index": 43,
+              "section_index": 14,
+              "section_title": "Power estimate for changes in kinetic energy",
+              "method": "recursive",
+              "token_count": 230
+            },
+            "embedding": null
+          },
+          {
+            "id": "c51c316e-edd9-58d8-81a7-d6187689a879",
+            "content": "4 Application to arbitrary ascents\n\n4.1 Ascent\n\nAs stated in Section 3, the method presented therein can be applied to any uphill by discretizing it into N straight-line segments. In this section, we apply the method to various ascents. To compare the optimal strategy of constant speed and variable power with another strategy, we include the ascent times under the assumption of constant power and variable speed.\n\nTo generate continuous ascents, which can be sampled with arbitrary resolution, we consider (n+1) nodes in x G-plane, where x corresponds to the horizontal distance and G is the grade, which is the tangent of the slope angle. We subdivide the distance with strictly increasing coordinates, x0 < x1 < · · · < xn. Along the ith segment, we define the grade as a piecewise linear interpolation of its endpoints,\n\nGi(X) = Gi−1 +\n\nGi −Gi−1\n\nxi −xi−1\n\n(X −xi−1), xi−1 ⩽X ⩽xi .\n\nThrough integration of the grade, we obtain the vertical coordinates of the ascent in the xy-plane, where y is the elevation. Thus, the change in elevation along the ith segment is\n\n∆yi(X) =\n\nX Z\n\nxi−1",
+            "metadata": {
+              "document_id": "ea159d6b-b864-560e-8f77-6c3c84fce1f4",
+              "source": "2403.03363v6.pdf",
+              "arxiv_id": "2403.03363v6",
+              "page_number": 7,
+              "end_page_number": 7,
+              "start_char": 14480,
+              "end_char": 15570,
+              "chunk_index": 21,
+              "section_index": 8,
+              "section_title": "Application to arbitrary ascents",
+              "method": "recursive",
+              "token_count": 254
+            },
+            "embedding": null
+          },
+          {
+            "id": "0c044121-fb84-5877-b944-b87ec6eadae7",
+            "content": "Be that as it may — even if ill-posedeness can be avoided by excluding points or segments where θ = 0 — a constant ascent speed is not a viable strategy. For ascent (4a), since the grade is constant, the ground speed, V = 3.9439 m/s, power, P = 300 W, and ascent speed, v = 0.3924 m/s, are constant, and result in the same ascent time, T = 254.8206 s , as expected in view of Table 1 and v = V sin(5.7106◦) . In general, however, the instantaneous power and ground speed corresponding to a constant ascent speed are excessively large along less steep portions of the climb in order to keep the vertical component of speed constant. Notably, this supports the choice of a consistently steep slope to maximize VAM.",
+            "metadata": {
+              "document_id": "ea159d6b-b864-560e-8f77-6c3c84fce1f4",
+              "source": "2403.03363v6.pdf",
+              "arxiv_id": "2403.03363v6",
+              "page_number": 19,
+              "end_page_number": 19,
+              "start_char": 42004,
+              "end_char": 42716,
+              "chunk_index": 57,
+              "section_index": 17,
+              "section_title": "Constant ascent speed",
+              "method": "recursive",
+              "token_count": 182
+            },
+            "embedding": null
+          },
+          {
+            "id": "c3acec3d-54a5-566e-b4d6-22ccacae2ca2",
+            "content": "∆yi(X) =\n\nX Z\n\nxi−1\n\nGi(ξ) dξ = Gi−1(X −xi−1) + 1\n\n2\n\nGi −Gi−1\n\nxi −xi−1\n\n(X −xi−1)2, xi−1 ⩽X ⩽xi ,\n\nwhich, at the endpoint, is\n\n∆yi(xi) =\n\nGi−1 + Gi\n\n2\n\n(xi −xi−1) .\n\nTherefore, the ith vertical ascent coordinate is yi = yi−1 + ∆yi(xi) and, given initial coordinates x0 and y0, the final vertical coordinate is\n\nyn = y0 +\n\nn X\n\ni=1\n\n∆yi(xi) . (14)\n\nThe average grade percentage for the entire ascent is\n\nG =\n\nyn −y0\n\nxn −x0\n\n· 100%\n\nand the ascent distance is\n\nL =\n\nn X\n\ni=1\n\n\n\n\n\nxi Z\n\nxi−1\n\np\n\n1 + Gi(X)2 dX\n\n\n\n. (15)",
+            "metadata": {
+              "document_id": "ea159d6b-b864-560e-8f77-6c3c84fce1f4",
+              "source": "2403.03363v6.pdf",
+              "arxiv_id": "2403.03363v6",
+              "page_number": 7,
+              "end_page_number": 7,
+              "start_char": 15551,
+              "end_char": 16074,
+              "chunk_index": 22,
+              "section_index": 9,
+              "section_title": "Ascent",
+              "method": "recursive",
+              "token_count": 208
+            },
+            "embedding": null
+          },
+          {
+            "id": "4aa50ef0-a4f5-52d5-a50c-bff9a5ff1802",
+            "content": "5 Discussion and conclusions\n\nThe ascent time is the shortest for the constant-speed case. For a constant slope, shown in Figure 4a, constant speed is tantamount to constant power; hence, as shown in the first row of Table 1, the ascent times are equal to one another for both cases. For the remaining rows of this table, the constant-speed case results in a time shorter by about 3.5% .\n\nThe difference between the two strategies increases with the steepness of a portion of an ascent. Let us consider a three-segment ascent whose overall grade is 10 %, with individual segments of 2.5 % , 25 % and 2.5 % . Letting P = 300 W, for a constant-speed strategy, we get V = 3.9631 m/s and T = 254.9668 s, with power of individual segments of 94.7177 W, 698.4306 W and 94.7177 W. For a constant-power strategy, T = 276.3511 s, with speed of individual segments of 8.6395 m/s,",
+            "metadata": {
+              "document_id": "ea159d6b-b864-560e-8f77-6c3c84fce1f4",
+              "source": "2403.03363v6.pdf",
+              "arxiv_id": "2403.03363v6",
+              "page_number": 10,
+              "end_page_number": 10,
+              "start_char": 20380,
+              "end_char": 21249,
+              "chunk_index": 30,
+              "section_index": 12,
+              "section_title": "Discussion and conclusions",
+              "method": "recursive",
+              "token_count": 232
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.01,
+      "generation_seconds": 3.383,
+      "prompt_tokens": 1622,
+      "completion_tokens": 198
+    },
+    {
+      "query_id": "41d68de9-7ef9-4dbd-8a08-31075b374b30",
+      "query": "How do liquidity providers interact with an auction-managed AMM?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "75ba1052-5396-5056-8dcb-def59b45ffda",
+          "score": 0.9497647139192146,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 1,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "df189e02-ecba-5146-8f5b-8cb9135f19c1",
+          "score": 0.9054153882095624,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "3d05b64e-d7bb-5fd0-962e-84c875cc461b",
+          "score": 0.7987664085989964,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 1,
+          "section_title": "Front matter"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "a180af55-f17a-5a72-a9f3-8fe0080a7be9",
+          "score": 0.7318042900679984,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 12,
+          "section_title": "Discussion"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "545d1948-8cc9-512c-994e-a73cce78fd1a",
+          "score": 0.6899200803491266,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 12,
+          "section_title": "Discussion"
+        }
+      ],
+      "response": {
+        "query": "How do liquidity providers interact with an auction-managed AMM?",
+        "answer": "Liquidity providers supply liquidity to the pool and receive rent payments from the auction’s current manager, who pays rent in exchange for setting the swap fee and collecting swap fees [2][4]. They can enter or exit freely, although withdrawals carry a small fee [2][3].",
+        "citations": [
+          {
+            "chunk_id": "df189e02-ecba-5146-8f5b-8cb9135f19c1",
+            "source": "2403.03367v4.pdf",
+            "page_number": 2,
+            "text_snippet": "The current highest bidder in the ongoing auction, known as the manager, pays rent to liquidity providers.",
+            "relevance_score": 0.9054153882095624
+          },
+          {
+            "chunk_id": "a180af55-f17a-5a72-a9f3-8fe0080a7be9",
+            "source": "2403.03367v4.pdf",
+            "page_number": 12,
+            "text_snippet": "In the am-AMM, the LPs earn rent payments instead of noise trader fees.",
+            "relevance_score": 0.7318042900679984
+          },
+          {
+            "chunk_id": "3d05b64e-d7bb-5fd0-962e-84c875cc461b",
+            "source": "2403.03367v4.pdf",
+            "page_number": 1,
+            "text_snippet": "Liquidity providers can enter and exit the pool freely in response to changing rent, though they must pay a small fee on withdrawal.",
+            "relevance_score": 0.7987664085989964
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "75ba1052-5396-5056-8dcb-def59b45ffda",
+            "content": "mal fee may be dynamic and vary with other market variables such as volatility or overall market\n\nvolume. In standard fixed-fee AMMs (ff-AMMs), these problems compound and interfere with each\n\n∗The second author is supported by the Briger Family Digital Finance Lab at Columbia Business School, and is an advisor to Paradigm and to fintech companies. The authors wish to thank Agostino Capponi, Mallesh Pai, and Anthony Zhang for helpful comments.\n\n1\n\nother: liquidity providers must choose a pool with fees high enough to reduce arbitrage opportuni-\n\nties while still low enough to capture value from retail flow. Additionally, liquidity providers must\n\nmake this choice statically and for themselves, and if they disagree, liquidity ends up fragmented\n\nacross multiple pools.\n\nIn this paper, we propose the auction-managed AMM (am-AMM), a new AMM design that\n\ntargets both LVR reduction and fee optimization with one mechanism. The mechanism incentivizes\n\nsophisticated market participants to capture some of the value leaked by the AMM, and also lets\n\nthose market participants set fees at a level that optimizes revenue from retail traders. The pool\n\nmaintains synchronous composability with other onchain contracts, does not require price oracles,",
+            "metadata": {
+              "document_id": "568b36f2-62d3-5ffe-aff3-03a1f56d33b7",
+              "source": "2403.03367v4.pdf",
+              "arxiv_id": "2403.03367v4",
+              "page_number": 1,
+              "end_page_number": 2,
+              "start_char": 2382,
+              "end_char": 3634,
+              "chunk_index": 3,
+              "section_index": 1,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 251
+            },
+            "embedding": null
+          },
+          {
+            "id": "df189e02-ecba-5146-8f5b-8cb9135f19c1",
+            "content": "those market participants set fees at a level that optimizes revenue from retail traders. The pool\n\nmaintains synchronous composability with other onchain contracts, does not require price oracles,\n\nand is resistant to censorship. It also ensures accessibility, meaning that liquidity on the pool can\n\nalways be traded against with some capped fee. Under certain assumptions, we prove that the\n\nam-AMM will attract more liquidity than any fixed-fee constant product AMM pool (with any fee\n\nup to the cap), in equilibrium.\n\nThe am-AMM is a constant-product AMM. The AMM utilizes an onchain censorship-resistant\n\n“Harberger lease” auction to find the highest bidder. The current highest bidder in the ongoing\n\nauction, known as the manager, pays rent to liquidity providers. In exchange, the manager can\n\ndynamically set the swap fee rate (up to some maximum cap), and receives all swap fees collected by\n\nthe pool. This allows the manager to capture small arbitrage opportunities each block by trading\n\non the pool, since they can trade with effectively zero fee. It also incentivizes them to set the swap\n\nfee in order to maximize revenue from uninformed flow. Liquidity providers can enter and exit the\n\npool freely (though they pay a small withdrawal fee).",
+            "metadata": {
+              "document_id": "568b36f2-62d3-5ffe-aff3-03a1f56d33b7",
+              "source": "2403.03367v4.pdf",
+              "arxiv_id": "2403.03367v4",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 3437,
+              "end_char": 4695,
+              "chunk_index": 4,
+              "section_index": 1,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 251
+            },
+            "embedding": null
+          },
+          {
+            "id": "3d05b64e-d7bb-5fd0-962e-84c875cc461b",
+            "content": "Dan Robinson\n\nParadigm email: dan@paradigm.xyz\n\nInitial version: February 13, 2024\n\nThis version: February 12, 2025\n\nAbstract\n\nAutomated market makers (AMMs) have emerged as the dominant market mechanism for trading on decentralized exchanges implemented on blockchains. This paper presents a single mechanism that targets two important unsolved problems for AMMs: reducing losses to informed orderflow, and maximizing revenue from uninformed orderflow. The “auction-managed AMM” works by running a censorship-resistant onchain auction for the right to temporarily act as “pool manager” for a constant-product AMM. The pool manager sets the swap fee rate on the pool, and also receives the accrued fees from swaps. The pool manager can exclusively capture some arbitrage by trading against the pool in response to small price movements, and also can set swap fees incorporating price sensitivity of retail orderflow and adapting to changing market conditions, with the benefits from both ultimately accruing to liquidity providers. Liquidity providers can enter and exit the pool freely in response to changing rent, though they must pay a small fee on withdrawal. We prove that under certain assumptions, this AMM should have higher liquidity in equilibrium than any standard, fixed-fee AMM.",
+            "metadata": {
+              "document_id": "568b36f2-62d3-5ffe-aff3-03a1f56d33b7",
+              "source": "2403.03367v4.pdf",
+              "arxiv_id": "2403.03367v4",
+              "page_number": 1,
+              "end_page_number": 1,
+              "start_char": 290,
+              "end_char": 1582,
+              "chunk_index": 1,
+              "section_index": 0,
+              "section_title": "Front matter",
+              "method": "recursive",
+              "token_count": 253
+            },
+            "embedding": null
+          },
+          {
+            "id": "a180af55-f17a-5a72-a9f3-8fe0080a7be9",
+            "content": "mispricing of the pool (stochastic, could be positive or negative). In general noise traders will\n\nprefer pools with less relative mispricing. An additional benefit of the am-AMM over the ff-AMM\n\nis that the quoted prices are more accurate. This is because the pool operator of an am-AMM\n\nfaces no fees in performing arbitrage trades against the pool, and is able to correct smaller price\n\ndiscrepancies.\n\nThere is also an important transfer of risk between the LPs and the pool manager: in the\n\nam-AMM, the LPs earn rent payments instead of noise trader fees. Since these rent payments are\n\ndetermined ex ante, in equilibrium, they incorporate the expected value of future noise trader fee\n\nrevenue, in contrast to the actual noise trader fee revenue, which arrives in a lumpy and stochastic\n\nfashion and goes to the pool manager. Although it is beyond the scope of the analysis we have\n\npresented (which assumes risk neutrality), this risk transfer is likely welfare improving since the pool manager is likely a larger and better capitalized entity than a typical passive LP, and is thus\n\nless risk averse.\n\nDrawbacks. The auction-managed AMM is not without drawbacks. First, the pool manager’s",
+            "metadata": {
+              "document_id": "568b36f2-62d3-5ffe-aff3-03a1f56d33b7",
+              "source": "2403.03367v4.pdf",
+              "arxiv_id": "2403.03367v4",
+              "page_number": 12,
+              "end_page_number": 12,
+              "start_char": 30860,
+              "end_char": 32056,
+              "chunk_index": 39,
+              "section_index": 7,
+              "section_title": "Discussion",
+              "method": "recursive",
+              "token_count": 249
+            },
+            "embedding": null
+          },
+          {
+            "id": "545d1948-8cc9-512c-994e-a73cce78fd1a",
+            "content": "less risk averse.\n\nDrawbacks. The auction-managed AMM is not without drawbacks. First, the pool manager’s\n\nability to effectively trade on the pool with zero spread exacerbates the “sandwich attack” problem\n\nwith onchain AMMs, as discussed generally by Daian et al. (2020); Zhou et al. (2021); Adams et al.\n\n(2023a). A party that can trade with zero fees can profit by pushing any publicly visible swap\n\ntransaction to its limit price. This is a meaningful drawback — which could hurt swappers or\n\nultimately discourage retail flow, thus potentially invalidating the assumption in Section 3 that\n\nretail flow is only a function of liquidity and fee — but known mitigations for general sandwich\n\nattacks could be applied, such as verifiable sequencing rules (Ferreira and Parkes, 2022), private\n\n12\n\nrelays (Adams et al., 2023a), or offchain filler auctions (Adams et al., 2023c).\n\nSecond, the ex ante auction for the arbitrage opportunity could have effects on the market for\n\nblock building. The pool manager’s exclusive right to capture some arbitrage profit from a pool",
+            "metadata": {
+              "document_id": "568b36f2-62d3-5ffe-aff3-03a1f56d33b7",
+              "source": "2403.03367v4.pdf",
+              "arxiv_id": "2403.03367v4",
+              "page_number": 12,
+              "end_page_number": 13,
+              "start_char": 31951,
+              "end_char": 33023,
+              "chunk_index": 40,
+              "section_index": 7,
+              "section_title": "Discussion",
+              "method": "recursive",
+              "token_count": 240
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.99
+      },
+      "error": null,
+      "retrieval_seconds": 0.009,
+      "generation_seconds": 2.348,
+      "prompt_tokens": 1740,
+      "completion_tokens": 234
+    },
+    {
+      "query_id": "24e70880-7bc4-40be-b0b4-5ca8d0076a23",
+      "query": "What does the predicted ideal measurement set (PIMS) include?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "69f975f4-5f3d-529f-9d41-a15f89873d50",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "B. Calculation of the predicted ideal measurement set (PIMS)"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "7ae6c90c-1a1f-5e43-bb95-e9cd9e8099a5",
+          "score": 0.1886948611271962,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "C. Pseudo-update and fusion"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "b1abd6ec-49fa-5255-a01a-de17df8c8e92",
+          "score": 0.18376021000775772,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 7,
+          "section_title": "D. Objective Function"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "af32a4b6-fc37-5756-a84f-d45111c3589b",
+          "score": 0.17873801212912635,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 3,
+          "section_title": "Transmit"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "92e24605-f230-5e49-a2ed-7c107c35bbbc",
+          "score": 0.17871133200936065,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "A. Estimation"
+        }
+      ],
+      "response": {
+        "query": "What does the predicted ideal measurement set (PIMS) include?",
+        "answer": "The PIMS includes ideal, noise-free hypothesized measurements for each sensor node, corresponding to all objects estimated to exist. These measurements assume no false alarms or missed detections, although a predicted object can be outside the sensor’s field of view and thus be entirely missed under a hypothesized control action. [1]",
+        "citations": [
+          {
+            "chunk_id": "69f975f4-5f3d-529f-9d41-a15f89873d50",
+            "source": "2401.14085v2.pdf",
+            "page_number": 6,
+            "text_snippet": "Such sets are ideal in the sense that they include no measurement noise, false alarm or miss-detection, and correspond to all the objects estimated to be existing.",
+            "relevance_score": 1.0
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "69f975f4-5f3d-529f-9d41-a15f89873d50",
+            "content": "B. Calculation of the predicted ideal measurement set (PIMS)\n\nThe next step is to compute hypothesized measurements sets that could ideally be returned by each sensor node. Such sets are ideal in the sense that they include no measurement noise, false alarm or miss-detection, and correspond to all the objects estimated to be existing. An example is shown in Figure 6. Consider an object that is predicted by sensor node s′, to exist at an estimated location of (ˆpx,k|k−1,s′, ˆpy,k|k−1,s′). As shown in Figure 6(a), without any sensor action (zero control command), ideally the object would be detected, returning a measurement that is comprised of the horizontal and vertical distance from the object to the sensor, denoted by\n\ñz = ( ̃zx,k,s′, ̃zy,k,s′). If a hypothesized control command in the form of a 2D translation and rotation is applied to the sensor, the measurements will change – see Figure 6(b). Due to the sensor’s limited field of view, it is also possible that a predicted object is entirely missed by the sensor – see Figure 6(c).\n\n",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 27852,
+              "end_char": 28904,
+              "chunk_index": 34,
+              "section_index": 14,
+              "section_title": "B. Calculation of the predicted ideal measurement set (PIMS)",
+              "method": "recursive",
+              "token_count": 250
+            },
+            "embedding": null
+          },
+          {
+            "id": "7ae6c90c-1a1f-5e43-bb95-e9cd9e8099a5",
+            "content": "C. Pseudo-update and fusion\n\nOnce the PIMS are generated for each sensor node (self and neighboring nodes), a pseudo-update step is run. “Pseudo” refers to the hypothetical nature of the measurements generated with zero noise for hypothetical control actions. The results are the multi-object posteriors that would be generated locally in each sensor node if the node’s locally acquired measurements were the PIMS generated in node s for them.\n\nThe pseudo-posteriors are then fused using the same fusion scheme that would be used in the update step after actual measurement acquisition by the sensor. In our experiments, with LMB filters running in each sensor node, fusion rules (6) and (5) are used, as also used in the update step.\n\n",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 28904,
+              "end_char": 29640,
+              "chunk_index": 35,
+              "section_index": 15,
+              "section_title": "C. Pseudo-update and fusion",
+              "method": "recursive",
+              "token_count": 150
+            },
+            "embedding": null
+          },
+          {
+            "id": "b1abd6ec-49fa-5255-a01a-de17df8c8e92",
+            "content": "uuxx\n\nuuyy\n\nuuθθ\n\npp̂xx,kk|kk−1,ss′\n\n(a) (b) (c)\n\nFigure 6: PIMS measurement returned for an object with hypothesized (a) zero control command, (b) a non-zero translation and rotation control command, and (c) another control command with the translation being same as in (b) but larger rotation that leads to the object being missed.\n\nIn the case that both densities are LMB, denoting them by:\n\ñπfused,k,s =\n\nn\n\ñr(l)\n\nfused,k,s, ̃p(l)\n\nfused,k,s\n\no\n\nl∈Lk,s\n\nπk|k−1,s =\n\nn\n\nr(l)\n\nk|k−1,s, p(l)\n\nk|k−1,s\n\no\n\nl∈Lk|k−1,s\n\nthe integral has a closed form given by [53]:\n\nν\n\nπk|k−1,s(·), ̃πfused,k,s(·; us)\n\n=\n\nX\n\nl∈Lk|k−1,s\n\n\"\n\ñr(l)\n\nfused,k,s log\n\n\n\n ̃r(l)",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 7,
+              "end_page_number": 7,
+              "start_char": 32605,
+              "end_char": 33261,
+              "chunk_index": 40,
+              "section_index": 16,
+              "section_title": "D. Objective Function",
+              "method": "recursive",
+              "token_count": 251
+            },
+            "embedding": null
+          },
+          {
+            "id": "af32a4b6-fc37-5756-a84f-d45111c3589b",
+            "content": "k,s, for sensor node s. Following this, the system executes the control command on the sensor (e.g., moving or rotating it as required) and subsequently performs detection, yielding a measurement set Zk,s. This set is utilized to update the predicted density, resulting in the local posterior πk,s.\n\nThe obtained local posterior is then transmitted to all neighboring sensors and serves as the local multi-object prior for the next time step. To achieve situational awareness regarding the number and states of objects of interest, each node fuses its local posterior with all received posteriors. It then estimates the multi-object state from the fused posterior.",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 3,
+              "end_page_number": 3,
+              "start_char": 15780,
+              "end_char": 16444,
+              "chunk_index": 17,
+              "section_index": 7,
+              "section_title": "Transmit",
+              "method": "recursive",
+              "token_count": 128
+            },
+            "embedding": null
+          },
+          {
+            "id": "92e24605-f230-5e49-a2ed-7c107c35bbbc",
+            "content": "൛ππ෤kk,ss′(⋅; uuss′)ൟss′∈ NN(ss) ∪ {ss}\n\n൛ZZ෨kk,ss′(uuss′)ൟss′∈ NN(ss) ∪ {ss} ൛XX෠kk|kk−1,ss′ൟss′∈ NN(ss) ∪ {ss} Input: ൛ππkk|kk−1,ss′ൟss′∈ NN(ss) ∪ {ss}\n\nPIMS Calculation\n\nFigure 5: The proposed architecture of the contents of multi-sensor control block executing at sensor node s, in the overall schematics shown in Figure 2.",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 27523,
+              "end_char": 27850,
+              "chunk_index": 33,
+              "section_index": 13,
+              "section_title": "A. Estimation",
+              "method": "recursive",
+              "token_count": 154
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.98
+      },
+      "error": null,
+      "retrieval_seconds": 0.009,
+      "generation_seconds": 1.735,
+      "prompt_tokens": 1429,
+      "completion_tokens": 131
+    },
+    {
+      "query_id": "e713c2e0-628c-485d-ae53-6d1eee1c07fb",
+      "query": "Does the model of the generalized principal-agent problem involve Stackelberg games?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "9f441e4c-419d-5756-b830-12af54e5d302",
+          "score": 0.8847553460204682,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 5,
+          "section_title": "Generalized Principal-Agent Problem with a Learning Agent"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "46684449-4476-5e66-a8d9-a8a7335c1f95",
+          "score": 0.8222405682031145,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 6,
+          "section_title": "Generalized Principal-Agent Problem"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "3cd03d9d-9a26-5416-8436-6661de3902d5",
+          "score": 0.7526436263323927,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 15,
+          "section_title": "Generalized Principal-Agent Problems with Approximate Best Response"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "4e677316-dce6-590d-afbc-7e4a45d770ee",
+          "score": 0.7458139319157112,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 15,
+          "section_title": "Generalized Principal-Agent Problems with Approximate Best Response"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "0a5d83bb-5cbf-57dd-8abd-9a218bbf14cd",
+          "score": 0.638662569933542,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 4,
+          "section_title": "Related Works"
+        }
+      ],
+      "response": {
+        "query": "Does the model of the generalized principal-agent problem involve Stackelberg games?",
+        "answer": "Yes. The generalized principal-agent problem explicitly includes Stackelberg games as one of its examples [1]. In the one-shot version with principal commitment, the principal commits first and the agent responds, and the principal’s optimal expected utility is called the Stackelberg value [2].",
+        "citations": [
+          {
+            "chunk_id": "9f441e4c-419d-5756-b830-12af54e5d302",
+            "source": "2402.09721v6.pdf",
+            "page_number": 5,
+            "text_snippet": "Generalized principal-agent problem, proposed by Myerson (1982); Gan et al. (2024), is a general model that includes auction design, contract design, Stackelberg games, and Bayesian persuasion.",
+            "relevance_score": 0.8847553460204682
+          },
+          {
+            "chunk_id": "46684449-4476-5e66-a8d9-a8a7335c1f95",
+            "source": "2402.09721v6.pdf",
+            "page_number": 6,
+            "text_snippet": "In a one-shot generalized principal-agent problem where the principal has commitment power, the principal first commits to a strategy π = {(πs, xs)}s∈S, then nature draws a signal s ∈S according to the distribution {πs}s∈S and sends s to the agent (note: due to the commitment assumption, this is equ",
+            "relevance_score": 0.8222405682031145
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "9f441e4c-419d-5756-b830-12af54e5d302",
+            "content": "2 Generalized Principal-Agent Problem with a Learning Agent\n\nThis section defines our model, generalized principal-agent problem with a learning agent. This model includes Stackelberg games, contract design, and Bayesian persuasion with learning agents.\n\n2.1 Generalized Principal-Agent Problem\n\nGeneralized principal-agent problem, proposed by Myerson (1982); Gan et al. (2024), is a general model that includes auction design, contract design, Stackelberg games, and Bayesian persuasion. While Myerson (1982) and Gan et al. (2024) allow the agent to have private information, our model assumes an agent with no private information. There are two players in a generalized principalagent problem: a principal and an agent. The principal has a convex, compact decision space X and the agent has a finite action set A. The principal and the agent have utility functions u, v : X × A →R. We assume that u(x, a), v(x, a) are linear in x ∈X, which is satisfied by all the examples of generalized principal-agent problems we will consider (Bayesian persuasion, Stackelberg games, contract design).",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 17006,
+              "end_char": 18097,
+              "chunk_index": 20,
+              "section_index": 3,
+              "section_title": "Generalized Principal-Agent Problem with a Learning Agent",
+              "method": "recursive",
+              "token_count": 231
+            },
+            "embedding": null
+          },
+          {
+            "id": "46684449-4476-5e66-a8d9-a8a7335c1f95",
+            "content": "Unconstrained generalized principal-agent problems include contract design and Stackelberg games. Constrained generalized principal-agent problems include Bayesian persuasion (see Section 2.3).\n\nIn a one-shot generalized principal-agent problem where the principal has commitment power, the principal first commits to a strategy π = {(πs, xs)}s∈S, then nature draws a signal s ∈S according to the distribution {πs}s∈S and sends s to the agent (note: due to the commitment assumption, this is equivalent to revealing the pair (s, xs) to the agent), then the agent takes an action as ∈arg maxa∈A v(xs, a) that maximizes its utility (breaking ties in favor of the principal), and the principal obtains utility u(xs, as). The principal aims to maximize its expected utility Es∼π[u(xs, as)] by choosing the strategy π. Denote the maximal expected utility that the principal can obtain by U ∗:\n\nU ∗= max\n\nπ\n\nX\n\ns∈S\n\nπs max as∈arg maxa∈A v(xs,a) u(xs, as). (1)\n\nU ∗is called the Stackelberg value in the literature.",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 19085,
+              "end_char": 20093,
+              "chunk_index": 22,
+              "section_index": 4,
+              "section_title": "Generalized Principal-Agent Problem",
+              "method": "recursive",
+              "token_count": 249
+            },
+            "embedding": null
+          },
+          {
+            "id": "3cd03d9d-9a26-5416-8436-6661de3902d5",
+            "content": "G in Stackelberg games. Our results will significantly generalize theirs to any generalized principal-agent problem, to randomized agent strategies, and to the maximax objectives OBJ\n\nD(δ), OBJ\n\nR(δ). To present our results, we need to introduce a few more notions and assumptions. Let diam(X; ∥· ∥) = maxx1,x2∈X ∥x1−x2∥be the diameter of the space X, where ∥·∥is some norm. For convenience we assume X ⊆Rd and use the l1-norm ∥x∥1 = Pd\n\ni=1 |x(i)| or the l∞-norm ∥x∥∞= maxd\n\ni=1 |x(i)|. For a generalized principal-agent problem with constraint P\n\ns∈S πsxs ∈C, let ∂X be the boundary of X and let dist(C, ∂X) = minc∈C,x∈∂X ∥c −x∥be the distance from C to the boundary of X. We assume that C is away from the boundary of X:",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 15,
+              "end_page_number": 15,
+              "start_char": 47854,
+              "end_char": 48577,
+              "chunk_index": 63,
+              "section_index": 12,
+              "section_title": "Generalized Principal-Agent Problems with Approximate Best Response",
+              "method": "recursive",
+              "token_count": 238
+            },
+            "embedding": null
+          },
+          {
+            "id": "4e677316-dce6-590d-afbc-7e4a45d770ee",
+            "content": "Claim 4.1. Assumption 4.1 implies: there exists a constant G > 0 such that, for any agent action a ∈A, there exists a principal decision x ∈X such that v(x, a)−v(x, a′) ≥G for every a′ ∈A\\{a}.\n\nThe proof of this claim is in Appendix C.1. The constant G > 0 in Claim 4.1 is analogous to the concept of “inducibility gap” in Stackelberg games (Von Stengel and Zamir, 2004; Gan et al., 2023). In fact, Gan et al. (2023) show that, if the inducibility gap G > δ, then the maximin approximate-best-response objective satisfies OBJD(δ) ≥U ∗−δ\n\nG in Stackelberg games. Our results will significantly generalize theirs to any generalized principal-agent problem, to randomized agent strategies, and to the maximax objectives OBJ\n\nD(δ), OBJ",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 15,
+              "end_page_number": 15,
+              "start_char": 47316,
+              "end_char": 48047,
+              "chunk_index": 62,
+              "section_index": 12,
+              "section_title": "Generalized Principal-Agent Problems with Approximate Best Response",
+              "method": "recursive",
+              "token_count": 211
+            },
+            "embedding": null
+          },
+          {
+            "id": "0a5d83bb-5cbf-57dd-8abd-9a218bbf14cd",
+            "content": "Camara et al. (2020) also propose a general framework of principal-agent problems with learning players, but has two key differences with ours: (1) They drop the common prior assumption while we still keep it. This assumption allows us to compare the principal’s utility in the learning model with the classic model with common prior. (2) Their principal has commitment power, which is reasonable in, e.g., auction design, but less realistic in information design where the principal’s strategy is a signaling scheme. Our principal does not commit.\n\nDeng et al. (2019) show that the follower’s no-swap-regret learning can cap the leader’s utility at U ∗+ o(1) in Stackelberg games. We find that this conclusion holds for all generalized principalagent problems where the agent does not have private information. This conclusion does not hold when the agent is privately informed, as shown by Mansour et al. (2022) in Bayesian Stackelberg\n\n1It is well known that deterministic algorithms cannot satsify the no-regret property (see, e.g., Roughgarden (2016)).\n\n4\n\ngames. We view our work as characterizing the largest class of games under which this conclusion holds.",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 4,
+              "end_page_number": 5,
+              "start_char": 13804,
+              "end_char": 14969,
+              "chunk_index": 16,
+              "section_index": 2,
+              "section_title": "Related Works",
+              "method": "recursive",
+              "token_count": 251
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.99
+      },
+      "error": null,
+      "retrieval_seconds": 0.011,
+      "generation_seconds": 1.794,
+      "prompt_tokens": 1697,
+      "completion_tokens": 143
+    },
+    {
+      "query_id": "8b8ca9ad-5bb0-4cf5-9b2c-4cf69635e060",
+      "query": "Is the sentiment scoring system for product reviews the same as for movie reviews?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "8ec38828-8775-5485-92f2-6f7b6f1748c3",
+          "score": 0.8443754557072596,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 13,
+          "section_title": "QUERY EXAMPLES"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "41907ef7-ba41-5f6e-8da6-12c0785d2027",
+          "score": 0.7789725610705575,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 8,
+          "section_title": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "f1ef461d-419a-5151-95fc-65dcf0f4935e",
+          "score": 0.7672764219396364,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 8,
+          "section_title": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "649b882f-5209-535f-a171-e95f0b14dd82",
+          "score": 0.5526243195866769,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 14,
+          "section_title": "PROMPTS"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "c07e47a1-661a-537f-a3eb-3b59284a8acd",
+          "score": 0.509379228781605,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 12,
+          "section_title": "QUERY EXAMPLES"
+        }
+      ],
+      "response": {
+        "query": "Is the sentiment scoring system for product reviews the same as for movie reviews?",
+        "answer": "Yes. For both movie and product reviews, the system asks for a sentiment score out of 5, using the same 1 (bad) to 5 (good) scale; only the description context differs (movie versus product) [4].",
+        "citations": [
+          {
+            "chunk_id": "649b882f-5209-535f-a171-e95f0b14dd82",
+            "source": "2403.05821v2.pdf",
+            "page_number": 14,
+            "text_snippet": "Answer with ONLY a single integer between 1 (bad) and 5 (good).",
+            "relevance_score": 0.5526243195866769
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "8ec38828-8775-5485-92f2-6f7b6f1748c3",
+            "content": "SELECT LLM(\n\n'Given the following information,\n\nsummarize good qualities in this movie that led to a favorable rating.',\n\n,→\n\n,→\n\n,→ reviewcontent, movieinfo ) FROM MOVIES\n\nMulti-LLM invocation. This query type involves multiple LLM calls in different parts of the query and addresses scenarios in which several layers of data processing or analysis are required. It represents advanced analytical tasks, such as combining different data insights.\n\nSELECT LLM(\n\n'Given the information about a\n\nmovie, summarize the good qualities that led to a favorable rating.',\n\n,→\n\n,→\n\n,→ reviewtype, reviewcontent, movieinfo, genres ) FROM MOVIES WHERE LLM(\n\n'Given the following review, answer\n\nwhether the sentiment is \"POSITIVE\" or \"NEGATIVE\".\n\nRespond ONLY with \"POSITIVE\" or \"NEGATIVE\", in all caps.',\n\n,→\n\n,→\n\n,→\n\n,→ reviewcontent ) = 'NEGATIVE'\n\nLLM aggregation. This query type incorporates an AVG operator that incorporates LLM outputs into further query processing. For example, one could use LLMs to assign sentiment scores to individual reviews and then aggregate\n\nthese scores to calculate an average sentiment for overall customer feedback. This query type is essential for tasks that need to extract insights from complex textual data.",
+            "metadata": {
+              "document_id": "39ecc7cc-3a7f-5721-970d-5aa47aafb177",
+              "source": "2403.05821v2.pdf",
+              "arxiv_id": "2403.05821v2",
+              "page_number": 13,
+              "end_page_number": 13,
+              "start_char": 60679,
+              "end_char": 61917,
+              "chunk_index": 81,
+              "section_index": 29,
+              "section_title": "QUERY EXAMPLES",
+              "method": "recursive",
+              "token_count": 256
+            },
+            "embedding": null
+          },
+          {
+            "id": "41907ef7-ba41-5f6e-8da6-12c0785d2027",
+            "content": "This is because the first LLM invocation for filtering is over distinct reviews for sentiment analysis, so Cache (Original) and Cache (GGR) performance will be similar, reducing the overall benefits. For Movies, this number reduces from 2.5× to 1.7× as the first invocation accounts for nearly half the query time; while for Products, the second invocation on Projection dominates runtime due to long decode output length (i.e., around 107), so we can still see 2.2× speed-up over Cache (Original). LLM aggregation. This query type uses AVG operator to aggregate the sentiment score on the reviews column with additional columns provided as context. We achieve a 3.5× speed-up in the Movies dataset and a 3.7× speed-up in the Products dataset over the No Cache baseline. We also achieve 2.5× speed-up on Movies and 2.8× speed-up on Products over Cache (Original). The results of this query type are similar to filtering query results, as the average\n\nOptimizing LLM Queries in Relational Data Analytics Workloads\n\nMovies Products BIRD PDMX Beer 0\n\n5000\n\n10000\n\n15000\n\nRuntime (s)\n\n3.2x 3.3x",
+            "metadata": {
+              "document_id": "39ecc7cc-3a7f-5721-970d-5aa47aafb177",
+              "source": "2403.05821v2.pdf",
+              "arxiv_id": "2403.05821v2",
+              "page_number": 8,
+              "end_page_number": 9,
+              "start_char": 40310,
+              "end_char": 41400,
+              "chunk_index": 53,
+              "section_index": 20,
+              "section_title": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD",
+              "method": "recursive",
+              "token_count": 255
+            },
+            "embedding": null
+          },
+          {
+            "id": "f1ef461d-419a-5151-95fc-65dcf0f4935e",
+            "content": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD\n\nOriginal 35% 27% 10% 12% 50% 11% 11% GGR 86% 83% 85% 57% 80% 67% 70%\n\nTable 2. PHR (%) of LLM Filter and RAG queries for Original and\n\nGGR, which achieves 30 – 75% higher hit rates.\n\na 2.7× and 2.8× speedup over the No Cache baseline for Movies and Products, respectively. Compared to Cache (Original), Cache (GGR) attains a speedup of 1.7× and 2.2×. The relative speedup compared to Cache (Original) reduces for both datasets compared to Filter and Projection queries. This is because the first LLM invocation for filtering is over distinct reviews for sentiment analysis, so Cache (Original) and Cache (GGR) performance will be similar, reducing the overall benefits.",
+            "metadata": {
+              "document_id": "39ecc7cc-3a7f-5721-970d-5aa47aafb177",
+              "source": "2403.05821v2.pdf",
+              "arxiv_id": "2403.05821v2",
+              "page_number": 8,
+              "end_page_number": 8,
+              "start_char": 39791,
+              "end_char": 40509,
+              "chunk_index": 52,
+              "section_index": 20,
+              "section_title": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD",
+              "method": "recursive",
+              "token_count": 210
+            },
+            "embedding": null
+          },
+          {
+            "id": "649b882f-5209-535f-a171-e95f0b14dd82",
+            "content": "C PROMPTS\n\nWe detail the system and user prompts for each query type and dataset as follows.\n\nSystem Prompt\n\nYou are a data analyst. Use the provided JSON data to answer the user query based on the specified fields. Respond with only the answer, no extra formatting.\n\nAnswer the below query: {QUERY}\n\nGiven the following data: {fields}\n\nUser Prompt - LLM Aggregation\n\nMOVIES: Given the following fields of a movie description and a user review, assign a sentiment score for the review out of 5. Answer with ONLY a single integer between 1 (bad) and 5 (good).\n\nPRODUCTS: Given the following fields of a product description and a user review, assign a sentiment score for the review out of 5. Answer with ONLY a single integer between 1 (bad) and 5 (good).\n\nUser Prompt - Multi-LLM Invocation\n\nMOVIES/PRODUCTS: Given the following review, answer whether the sentiment associated is 'POSITIVE' or 'NEGATIVE'. Answer in all caps with ONLY 'POSITIVE' or 'NEGATIVE':\n\nUser Prompt - LLM Filter",
+            "metadata": {
+              "document_id": "39ecc7cc-3a7f-5721-970d-5aa47aafb177",
+              "source": "2403.05821v2.pdf",
+              "arxiv_id": "2403.05821v2",
+              "page_number": 14,
+              "end_page_number": 14,
+              "start_char": 64348,
+              "end_char": 65334,
+              "chunk_index": 86,
+              "section_index": 31,
+              "section_title": "PROMPTS",
+              "method": "recursive",
+              "token_count": 223
+            },
+            "embedding": null
+          },
+          {
+            "id": "c07e47a1-661a-537f-a3eb-3b59284a8acd",
+            "content": "A QUERY EXAMPLES\n\nOur benchmark suite incorporates a broad range of query types. We show examples of each query type as follows.\n\nLLM filter. This query type leverages LLM for filtering data within a WHERE clause. The LLM processes and analyzes information to meet some specified criteria, such as identifying whether a movie is suitable for kids. This query type illustrates typical use cases in sentiment analysis and\n\nOptimizing LLM Queries in Relational Data Analytics Workloads\n\ncontent filtering, which are important for application tasks, such as customer feedback analysis and content moderation.\n\nSELECT t.movietitle FROM MOVIES WHERE LLM(\n\n'Given the following fields,\n\ndetermine whether the movie is suitable for kids. Answer ONLY with \"Yes\" or \"No\".',\n\n,→\n\n,→\n\n,→ movieinfo, reviewcontent, reviewtype, movietitle ) = 'Yes'\n\nLLM projection. This query type makes calls to an LLM within a SELECT statement to process information from specified database column(s). It reflects common tasks in data analytics in which the LLM is used for summarization and interpretation based on certain data attributes.\n\nSELECT LLM(\n\n'Given the following information,\n\nsummarize good qualities in this movie that led to a favorable rating.',\n\n,→\n\n,→",
+            "metadata": {
+              "document_id": "39ecc7cc-3a7f-5721-970d-5aa47aafb177",
+              "source": "2403.05821v2.pdf",
+              "arxiv_id": "2403.05821v2",
+              "page_number": 12,
+              "end_page_number": 13,
+              "start_char": 59565,
+              "end_char": 60807,
+              "chunk_index": 80,
+              "section_index": 29,
+              "section_title": "QUERY EXAMPLES",
+              "method": "recursive",
+              "token_count": 253
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.99
+      },
+      "error": null,
+      "retrieval_seconds": 0.013,
+      "generation_seconds": 2.653,
+      "prompt_tokens": 1731,
+      "completion_tokens": 245
+    }
+  ]
+}

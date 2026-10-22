@@ -1,0 +1,72 @@
+{
+  "iteration": 2,
+  "experiment_id": "recursive-bm25",
+  "ranked_by": [
+    "ndcg@5",
+    "mrr"
+  ],
+  "config": {
+    "chunk_method": "recursive",
+    "embedding_model": null,
+    "retrieval_method": "bm25",
+    "top_k": 5,
+    "reranker": "none",
+    "hybrid_alpha": null
+  },
+  "chunking": {
+    "parser": "pymupdf",
+    "chunker": "recursive",
+    "chunk_size": 256,
+    "overlap": 40,
+    "tokenizer": "cl100k_base",
+    "separators": [
+      "section",
+      "paragraph",
+      "sentence",
+      "word",
+      "token"
+    ],
+    "boundary_embedding_model": null,
+    "breakpoint_percentile": null,
+    "min_tokens": 50
+  },
+  "generator": "openai/gpt-6-luna",
+  "metrics": {
+    "recall": 0.6793650793650794,
+    "precision": 0.2,
+    "mrr": 0.6597222222222222,
+    "ndcg": 0.5883955748088788,
+    "hit": 0.9166666666666666,
+    "max_precision": 0.4666666666666667,
+    "paper_precision": 0.9333333333333333,
+    "paper_mrr": 0.9583333333333334,
+    "paper_ndcg": 0.9344988553945439,
+    "paper_hit": 1.0,
+    "ndcg_abstractive": 0.5700933622133183,
+    "ndcg_extractive": 0.625
+  },
+  "judge_scores": {
+    "relevance": 5.0,
+    "accuracy": 4.833333333333333,
+    "completeness": 4.333333333333333,
+    "citation_quality": 4.75,
+    "overall": 4.729166666666667,
+    "judged": 12.0
+  },
+  "latency": {
+    "retrieval_ms_median": 8.595374994911253,
+    "retrieval_ms_max": 11.815125006251037,
+    "end_to_end_s_median": 2.298180166483624,
+    "end_to_end_s_mean": 2.6191921632446657,
+    "end_to_end_s_max": 6.194698166966904
+  },
+  "env": {
+    "CHUNK_SIZE": "256",
+    "OVERLAP": "40",
+    "CHUNK_METHOD": "RECURSIVE",
+    "RETRIEVAL": "bm25",
+    "TOP_K": "5",
+    "RERANKER": "none",
+    "GENERATION_MODEL": "openai/gpt-6-luna"
+  }
+}

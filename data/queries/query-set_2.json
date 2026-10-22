@@ -1,0 +1,121 @@
+{
+  "seed": 42,
+  "count": 12,
+  "abstractive": 8,
+  "source_mix": {
+    "text": 0.65,
+    "text-image": 0.25,
+    "text-table": 0.05,
+    "text-table-image": 0.05
+  },
+  "queries": [
+    {
+      "query_id": "49a35154-5dec-4f9c-b0cf-3ed778cf144f",
+      "query": "What is the concept of unambiguous efficiency in allocation models?",
+      "type": "abstractive",
+      "source": "text-table",
+      "doc_id": "2401.11899v3",
+      "section_id": 6,
+      "reference_answer": "Unambiguous efficiency in allocation models refers to a condition where an allocation remains efficient regardless of agents' specific preferences over lotteries. It ensures that no alternative allocation can make all agents better off, as defined by stochastic dominance."
+    },
+    {
+      "query_id": "75314235-5943-4a14-8a89-ce52cae14bd3",
+      "query": "Does a larger bandgap energy ($E_g \\gg k_B T_h$) result in higher efficiency at maximum power?",
+      "type": "extractive",
+      "source": "text-image",
+      "doc_id": "2402.07527v3",
+      "section_id": 4,
+      "reference_answer": "Yes, a larger bandgap energy ($E_g \\gg k_B T_h$) results in higher efficiency at maximum power."
+    },
+    {
+      "query_id": "829c817c-5bc5-4a66-ba56-64b93c94ad98",
+      "query": "How do different biological pathway datasets compare in terms of distortion when using Euclidean versus mixed-curvature embeddings?",
+      "type": "abstractive",
+      "source": "text-image",
+      "doc_id": "2401.15478v2",
+      "section_id": 21,
+      "reference_answer": "Each dataset shows varying levels of distortion when comparing Euclidean and mixed-curvature embeddings. The differences highlight how each type of embedding handles specific characteristics inherent to each dataset's structure."
+    },
+    {
+      "query_id": "e42bdcad-f25d-4f02-9425-b4c3656adca9",
+      "query": "Why is time more affected than distance during sailing maneuvers under constant winds?",
+      "type": "abstractive",
+      "source": "text-image",
+      "doc_id": "2404.03773v2",
+      "section_id": 3,
+      "reference_answer": "With constant winds, the time taken for each maneuver impacts overall navigation efficiency more than distance due to consistent velocity."
+    },
+    {
+      "query_id": "676f3e5b-df04-4358-83c5-af77ba49cf99",
+      "query": "What is the optimization problem faced by a representative agent in the limiting game?",
+      "type": "abstractive",
+      "source": "text",
+      "doc_id": "2403.01012v4",
+      "section_id": 6,
+      "reference_answer": "The optimization problem involves minimizing the cost functional \\( J_{i}^{\\infty}(u_{i}) \\) given by \\(\\mathbb{E} \\int_{0}^{T}\\left(\\left|M^{\\frac{1}{2}}\\left(x_{i}(t)-\\widehat{F}_{1} \\bar{x}(t)\\right)\\right|^{2}+\\left|u_{i}(t)\\right|^{2}\\right) d t+\\mathbb{E}\\left|G^{\\frac{1}{2}}\\left(x_{i}(T)-\\widehat{F}_{2} \\bar{x}(T)\\right)\\right|^{2}\\)."
+    },
+    {
+      "query_id": "4f4e706f-61cd-4fd1-9665-4ed32afb984d",
+      "query": "What challenges are faced in predicting T-cell responses to specific peptides?",
+      "type": "abstractive",
+      "source": "text",
+      "doc_id": "2403.12117v2",
+      "section_id": 0,
+      "reference_answer": "Predicting T-cell responses to specific peptides is challenging due to limited and heterogeneous training data that have a multi-domain structure. This can lead to shortcut learning, where models may learn general characteristics of peptide sources rather than the specific features associated with T-cell response."
+    },
+    {
+      "query_id": "94e00fa4-b4a5-447a-81ed-f18e4f20a5cb",
+      "query": "How does a longer planned lead time affect service levels in scenarios with biased and unbiased forecasts?",
+      "type": "abstractive",
+      "source": "text",
+      "doc_id": "2403.11010v3",
+      "section_id": 6,
+      "reference_answer": "A longer planned lead time can lead to a higher service level in scenarios with biased and unbiased forecasts."
+    },
+    {
+      "query_id": "7dc98320-b491-40cc-875d-b9e8ea5ab3c5",
+      "query": "How does scaling horizontal and vertical distances affect ascent time and \\( P_K\\)?",
+      "type": "abstractive",
+      "source": "text",
+      "doc_id": "2403.03363v6",
+      "section_id": 14,
+      "reference_answer": "Halving the distances halves the ascent time to \\( T=131.8770\\,\\text{s} \\) and doubles \\( P_{K}\\) to \\(32.9764\\,\\text{W}\\); doubling them doubles ascent time to \\( T=527.5078\\,\\text{s} \\) and halves \\( P_{K}\\) to \\(8.2441\\,\\text{W}\\)."
+    },
+    {
+      "query_id": "41d68de9-7ef9-4dbd-8a08-31075b374b30",
+      "query": "How do liquidity providers interact with an auction-managed AMM?",
+      "type": "abstractive",
+      "source": "text",
+      "doc_id": "2403.03367v4",
+      "section_id": 0,
+      "reference_answer": "Liquidity providers can freely enter or exit the pool based on changing rent conditions but must pay a small withdrawal fee. This flexibility allows them to respond dynamically to market changes while contributing to higher liquidity levels compared to standard fixed-fee models."
+    },
+    {
+      "query_id": "24e70880-7bc4-40be-b0b4-5ca8d0076a23",
+      "query": "What does the predicted ideal measurement set (PIMS) include?",
+      "type": "extractive",
+      "source": "text",
+      "doc_id": "2401.14085v2",
+      "section_id": 10,
+      "reference_answer": "The predicted ideal measurement set includes no measurement noise, false alarm, or miss-detection and corresponds to all the objects estimated to be existing."
+    },
+    {
+      "query_id": "e713c2e0-628c-485d-ae53-6d1eee1c07fb",
+      "query": "Does the model of the generalized principal-agent problem involve Stackelberg games?",
+      "type": "extractive",
+      "source": "text",
+      "doc_id": "2402.09721v6",
+      "section_id": 3,
+      "reference_answer": "Yes."
+    },
+    {
+      "query_id": "8b8ca9ad-5bb0-4cf5-9b2c-4cf69635e060",
+      "query": "Is the sentiment scoring system for product reviews the same as for movie reviews?",
+      "type": "extractive",
+      "source": "text",
+      "doc_id": "2403.05821v2",
+      "section_id": 37,
+      "reference_answer": "Yes."
+    }
+  ]
+}

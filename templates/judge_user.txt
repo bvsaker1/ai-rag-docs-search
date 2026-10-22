@@ -1,0 +1,8 @@
+Question: {query}
+
+Reference answer: {reference_answer}
+
+Generated answer: {answer}
+
+Sources given to the system (the [n] numbers the answer cites):
+{sources}

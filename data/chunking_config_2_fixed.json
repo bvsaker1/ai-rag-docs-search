@@ -1,0 +1,11 @@
+{
+  "parser": "pymupdf",
+  "chunker": "fixed_token",
+  "chunk_size": 256,
+  "overlap": 40,
+  "tokenizer": "cl100k_base",
+  "separators": null,
+  "boundary_embedding_model": null,
+  "breakpoint_percentile": null,
+  "min_tokens": null
+}

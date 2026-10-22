@@ -1,0 +1,1408 @@
+{
+  "iteration": 1,
+  "config": {
+    "chunk_method": "recursive",
+    "embedding_model": "all-mpnet-base-v2",
+    "retrieval_method": "hybrid",
+    "top_k": 5,
+    "reranker": "none",
+    "hybrid_alpha": 0.5
+  },
+  "generator": "google/gemini-2.5-flash-lite",
+  "created_at": "2026-10-22T21:16:11.612440+00:00",
+  "entries": [
+    {
+      "query_id": "49a35154-5dec-4f9c-b0cf-3ed778cf144f",
+      "query": "What is the concept of unambiguous efficiency in allocation models?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "0083e839-c46a-55b0-8136-9c70e728b262",
+          "score": 0.8902893837704194,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 1,
+          "section_title": "Front matter"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "83253a3b-8666-5334-9744-8c91dd098461",
+          "score": 0.8729612286418508,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 10,
+          "section_title": "Efficiency"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "10589b8d-b904-57bb-8cee-4aa3766dc698",
+          "score": 0.8140792503900244,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 4,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "1b9770da-1ac9-560b-b613-b8d170e89b6b",
+          "score": 0.7945566976786149,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 10,
+          "section_title": "Unambiguous efficiency"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "268ef206-a23e-536d-ab89-253185f79fd6",
+          "score": 0.7567079282935274,
+          "retriever_type": "hybrid",
+          "source": "2401.11899v3.pdf",
+          "page_number": 11,
+          "section_title": "Unambiguous efficiency"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 10.26,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "query_id": "75314235-5943-4a14-8a89-ce52cae14bd3",
+      "query": "Does a larger bandgap energy ($E_g \\gg k_B T_h$) result in higher efficiency at maximum power?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "5690e299-94a7-5418-ab95-499e2f49833e",
+          "score": 0.9459787224486554,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 5,
+          "section_title": "Dual radiative heat engines"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "0696991a-f7a8-5276-8657-f9330aedb71e",
+          "score": 0.875655701844205,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 6,
+          "section_title": "Performance bounds at maximum power"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "8429dd54-041a-5154-af1d-ec806a8d85b7",
+          "score": 0.8727989589661679,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 9,
+          "section_title": "Variation of maximum power and related efficiency with bandgap"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "a0d260c8-9fda-5d4b-888c-bf522443608c",
+          "score": 0.8110221397433297,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 5,
+          "section_title": "Dual radiative heat engines"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "92439fca-0123-59b3-a282-365264886f97",
+          "score": 0.7956734547124444,
+          "retriever_type": "hybrid",
+          "source": "2402.07527v3.pdf",
+          "page_number": 10,
+          "section_title": "Dependency of the optimum bandgap on the quantum efficiency"
+        }
+      ],
+      "response": {
+        "query": "Does a larger bandgap energy ($E_g \\gg k_B T_h$) result in higher efficiency at maximum power?",
+        "answer": "For bandgaps significantly larger than $k_B T_h$ ($E_g \\gg k_B T_h$), the efficiency at maximum power can be estimated using the formula $\\eta_{MPP} = \\eta_C [1 + (2 - \\eta_C)\\chi]$, where $\\chi$ is a constant approximately equal to 1.21 [2]. This formula provides a good estimate for bandgaps larger than $100 k_B T_h$ [2]. For instance, at a heat source temperature of 600 K, this formula yields an efficiency of 17.7%, compared to 17.1% for a 1 eV bandgap and 16.6% for a 0.52 eV bandgap [2]. Dual radiative engines can approach the Carnot limit for infinitely large bandgaps [1].",
+        "citations": [
+          {
+            "chunk_id": "0696991a-f7a8-5276-8657-f9330aedb71e",
+            "source": "2402.07527v3.pdf",
+            "page_number": 6,
+            "text_snippet": "for Th = 600 K, ηEg≫kBTh MPP = 17.7% while η1 eV MPP = 17.1% and η0.52 eV MPP = 16.6%.",
+            "relevance_score": 0.875655701844205
+          },
+          {
+            "chunk_id": "5690e299-94a7-5418-ab95-499e2f49833e",
+            "source": "2402.07527v3.pdf",
+            "page_number": 5,
+            "text_snippet": "In all three scenarios, the performance of dual radiative engines at high efficiency is similar to those of TPV engines, with maximum efficiency approaching the Carnot limit for infinitely large bandgap.",
+            "relevance_score": 0.9459787224486554
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "5690e299-94a7-5418-ab95-499e2f49833e",
+            "content": "Because the maximum power no longer diverges with Eg, we can trace the η −P envelope of dual engines obtained over the whole bandgap space, indicating the best operating conditions achievable for a certain quantum efficiency. These are illustrated in Fig. 6 for three different quantum efficiencies, along with the TPV envelope in dashed line for comparison. In all three scenarios, the performance of dual radiative engines at high efficiency is similar to those of TPV engines, with maximum efficiency approaching the Carnot limit for infinitely large bandgap. This originates from the fact that ̇Nh/ ̇Nc →∞ when Eg →∞, making the influence of QE in Eq. (7) negligible for very high bandgaps. When operating in TPX regime, dual engines can reach higher power outputs than TPV even when non-radiative losses are included. However, quantum efficiencies of at least 0.75 are required to obtain a noticeable improvement compared to TPV. In addition, the optimal bandgap (in terms of power output) remains quite low even for QE = 0.9, being equal to 5kBTh = 0.26 eV. To make materials with bandgaps in the near-infrared and the visible range attractive, larger QEs should be achieved. For instance, for Eg = 20kBTh ≈1 eV, a QE of at least 0.94 is required to deliver an electrical power output larger than that of TPV. However, the dual engine maximum power quickly increases for larger QEs, rising to 6σT 4\n\nh at the radiative limit for this bandgap energy.\n\nAs a side note, including non-radiative losses causes a mismatch between the currents Jh and Jc of the two optoelectronic components. Since voltages are mismatched too, the two components cannot be directly bound electrically if both have the same area, and additional electronics is necessary to make the engine work. Otherwise, it is possible to design engines with components with mismatched areas [33] or bandgaps [34] to make them self-sustaining.",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 18585,
+              "end_char": 20494,
+              "chunk_index": 11,
+              "section_index": 2,
+              "section_title": "Dual radiative heat engines",
+              "method": "recursive",
+              "token_count": 439
+            },
+            "embedding": null
+          },
+          {
+            "id": "0696991a-f7a8-5276-8657-f9330aedb71e",
+            "content": "The efficiency at maximum power can be written as\n\nηEg≫kBTh\n\nMPP = ηC 1 + (2 −ηC)χ, (9)\n\nχ being a constant equal to 1 2( 1 6( π ln(2))2 −1) ≈1.21.\n\nThe temperature variation of ηEg≫kBTh\n\nMPP is provided in Fig. 7 (black line), and matches well the numerical results obtained for bandgaps larger than 100kBTh. It also gives a good estimate of the efficiency obtained for standard bandgaps, as long as Eg ≫kBTh: for Th = 600 K,\n\nηEg≫kBTh\n\nMPP = 17.7% while η1 eV\n\nMPP = 17.1% and η0.52 eV\n\nMPP = 16.6%. In addition, because maximum power diverges when Eg →∞, below-bandgap radiation would be negligible in comparison to P, being independent of the chemical potential. Consequently, Eq. (9) holds even when below-bandgap radiation is included, and corresponds to the analytical extension of the Shockley-Queisser limit [36] for dual radiative engines.\n\nTo better understand how efficient dual radiative engines are at maximum power, one can compare Eq. (9) with classical upper bounds for ηMPP. The Novikov- Curzon-Ahlborn efficiency ηNCA = 1 −\n\np\n\nTc/Th [37, 38] and the Schmiedl-Seifert efficiency ηSS = 2ηC/(4 −ηC) [39] are respectively efficiency bounds for endoreversible and exoreversible engines such as thermoelectric generators [40]. For the temperatures previously considered, both efficiencies are close to 29%, hence 11 percentage points higher than ηEg≫kBTh\n\nMPP . This significant difference, which highlights the presence of additional losses in radiative engines, can be attributed to thermalisation losses - that is, to the fraction of radiative energy exchanged which is useless to optoelectronic conversion. To verify this, we now consider the radiation to be quasimonochromatic around Eg (i.e. Eg ≤ ̄hω ≤Eg + δE with δE ≪kBTc) so that thermalisation losses become negligible. As demonstrated in Appendix G, this leads to",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 22643,
+              "end_char": 24481,
+              "chunk_index": 13,
+              "section_index": 3,
+              "section_title": "Performance bounds at maximum power",
+              "method": "recursive",
+              "token_count": 509
+            },
+            "embedding": null
+          },
+          {
+            "id": "8429dd54-041a-5154-af1d-ec806a8d85b7",
+            "content": "Variation of maximum power and\n\nrelated efficiency with bandgap\n\nWe provide in Fig. 16 the variations of the maximum power and related efficiency as a function of the bandgap, for the complete dual engine (thick black line) and for each individual engine. For a heat source temperature of 600 K, the dual-engine MPP moves from the TRPV quadrant for low bandgaps to the TPX quadrant for higher bandgaps. In this case, the transition between the two quadrants occurs around Eg/kBTh = 0.7. Dual engines become especially attractive when Eg > kBTh ≈ 0.05 eV, their power output increasing with Eg and being already 50% larger than that of single engines for Eg = 1.9kBTh. In practice, this condition is satisfied by any realistic bandgap at the temperature considered.\n\nNote how, when TPX or TRPV engines do not maximise the power output, they operate as TPV devices. This is what causes the sudden change in slope indicated by arrows in panel (b): around Eg/kBTh = 0.7, there\n\n10\n\nFIG. 14: η −P plots obtained for dual radiative engines\n\nat the radiative limit, for Th = 400 K and for various\n\nbandgaps.\n\nFIG. 15: η −P plots obtained for dual radiative engines\n\nat the radiative limit, for Th = 1200 K and for various\n\nbandgaps.\n\nis for both devices an abrupt change in the direction of displacement of the MPP in (μh, μc) coordinates, from that of the complete dual engine to that of a TPV device (or vice versa).\n\nOne can also observe that optimising TRNEL devices for electrical power production simply means operating as a TR device. Moreover, in the limit of zero bandgap, TR operation becomes optimal: this is because the TR- NEL quadrant is the only one available since μ < Eg →0.\n\nAppendix E: ",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 9,
+              "end_page_number": 10,
+              "start_char": 34318,
+              "end_char": 36016,
+              "chunk_index": 21,
+              "section_index": 9,
+              "section_title": "Variation of maximum power and related efficiency with bandgap",
+              "method": "recursive",
+              "token_count": 418
+            },
+            "embedding": null
+          },
+          {
+            "id": "a0d260c8-9fda-5d4b-888c-bf522443608c",
+            "content": "for varying bandgap energy Eg, depending on the quantum efficiency considered. The thin full lines in colour are the envelopes obtained for dual engines at a given Eg. The thick coloured dashed line and the black\n\ndotted line are the envelopes obtained by considering the whole Eg space for dual engines and TPV engines,\n\nrespectively.\n\nmajor differences in comparison to the results obtained at the radiative limit. First, TRNEL devices have significantly lost interest, no longer being able to reach Carnot efficiency. Worse, their envelope is now within that of TRPV devices for both bandgaps considered. Therefore, TRNEL systems are of interest only when operating extremely close to the radiative limit: for TRNEL maximum efficiency to exceed that of TRPV, QE should be greater than 0.98 for Eg = kBTh, and even greater than 0.9999999 for Eg = 10kBTh. For more feasible values of QE, the maximum efficiency of the dual radiative engine is reached in TRPV regime. Second, the maximum efficiency is now highly dependent on the bandgap: being only 40% of Carnot efficiency for Eg = kBTh, it goes up to 80% of ηC for Eg = 10kBTh. Finally, the power output variation with the bandgap is much weaker. In fact,\n\nas long as QE < 1, there is an optimal bandgap that allows the power output to be maximised: the optimum bandgap is close to Eg = 5kBTh for Th = 600 K and QE = 0.9, and decreases for the two lower QEs considered. The complete variations of the optimum bandgap with QE are further analysed in Appendix E.",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 17070,
+              "end_char": 18583,
+              "chunk_index": 10,
+              "section_index": 2,
+              "section_title": "Dual radiative heat engines",
+              "method": "recursive",
+              "token_count": 347
+            },
+            "embedding": null
+          },
+          {
+            "id": "92439fca-0123-59b3-a282-365264886f97",
+            "content": "Dependency of the optimum bandgap\n\non the quantum efficiency\n\nWe show in Fig. 17 how the bandgap leading to maximum power varies with the quantum efficiency, along with the variation of the maximum power itself. First, as mentioned in Section II, the optimum bandgap diverges when QE approaches 1, that is, when the engine approaches the radiative limit. Close to the divergence, the optimum bandgap and the maximum power have been\n\nobserved to vary as 1/(1 −QE) and 1/(1 −QE)2, respectively. In Section III, we highlighted that the power output enhancement obtained by using dual engines (in the TPX regime) over TPV devices was only significant for large enough QEs. This can clearly be observed here, with the optimum bandgap and the maximum power of dual engines deviating from those of TPV for QEs above 0.5 and 0.75, respectively. This deviation becomes especially prominent for QE ≥0.9. As opposed to TPV, the optimum bandgap of dual engines actually varies nonmonotonically with QE: it reaches a minimum close to QE = 0.5, and then starts increasing.\n\nAppendix F: ",
+            "metadata": {
+              "document_id": "8c8f0afa-81ca-50db-b5de-33d3611c1834",
+              "source": "2402.07527v3.pdf",
+              "arxiv_id": "2402.07527v3",
+              "page_number": 10,
+              "end_page_number": 10,
+              "start_char": 36016,
+              "end_char": 37088,
+              "chunk_index": 22,
+              "section_index": 10,
+              "section_title": "Dependency of the optimum bandgap on the quantum efficiency",
+              "method": "recursive",
+              "token_count": 250
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.95
+      },
+      "error": null,
+      "retrieval_seconds": 0.008,
+      "generation_seconds": 2.401,
+      "prompt_tokens": 2749,
+      "completion_tokens": 492
+    },
+    {
+      "query_id": "829c817c-5bc5-4a66-ba56-64b93c94ad98",
+      "query": "How do different biological pathway datasets compare in terms of distortion when using Euclidean versus mixed-curvature embeddings?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "15993aba-91d3-5f8b-bb28-717fddcfead4",
+          "score": 0.9628548247472717,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 6,
+          "section_title": "4.1. Pathway Embeddings"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "82701ab9-2c75-5413-9204-0dc6293f57b4",
+          "score": 0.9217874884622685,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 13,
+          "section_title": "C. Supplementary Figures"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "ad96d395-4f11-5568-9712-39c629e228f2",
+          "score": 0.8861358092344953,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 5,
+          "section_title": "4. Results"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "71fda9e6-05f0-546d-9aa6-83603749bbe8",
+          "score": 0.7437893317562958,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 1,
+          "section_title": "Front matter"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "380c41fc-c2cb-5d4c-935d-89cedcc64e0f",
+          "score": 0.718882697891272,
+          "retriever_type": "hybrid",
+          "source": "2401.15478v2.pdf",
+          "page_number": 8,
+          "section_title": "5. Discussion and Conclusion"
+        }
+      ],
+      "response": {
+        "query": "How do different biological pathway datasets compare in terms of distortion when using Euclidean versus mixed-curvature embeddings?",
+        "answer": "Mixed-curvature embeddings show significantly lower mean distortion and variance compared to node2vec and Laplacian baselines [1]. Across all pathway datasets, mixed-curvature product spaces offer substantial reductions in distortion relative to standard Euclidean embeddings, with many graphs experiencing over a 50% decrease in distortion [3]. In all instances, a mixed-curvature representation results in an embedding with less distortion than a simple Euclidean embedding [5]. Figure 4 illustrates the distortion in Euclidean embeddings versus mixed-curvature embeddings for various pathway datasets [2].",
+        "citations": [
+          {
+            "chunk_id": "15993aba-91d3-5f8b-bb28-717fddcfead4",
+            "source": "2401.15478v2.pdf",
+            "page_number": 6,
+            "text_snippet": "The mixed-curvature embeddings exhibit significantly lower mean distortion and variance than the node2vec and Laplacian baselines.",
+            "relevance_score": 0.9628548247472717
+          },
+          {
+            "chunk_id": "ad96d395-4f11-5568-9712-39c629e228f2",
+            "source": "2401.15478v2.pdf",
+            "page_number": 5,
+            "text_snippet": "We observe that mixed-curvature product spaces provide marked reductions in distortion relative to the standard Euclidean embedding, with many graphs achieving a greater than 50% reduction in distortion.",
+            "relevance_score": 0.8861358092344953
+          },
+          {
+            "chunk_id": "380c41fc-c2cb-5d4c-935d-89cedcc64e0f",
+            "source": "2401.15478v2.pdf",
+            "page_number": 8,
+            "text_snippet": "In all cases, a mixed-curvature representation yields an embedding with lower distortion than a simple Euclidean embedding.",
+            "relevance_score": 0.718882697891272
+          },
+          {
+            "chunk_id": "82701ab9-2c75-5413-9204-0dc6293f57b4",
+            "source": "2401.15478v2.pdf",
+            "page_number": 13,
+            "text_snippet": "Figure 4. Scatterplots of distortion in the Euclidean embedding versus distortion in the mixed-curvature embedding for pathway datasets.",
+            "relevance_score": 0.9217874884622685
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "15993aba-91d3-5f8b-bb28-717fddcfead4",
+            "content": "Product Manifold Representations for Learning on Biological Pathways\n\n(a) Best overall versus Euclidean distortions\n\n(b) Pathway distortion distributions\n\nFigure 2. Best overall mixed-curvature versus best Euclidean distortions across all pathway datasets (a). See Figure 4 for individual\n\npathway datasets. Distortions across all datasets for the graph Laplacian, node2vec, and mixed-curvature embedding methods (b).\n\ndataset and embedding type the constant c which minimizes the below objective\n\nmin c∈R+\n\nX\n\ni<j\n\nc · d(xi, xj)\n\ndG(ni, nj) −1\n\nwhere d(xi, xj) is the distance between the embeddings of nodes i and j, and dG(ni, nj) is the shortest-path graph distance between nodes i and j. After calculating the optimal scaling factor, c, we scale the embeddings by this factor and recalculate the distortions for all pathways in the dataset. We summarize the distortions in Figure 2(b). The mixed-curvature embeddings exhibit significantly lower mean distortion and variance than the node2vec and Laplacian baselines.",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 22981,
+              "end_char": 24002,
+              "chunk_index": 15,
+              "section_index": 13,
+              "section_title": "4.1. Pathway Embeddings",
+              "method": "recursive",
+              "token_count": 226
+            },
+            "embedding": null
+          },
+          {
+            "id": "82701ab9-2c75-5413-9204-0dc6293f57b4",
+            "content": "C. Supplementary Figures\n\nProduct Manifold Representations for Learning on Biological Pathways\n\n(a) PathBank dataset (b) NCI dataset\n\n(c) KEGG dataset (d) Reactome dataset\n\n(e) HumanCyc (f) All datasets\n\nFigure 4. Scatterplots of distortion in the Euclidean embedding versus distortion in the mixed-curvature embedding for pathway datasets.\n\nPoints are colored by local density, with yellow indicating the highest density.\n\nProduct Manifold Representations for Learning on Biological Pathways\n\n",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 13,
+              "end_page_number": 15,
+              "start_char": 52675,
+              "end_char": 53169,
+              "chunk_index": 40,
+              "section_index": 31,
+              "section_title": "C. Supplementary Figures",
+              "method": "recursive",
+              "token_count": 104
+            },
+            "embedding": null
+          },
+          {
+            "id": "ad96d395-4f11-5568-9712-39c629e228f2",
+            "content": "4. Results\n\n4.1. Pathway Embeddings\n\nWe first summarize each of the pathway databases in Table 1 and provide node and edge histograms in Figure 1. There exist uniquely beneficial product spaces, as measured by distortion, for only roughly half of the pathways. Most pathways are small by graph machine learning standards with the majority having less than 100 nodes and less than 200 edges. Thus, pathways exhibit a unique opportunity to study the effects of popular graph learning techniques, including GCNs, on small graphs, as most graph machine learning benchmarks possess thousands, or even millions and billions, of nodes and edges.\n\nNext, for each pathway graph, we determine the best combi-\n\nnation of hyperbolic, Euclidean, and spherical components as determined by lowest distortion. Figure 2(a) demonstrates the reductions in distortion gained from learning the non-Euclidean embeddings over all graphs in each of the five pathway datasets we studied. The red diagonal indicates the position at which the distortions of the Euclidean embeddings and mixed-curvature product embeddings would be equal. Points lying below this line indicate graphs for which a product representation yielded a reduction in distortion over a Euclidean representation. Because a fully Euclidean embedding is a special case of the mixed-curvature product embedding, the best mixed-curvature product embedding should always have better distortion than the best Euclidean embedding. The question is whether the improvement is marginal or substantial on biological pathways. We observe that mixed-curvature product spaces provide marked reductions in distortion relative to the standard Euclidean embedding, with many graphs achieving a greater than 50% reduction in distortion.\n\nWe further compare our mixed-curvature embeddings against two common graph embedding baselines. The first is node2vec (Grover & Leskovec, 2016), a popular graph embedding method which uses an algorithm analogous to word2vec (Mikolov et al., 2013) trained on random walks taken from the graph. We also compare against a standard embedding method formed by taking eigenvectors of the graph Laplacian matrix (Bonald, 2019). For both methods, we embed the pathway graphs from all datasets and compute distortions for each pathway embedding in each dataset. Because node2vec and the graph Laplacian embedding do not directly minimize distortion in their loss functions, they can arbitrarily scale embedding vectors, causing them to perform poorly on a naive calculation of the distortion metric. Therefore, we perform a scaling optimization for the node2vec and graph Laplacian embeddings, finding for each",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 5,
+              "end_page_number": 5,
+              "start_char": 20313,
+              "end_char": 22979,
+              "chunk_index": 14,
+              "section_index": 12,
+              "section_title": "4. Results",
+              "method": "recursive",
+              "token_count": 510
+            },
+            "embedding": null
+          },
+          {
+            "id": "71fda9e6-05f0-546d-9aa6-83603749bbe8",
+            "content": "Product Manifold Representations for Learning on Biological Pathways\n\nDaniel McNeela 1 2 3 Frederic Sala* 1 Anthony Gitter* 1 2 3\n\nAbstract\n\nMachine learning models that embed graphs in non-Euclidean spaces have shown substantial benefits in a variety of contexts, but their application has not been studied extensively in the biological domain, particularly with respect to biological pathway graphs. Such graphs exhibit a variety of complex network structures, presenting challenges to existing embedding approaches. Learning high-quality embeddings for biological pathway graphs is important for researchers looking to understand the underpinnings of disease and train high-quality predictive models on these networks. In this work, we investigate the effects of embedding pathway graphs in non-Euclidean mixed-curvature spaces and compare against traditional Euclidean graph representation learning models. We then train a supervised model using the learned node embeddings to predict missing protein-protein interactions in pathway graphs. We find large reductions in distortion and boosts on in-distribution edge prediction performance as a result of using mixed-curvature embeddings and their corresponding graph neural network models. However, we find that mixed-curvature representations underperform existing baselines on out-ofdistribution edge prediction performance suggesting that these representations may overfit to the training graph topology. We provide our Mixed- Curvature Product Graph Convolutional Network code at https://github.com/mcneela/Mixed- Curvature-GCN and our pathway analysis code at https://github.com/mcneela/Mixed-Curvature- Pathways.\n\n*Equal contribution 1Department of Computer Sciences, University of Wisconsin-Madison, Madison, WI, USA 2Morgridge Institute for Research, Madison, WI, USA 3Department of Biostatistics and Medical Informatics, University of Wisconsin-Madison, Madison, WI, USA. Correspondence to: Anthony Gitter <gitter@biostat.wisc.edu>.\n\n",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 1,
+              "end_page_number": 1,
+              "start_char": 0,
+              "end_char": 1996,
+              "chunk_index": 0,
+              "section_index": 0,
+              "section_title": "Front matter",
+              "method": "recursive",
+              "token_count": 386
+            },
+            "embedding": null
+          },
+          {
+            "id": "380c41fc-c2cb-5d4c-935d-89cedcc64e0f",
+            "content": "5. Discussion and Conclusion\n\nWe find that performing representation learning in non- Euclidean and mixed-curvature spaces yields notable improvements in distortion and downstream in-distribution edge prediction performance. In all cases, a mixed-curvature representation yields an embedding with lower distortion than a simple Euclidean embedding. However, the exact decomposition of the product space into its mixture of components is highly dependent on the graph topology. Thus, it is beneficial to perform a hyperparameter sweep over the number and types of components, as well as their dimen-\n\nsionalities, when learning a representation for a biological pathway graph. Such a sweep need not be highly time intensive as biological pathway graphs are generally of a modest size.\n\nFor the out-of-distribution edge prediction task, the full structure of the graph is not known when the node embeddings are learned because the test set edges from STRING are not included in the training set. This leads to a number of questions about how to further generalize our approach. For example, we may ask how close the full graph structure must be to the observed structure in order to produce node embeddings that are usable for edge prediction via our method. We can also explore whether there are alternative hyperparameter tuning strategies that produce slightly worse distortions or in-distribution edge prediction performance but generalized better to out-of-distribution edge prediction. The Laplacian embedding has the best out-ofdistribution performance, consistent with its robust behavior in previous biological graph representation learning benchmarking (Song et al., 2023). Currently, we only assess out-of-distribution edge predictions using STRING physical protein interactions. An evaluation of 45 interaction networks (Wright et al., 2025) could be used to prioritize other networks for evaluating these predictions and understand biases in the interaction networks.\n\nAnother future direction would be to consider additional downstream tasks, as edge prediction is not the only useful task for biological pathways that can be improved by non- Euclidean representation learning. We plan to investigate how our pathway embeddings benefit other problems such as node classification, for example, predicting the type (gene, protein, small molecule, metabolite, etc.) of a pathway node.",
+            "metadata": {
+              "document_id": "59f5738a-0653-5b9a-b8b9-80c07b5fa3aa",
+              "source": "2401.15478v2.pdf",
+              "arxiv_id": "2401.15478v2",
+              "page_number": 8,
+              "end_page_number": 8,
+              "start_char": 30912,
+              "end_char": 33305,
+              "chunk_index": 21,
+              "section_index": 22,
+              "section_title": "5. Discussion and Conclusion",
+              "method": "recursive",
+              "token_count": 427
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.008,
+      "generation_seconds": 1.204,
+      "prompt_tokens": 2430,
+      "completion_tokens": 324
+    },
+    {
+      "query_id": "e42bdcad-f25d-4f02-9425-b4c3656adca9",
+      "query": "Why is time more affected than distance during sailing maneuvers under constant winds?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "1aa13ee1-9e06-59cf-84cf-2d675adbcfc9",
+          "score": 0.8520944241600679,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "a43704a2-94f8-5547-961f-465a1d43903a",
+          "score": 0.799714728328264,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 4,
+          "section_title": "Terminology"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "c8d9a089-36d8-50e8-ae61-42339d193d7f",
+          "score": 0.7135579738203156,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 4,
+          "section_title": "Terminology"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "632bb4ac-7461-5200-9b67-706922e33503",
+          "score": 0.6722712148026703,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 3,
+          "section_title": "Model"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "df8f4b23-cb83-5b18-9994-3f9581011d9b",
+          "score": 0.6491720420275912,
+          "retriever_type": "hybrid",
+          "source": "2404.03773v2.pdf",
+          "page_number": 3,
+          "section_title": "Terminology"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 10.328,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "query_id": "676f3e5b-df04-4358-83c5-af77ba49cf99",
+      "query": "What is the optimization problem faced by a representative agent in the limiting game?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "4917e02d-0b18-5698-a5b3-1b146f28be22",
+          "score": 0.9457568085305899,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 11,
+          "section_title": "Limiting Game in Hilbert Spaces"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "4ecbefb3-9a56-534b-b5c9-563243e9c3c1",
+          "score": 0.6093357727504941,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 11,
+          "section_title": "N-Player Game in Hilbert Space"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "f49561b9-3b01-59e5-9f90-feea496e0d5c",
+          "score": 0.5922684342018132,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 24,
+          "section_title": "-Nash Equilibrium"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fc6275da-0dd2-5ec0-8bb5-93d15d2ec923",
+          "score": 0.5096605728411399,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 6,
+          "section_title": "Generalized Principal-Agent Problem"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "4ec31e3b-5f1f-5449-bb05-d988330185f6",
+          "score": 0.44124332473913197,
+          "retriever_type": "hybrid",
+          "source": "2403.01012v4.pdf",
+          "page_number": 20,
+          "section_title": "Nash Equilibrium"
+        }
+      ],
+      "response": {
+        "query": "What is the optimization problem faced by a representative agent in the limiting game?",
+        "answer": "In the limiting game where the number of agents approaches infinity, a representative agent faces an optimization problem to minimize a cost functional. This functional includes terms related to the agent's state deviation from a mean field, the agent's control input, and the terminal state deviation from a mean field value [1]. The dynamics of the agent are described by a stochastic differential equation that includes deterministic drift and diffusion terms, influenced by the mean field [1]. The goal is to find the best response strategies for the agents in relation to this mean field [1].",
+        "citations": [
+          {
+            "chunk_id": "4917e02d-0b18-5698-a5b3-1b146f28be22",
+            "source": "2403.01012v4.pdf",
+            "page_number": 11,
+            "text_snippet": "In this context, on the one hand, a Nash equilibrium for the system consists of the best response strategies of the agents to the mean field ̄x(t).",
+            "relevance_score": 0.9457568085305899
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "4917e02d-0b18-5698-a5b3-1b146f28be22",
+            "content": "4.2. Limiting Game in Hilbert Spaces\n\nIn this section we present the limiting game which reflects the scenario where, in system (4.1)- (4.2), the number of agents N tends to infinity. In this case, the optimization problem faced by a representative agent i is described as follows. Specifically, the dynamics of a representative agent, indexed by i, is given by\n\ndxi(t) = (Axi(t) + Bui(t) + F1 ̄x(t))dt + (Dxi(t) + Eui(t) + F2 ̄x(t) + σ)dWi(t), (4.3)\n\nxi(0) = ξi,\n\nand the cost functional to be minimized by agent i by\n\nJ∞\n\ni (ui) = E\n\nZ T\n\n0\n\nM\n\n1 2\n\nxi(t) −bF1 ̄x(t)\n\n2 + |ui(t)|2\n\ndt + E\n\nG\n\n1 2\n\nxi(T) −bF2 ̄x(T)\n\n2 , (4.4)\n\nwhere ̄x(t) represents the coupling term in the limit and is termed the mean field. In this context, on the one hand, a Nash equilibrium for the system consists of the best response strategies of the agents to the mean field ̄x(t). On the other hand, in the equilibrium where all agents follow Nash strategies, together they replicate the mean field, i.e. 1 N\n\nP\n\ni∈N xi(t)\n\nq.m. −→ ̄x(t). We impose the following assumption for the limiting problem.\n\n11\n\nA4.3. (Filtration & Admissible Control) The filtration Fi,∞of agent i satisfies the usual conditions and ensures that Wi is a Q-Wiener process and that the initial condition ξi is Fi,∞\n\n0 -measurable. Subsequently, the set of admissible control actions for agent i, denoted by Ui, is defined as the collection of Fi,∞-adapted control laws ui that belong to M2(T ; U).\n\nWe first, in Section 4.2.2, treat the interaction term as an input g ∈C(T ; H) and solve the resulting optimal control problem for a representative agent given by the dynamics",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 11,
+              "end_page_number": 12,
+              "start_char": 31076,
+              "end_char": 32705,
+              "chunk_index": 21,
+              "section_index": 8,
+              "section_title": "Limiting Game in Hilbert Spaces",
+              "method": "recursive",
+              "token_count": 473
+            },
+            "embedding": null
+          },
+          {
+            "id": "4ecbefb3-9a56-534b-b5c9-563243e9c3c1",
+            "content": "Moreover, agent i, i ∈N, aims to minimize the cost functional\n\nJ[N]\n\ni (ui, u−i) = E\n\nZ T\n\n0\n\nM\n\n1 2\n\nxi(t) −bF1x(N)(t)\n\n2 + |ui(t)|2\n\ndt + E\n\nG\n\n1 2\n\nxi(T) −bF2x(N)(T)\n\n2 ,\n\n(4.2) where M and G are positive operators on H, and bF1, bF2 ∈L(H). We note that a positive operator can be added to the quadratic term associated with the control process in the cost functional. However, this operator must satisfy specific conditions to ensure that its inverse is also a welldefined positive operator. To avoid further complexity in the notation, we use the identity operator in this work.\n\nIn general, solving the N-player differential game described in this section becomes challenging, even for moderate values of N and for finite-dimensional cases. The interactions between agents lead to a large-scale optimization problem, where each agent needs to observe the states of all other interacting agents. To address the dimensionality and the information restriction, following the classical MFG methodology, we investigate the limiting problem as the number of agents N tends to infinity. In this limiting model, the average behavior of the agents, known as the mean field, can be mathematically characterized, simplifying the problem. Specifically, in the limiting case, a generic agent interacts with the mean field, rather than a large number of agents. Furthermore, the mean field happens to coincide with the mean state of the agent. In the subsequent sections, we develop the Nash Certainty Equivalence principle and characterize a Nash equilibrium for the limiting game in Hilbert spaces. We then demonstrate that this equilibrium yields an ǫ-Nash equilibrium for the original N-player game.",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 11,
+              "end_page_number": 11,
+              "start_char": 29379,
+              "end_char": 31074,
+              "chunk_index": 20,
+              "section_index": 7,
+              "section_title": "N-Player Game in Hilbert Space",
+              "method": "recursive",
+              "token_count": 368
+            },
+            "embedding": null
+          },
+          {
+            "id": "f49561b9-3b01-59e5-9f90-feea496e0d5c",
+            "content": "Proposition 4.10 (Error Bounds for Agent i = 1). Let x1(t) and x[N]\n\n1 (t), respectively, denote the state of agent i = 1 in the limiting game and the N-player game satisfying (4.3) and (4.59). Moreover, let J∞(u◦\n\n1) and J[N](u◦ 1, u◦ −1), respectively, denote the cost functional of agent i = 1 in the limiting game and the N-player game given by (4.4) and (4.61).\n\n(i) If agent i = 1 employs the control law u◦\n\n1 given by (4.51), we have\n\nsup t∈T\n\nE\n\nx◦\n\n1(t) −x[N],◦ 1 (t)\n\n2\n\nH ≤C\n\nN , (4.80)\n\nJ∞(u◦\n\n1) −J[N](u◦ 1, u◦ −1)\n\n≤ C √\n\nN\n\n. (4.81)\n\n(ii) If agent i = 1 employs any u1 ∈UN, we have\n\nsup t∈T\n\nE\n\nx1(t) −x[N]\n\n1 (t)\n\n2\n\nH ≤C\n\nN , (4.82)\n\nJ∞(u1) −J[N](u1, u◦\n\n−1)\n\n≤ C √\n\nN\n\n. (4.83)\n\nProof. From (4.3), (4.53) and (4.59), for the case where agent i = 1 employs the control law u◦\n\n1 given by (4.51)-(4.52), by direct computation, we have\n\nx◦\n\n1(t) −x[N],◦ 1 (t) = −\n\nZ t\n\n0 S(t −r)BK−1(T −r)L(T −r)(x◦\n\n1(r) −x[N],◦ 1 (r))dr\n\n+\n\nZ t\n\n0 S(t −r)F1\n\n̄x(r) −x(N),◦(r)\n\ndr +\n\nZ t\n\n0 S(t −r)F2\n\n̄x(r) −x(N),◦(r)\n\ndW1(r)\n\n+\n\nZ t\n\n0 S(t −r)(D −EK−1(T −r)L(T −r))(x◦\n\n1(r) −x[N],◦ 1 (r))dW1(r). (4.84)\n\n24",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 24,
+              "end_page_number": 24,
+              "start_char": 60618,
+              "end_char": 61728,
+              "chunk_index": 50,
+              "section_index": 13,
+              "section_title": "-Nash Equilibrium",
+              "method": "recursive",
+              "token_count": 512
+            },
+            "embedding": null
+          },
+          {
+            "id": "fc6275da-0dd2-5ec0-8bb5-93d15d2ec923",
+            "content": "• Unconstrained (Myerson, 1982): there is no restriction on the principal’s strategy π.\n\n• Constrained (Gan et al., 2024): the principal’s strategy π has to satisfy constraint P s∈S πsxs ∈ C where C ⊆X is some convex set.\n\nUnconstrained generalized principal-agent problems include contract design and Stackelberg games. Constrained generalized principal-agent problems include Bayesian persuasion (see Section 2.3).\n\nIn a one-shot generalized principal-agent problem where the principal has commitment power, the principal first commits to a strategy π = {(πs, xs)}s∈S, then nature draws a signal s ∈S according to the distribution {πs}s∈S and sends s to the agent (note: due to the commitment assumption, this is equivalent to revealing the pair (s, xs) to the agent), then the agent takes an action as ∈arg maxa∈A v(xs, a) that maximizes its utility (breaking ties in favor of the principal), and the principal obtains utility u(xs, as). The principal aims to maximize its expected utility Es∼π[u(xs, as)] by choosing the strategy π. Denote the maximal expected utility that the principal can obtain by U ∗:\n\nU ∗= max\n\nπ\n\nX\n\ns∈S\n\nπs max as∈arg maxa∈A v(xs,a) u(xs, as). (1)\n\nU ∗is called the Stackelberg value in the literature.",
+            "metadata": {
+              "document_id": "e28bca6e-1b08-5c55-b171-d38cd277b2ff",
+              "source": "2402.09721v6.pdf",
+              "arxiv_id": "2402.09721v6",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 18862,
+              "end_char": 20093,
+              "chunk_index": 12,
+              "section_index": 4,
+              "section_title": "Generalized Principal-Agent Problem",
+              "method": "recursive",
+              "token_count": 314
+            },
+            "embedding": null
+          },
+          {
+            "id": "4ec31e3b-5f1f-5449-bb05-d988330185f6",
+            "content": "̇q(t) =\n\nA∗−L∗(t)K−1(t)B∗\n\nq(t) + Γ1\n\n(F2 ̄x(T −t) + σ)∗Π(t)\n\n−L∗(t)K−1(t)Γ2\n\n(F2 ̄x(T −t) + σ)∗Π(t)\n\n+\n\nΠ(t)F1 −M bF1\n\n̄x(T −t), (4.55)\n\nwith Π(0) = G, x ∈D(A), and q(0) = −G bF2 ̄x(T).\n\nProof. According to the demonstrations in Section 4.2.3, if the contraction condition (4.42) holds, then there exist Π ∈Cs (T , L(H)) , q ∈C(T ; H) and ̄x ∈C(T ; H), which are the unique solution to the set of consistency equations give by (4.53)-(4.55). In addition, the set of feedback control laws {u◦\n\ni }i∈N, where u◦\n\ni is given by (4.51)-(4.52), forms a unique Nash equilibrium for the limiting system described by (4.3)-(4.4), i.e.\n\nJ∞\n\ni (u◦\n\ni , u◦\n\n−i) = inf\n\nui∈Ui J∞\n\ni (ui, u◦\n\n−i), ∀i ∈N. (4.56)\n\nThis is because, in the limit when the number of agents N goes to infinity, the agents get decoupled from each other and hence the high-dimensional optimization problem faced by agent i, i ∈N, turns into a single-agent optimal control problem for which there is a unique solution. Hence, agent i cannot improve its cost by deviating from the optimal strategy (4.51)-(4.52) and the set of these strategies yields a Nash equilibrium for the limiting system. In other words, the Nash equilibrium property, as defined in (4.56), holds trivially for the set of strategies {u◦\n\ni }i∈N because the limiting cost functional of agent i, given by (4.4), is independent of the strategies of other agents.\n\nSubsequently, the equilibrium state of agent i is given by\n\nx◦\n\ni (t) = S(t)ξi −\n\nZ t",
+            "metadata": {
+              "document_id": "a3ec9e07-f759-54ca-ba2b-9145df828ead",
+              "source": "2403.01012v4.pdf",
+              "arxiv_id": "2403.01012v4",
+              "page_number": 20,
+              "end_page_number": 20,
+              "start_char": 52301,
+              "end_char": 53781,
+              "chunk_index": 42,
+              "section_index": 12,
+              "section_title": "Nash Equilibrium",
+              "method": "recursive",
+              "token_count": 509
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 1.331,
+      "prompt_tokens": 3102,
+      "completion_tokens": 306
+    },
+    {
+      "query_id": "4f4e706f-61cd-4fd1-9665-4ed32afb984d",
+      "query": "What challenges are faced in predicting T-cell responses to specific peptides?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "fe723041-583d-5c5f-957d-7aca2d1a8a1c",
+          "score": 0.9412634750273071,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "0e487474-b2eb-58a9-b705-267e1c0bbf08",
+          "score": 0.8585455926905345,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "68ca8695-27a0-54c7-b909-0135feb79a86",
+          "score": 0.8540379458083138,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 1,
+          "section_title": "Abstract"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "75aae72d-0a6a-5e4b-b445-8b1526324b79",
+          "score": 0.787191939788261,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 3,
+          "section_title": "Construction of a T-cell response data set"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "55b5dc7f-9e1b-511a-a3c9-6bedc1f6d0af",
+          "score": 0.728266034212869,
+          "retriever_type": "hybrid",
+          "source": "2403.12117v2.pdf",
+          "page_number": 4,
+          "section_title": "Domain structure in T-cell response data"
+        }
+      ],
+      "response": {
+        "query": "What challenges are faced in predicting T-cell responses to specific peptides?",
+        "answer": "Predicting T-cell responses to specific peptides is challenging due to limited and heterogeneous training data, which often originates from various sources like viruses, bacteria, or human proteins [1][3]. This data heterogeneity can be further complicated by patterns specific to the MHC molecule allele that presents the peptide [1]. Additionally, the limited availability of experimental data from T-cell assays contributes to this challenge [1]. The presence of different underlying domains with varying fractions of positives also carries the risk of \"shortcut learning,\" where models may learn domain-specific features rather than T-cell response-specific patterns [2][3].",
+        "citations": [
+          {
+            "chunk_id": "fe723041-583d-5c5f-957d-7aca2d1a8a1c",
+            "source": "2403.12117v2.pdf",
+            "page_number": 2,
+            "text_snippet": "Moreover, peptides feature patterns that are specific to the allele of the MHC molecule they are presented by [10].",
+            "relevance_score": 0.9412634750273071
+          },
+          {
+            "chunk_id": "68ca8695-27a0-54c7-b909-0135feb79a86",
+            "source": "2403.12117v2.pdf",
+            "page_number": 1,
+            "text_snippet": "It is a challenging task due to limited, heterogeneous training data featuring a multi-domain structure; such data entail the danger of shortcut learning, where models learn general characteristics of peptide sources, such as the source organism, rather than specific peptide characteristics associat",
+            "relevance_score": 0.8540379458083138
+          },
+          {
+            "chunk_id": "0e487474-b2eb-58a9-b705-267e1c0bbf08",
+            "source": "2403.12117v2.pdf",
+            "page_number": 2,
+            "text_snippet": "For all empirical studies it is critical to keep in mind that having several underlying domains with varying fractions of positives entails the risk of shortcut learning [16–18], that is, using domain-specific features to classify peptides based on their domain identity instead of T-cell response-sp",
+            "relevance_score": 0.8585455926905345
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "fe723041-583d-5c5f-957d-7aca2d1a8a1c",
+            "content": "Introduction\n\nThe human immune system consists of humoral and cell-mediated mechanisms, with T cells playing a significant role in the latter. T cells recognize and eliminate cancerous or infected cells by detecting peptides presented on the cell surface by major histocompatibility complex (MHC) molecules, which can be grouped into two classes, MHC I and MHC II [1].\n\nPeptide-based vaccines are a promising approach for the personalized treatment of cancer [2] and might allow more precise vaccines against infectious diseases [3]. Such vaccines can be developed by selecting peptides that are specific to a pathogen or tumor. Since only a limited number of peptides can be included in the vaccine, their selection should be based on their probability of inducing a T-cell response. Predicting this probability is an important task in the development of peptide vaccines [2].\n\nFrom a computational perspective, this task can be separated into two subtasks: first predicting whether a peptide is presented on the cell surface by an MHC molecule and afterwards predicting whether a presented peptide induces a T-cell response. For the first task, a large amount of available experimental data has led to accurate machine learning-based predictions [4–6]. The second task can, despite some attempts [7, 8], still be considered as an open problem, in part due to fewer experimental data from T-cell assays [9].\n\nAside from small sample sizes, another challenge arises from peptides in T-cell response data originating from different sources, such as viruses, bacteria, or human proteins. Moreover, peptides feature patterns that are specific to the allele of the MHC molecule they are presented by [10]. Both factors lead to data heterogeneity, which is either unaccounted for by existing approaches [8, 11] or handled by limiting the model to selected MHC alleles and considering small peptides, such that positions that are affected by MHC allele-specific patterns can be identified [7, 12, 13].\n\nTo leverage all the available data, we investigate more flexible approaches that do not limit the selection of peptides based on their source, length, and presenting MHC allele. Based on our data analysis, we show how the heterogeneity of the resulting data set can be viewed as a multi-domain structure, which motivates the application of different transfer learning techniques in combination with the flexible transformer architecture [14]. We further investigate how the prediction performance on individual domains is affected by including data from the other domains in the training process, where improved performance is denoted as positive transfer and reduced performance as negative transfer [15].",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 1782,
+              "end_char": 4485,
+              "chunk_index": 2,
+              "section_index": 3,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 510
+            },
+            "embedding": null
+          },
+          {
+            "id": "0e487474-b2eb-58a9-b705-267e1c0bbf08",
+            "content": "For all empirical studies it is critical to keep in mind that having several underlying domains with varying fractions of positives entails the risk of shortcut learning [16–18], that is, using domain-specific features to classify peptides based on their domain identity instead of T-cell response-specific patterns. To obtain shortcut-invariant model performance estimates, we thus propose a domain-aware evaluation scheme.\n\nOur results indicate that shortcuts based on peptide sources and MHC alleles are indeed learned by the transformer and lead to inflated performance estimates when the domain-aware evaluation is not applied. We further observe that per-source finetuning is effective in enabling positive transfer across a wide range of peptide sources and show that our final model is competitive with existing state-of-the-art approaches for predicting T-cell responses for human peptides.\n\n2",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 2,
+              "end_page_number": 2,
+              "start_char": 4487,
+              "end_char": 5389,
+              "chunk_index": 3,
+              "section_index": 3,
+              "section_title": "Introduction",
+              "method": "recursive",
+              "token_count": 154
+            },
+            "embedding": null
+          },
+          {
+            "id": "68ca8695-27a0-54c7-b909-0135feb79a86",
+            "content": "Abstract\n\nWe study the prediction of T-cell response for specific given peptides, which could, among other applications, be a crucial step towards the development of personalized cancer vaccines. It is a challenging task due to limited, heterogeneous training data featuring a multi-domain structure; such data entail the danger of shortcut learning, where models learn general characteristics of peptide sources, such as the source organism, rather than specific peptide characteristics associated with T-cell response. Using a transformer model for T-cell response prediction, we show that the danger of inflated predictive performance is not merely theoretical but occurs in practice. Consequently, we propose a domain-aware evaluation scheme. We then study different transfer learning techniques to deal with the multi-domain structure and shortcut learning. We demonstrate a per-source fine tuning approach to be effective across a wide range of peptide sources and further show that our final model is competitive with existing state-of-the-art approaches for predicting T-cell responses for human peptides.\n\nKeywords: T cells, MHC, peptides, shortcut learning, domain adaptation, transformers\n\n1\n\narXiv:2403.12117v2 [q-bio.CB] 26 Feb 2025\n\n",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 1,
+              "end_page_number": 1,
+              "start_char": 535,
+              "end_char": 1782,
+              "chunk_index": 1,
+              "section_index": 2,
+              "section_title": "Abstract",
+              "method": "recursive",
+              "token_count": 231
+            },
+            "embedding": null
+          },
+          {
+            "id": "75aae72d-0a6a-5e4b-b445-8b1526324b79",
+            "content": "Construction of a T-cell response data set\n\nWe use the Immune Epitope Database1 (IEDB) [9] to construct a T-cell response data set. A data point consists of the amino acid sequence of the peptide, a binary label representing the T-cell response in the form of IFNγ, the allele of the MHC molecule that presented the peptide to a T cell, the class of the MHC allele (I or II), and the source of the peptide. The source can be an organism or a virus.\n\nFor some peptides in the data set, the MHC alleles are not specified in the IEDB. Additionally, the MHC allele information is incomplete since one peptide can often be presented on several MHC alleles. However, not all combinations of peptides and MHC alleles are tested. Since the existing MHC information in the IEDB is mostly based on predictions, we use existing models to obtain a list of MHC alleles for each peptide in a consistent way. NetMHCpan 4.1 [4] serves as a predictor for peptides with MHC class I alleles and NetMHCIIpan 4.0 [4] for peptides with MHC class II alleles. We select the 100 most frequent alleles, which account for 98.7% of peptide-MHC combinations in the IEDB data set, and use all MHC class-matched combinations of peptides and MHC alleles as input for the two predictors.\n\nWe assign an allele to a peptide if it is predicted to be a weak binder. NetMHC- pan 4.1 and NetMHCIIpan 4.0 define a peptide as weak binder if its prediction score is within the top 2% of prediction scores for random natural peptides. Peptides that are predicted to not bind to any of the alleles get assigned a default allele for the respective MHC class. This applies to 29.7% of class I peptides and 66.5% of class II peptides. Since the MHC alleles are only relevant for us to identify MHC allele-specific patterns in peptides, the relatively large fraction of default alleles is not problematic because peptides with a default allele likely have no strong allele-specific patterns. Table 1 shows the resulting statistics about the MHC classes, T-cell response labels, and peptide lengths of the T-cell response data.\n\nTable 1 Statistics of the data set. The columns for positives/negatives refer to the number of peptides with the respective T-cell response label.",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 3,
+              "end_page_number": 3,
+              "start_char": 5746,
+              "end_char": 7972,
+              "chunk_index": 5,
+              "section_index": 5,
+              "section_title": "Construction of a T-cell response data set",
+              "method": "recursive",
+              "token_count": 510
+            },
+            "embedding": null
+          },
+          {
+            "id": "55b5dc7f-9e1b-511a-a3c9-6bedc1f6d0af",
+            "content": "Domain structure in T-cell response data\n\nBased on the data analysis presented in Figure 1, we identify two domain structures in the T-cell response data set, peptide sources (left column) and MHC alleles (right column). The next paragraphs describe these two domain structures in more detail.\n\nFigure 1a shows that the peptides in the T-cell response data set originate from several sources and that the fraction of T-cell response positives varies strongly between sources. When studying T-cell responses for one peptide source, a protein of that source is often screened by testing a set of largely overlapping peptides that originate from the protein. These overlaps lead to clusters of peptides that make peptides within one source more similar than peptides from a different source.\n\nMotivated by the size of the binding core in peptides [19], we define that peptides correspond to the same cluster if they share a sub-sequence of length nine. The Sankey diagram in Figure 1c confirms that the seven largest peptide clusters typically consist of peptides from only a few sources.\n\nIn analogy to the distribution of peptide sources in Figure 1a, Figure 1b shows the distribution of MHC alleles. As peptides can be associated with several MHC alleles, we show a subset of MHC alleles that together cover a large fraction of peptides. Compared to peptide sources, there is a lower variability in the fraction of T-cell response positives between MHC alleles.\n\nThe distinct binding motifs of MHC alleles [10] introduce an MHC-based domain structure in T-cell response data. We visualize the sequence logos for two exemplary MHC alleles and peptides of length nine, separately for T-cell response positives and negatives, in Figure 1d. At the anchor positions two and nine, there are obvious differences between the MHC alleles in the sequence logos. However, comparing sequence logos between T-cell response positives and negatives does not reveal obvious differences.\n\nSince studies of T-cell responses often focus on just one peptide source and one MHC class or only consider peptides that are presented on certain MHC alleles, the joint distribution of peptide sources and MHC alleles is not uniform (see Supplement S1). Consequently, peptide sources can also feature the patterns of the MHC alleles with which they co-occur.\n\n",
+            "metadata": {
+              "document_id": "e284244d-a79b-506c-93de-f1472ec617da",
+              "source": "2403.12117v2.pdf",
+              "arxiv_id": "2403.12117v2",
+              "page_number": 4,
+              "end_page_number": 4,
+              "start_char": 8130,
+              "end_char": 10462,
+              "chunk_index": 7,
+              "section_index": 6,
+              "section_title": "Domain structure in T-cell response data",
+              "method": "recursive",
+              "token_count": 450
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 1.6,
+      "prompt_tokens": 2663,
+      "completion_tokens": 468
+    },
+    {
+      "query_id": "94e00fa4-b4a5-447a-81ed-f18e4f20a5cb",
+      "query": "How does a longer planned lead time affect service levels in scenarios with biased and unbiased forecasts?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "d9ccf93f-29e8-521c-b4e2-654c37dad31d",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 5,
+          "section_title": "2.2.2. Planned Lead Times"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "bae77d1b-7b6f-5abc-aac2-0e37efcfdb18",
+          "score": 0.6228727324183632,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 6,
+          "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "55bf3dff-ace1-58e5-a838-2942a982bdac",
+          "score": 0.5019884470802483,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 23,
+          "section_title": "6.3.1. Unbiased Forecast"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "b22d46c0-5c94-5632-97f7-6ea1939a43ed",
+          "score": 0.40986178178141786,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 20,
+          "section_title": "6.1.2. Optimal Planning Parameters at Low Utilization"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "57c6f7a6-4ac0-50be-835b-9c79b49e8185",
+          "score": 0.39595409273738125,
+          "retriever_type": "hybrid",
+          "source": "2403.11010v3.pdf",
+          "page_number": 28,
+          "section_title": "6.3.3. Temporary forecast bias"
+        }
+      ],
+      "response": {
+        "query": "How does a longer planned lead time affect service levels in scenarios with biased and unbiased forecasts?",
+        "answer": "In scenarios involving both biased and unbiased forecasts, a longer planned lead time can result in a higher service level [1].",
+        "citations": [
+          {
+            "chunk_id": "d9ccf93f-29e8-521c-b4e2-654c37dad31d",
+            "source": "2403.11010v3.pdf",
+            "page_number": 5,
+            "text_snippet": "Enns (2002) showed that in scenarios with biased and unbiased forecasts, a longer planned lead time can lead to a higher service level.",
+            "relevance_score": 1.0
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "d9ccf93f-29e8-521c-b4e2-654c37dad31d",
+            "content": "2.2.2. Planned Lead Times\n\nAnother series of papers examines how to set planned lead times under forecast uncertainty. According to Enns (2001), a potential solution to mitigate the impact of demand uncertainty is to\n\n6\n\nincrease the planned lead time. However, the most effective approach may vary, depending on the type of uncertainty. Also, Altendorfer (2019) found higher planned lead times to be advantageous for mitigating forecast uncertainty when shop loads are high. Enns (2002) showed that in scenarios with biased and unbiased forecasts, a longer planned lead time can lead to a higher service level. It is important to note that the lack of forecast evolution in the results of Enns (2002) has an effect similar to that of Enns (2001), where inventory levels increase to mitigate uncertainty.\n\n",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 5,
+              "end_page_number": 6,
+              "start_char": 14715,
+              "end_char": 15521,
+              "chunk_index": 10,
+              "section_index": 7,
+              "section_title": "2.2.2. Planned Lead Times",
+              "method": "recursive",
+              "token_count": 169
+            },
+            "embedding": null
+          },
+          {
+            "id": "bae77d1b-7b6f-5abc-aac2-0e37efcfdb18",
+            "content": "2.2.3 Interrelation between Safety Stock and Planned Lead Times\n\nWhile one can set a planned lead time or a safety stock to face forecast uncertainty, it is also possible to exchange them. Whybark and Williams (1976) suggested that for demand quantity uncertainty, safety stock is beneficial, while for demand timing uncertainties, safety lead time is preferable in single-product, single-stage production environments. However, this approach may not be suitable for multi-product, multi-stage production systems, as discussed in Enns (2002). Dong and Lee (2003) suggested that higher planned lead times may be preferable in situations with higher demand timing uncertainty, but the results are inconclusive. In systematic biased demand uncertainty situations, Altendorfer (2019) and Buzacott and Shanthikumar (1994) indicated that a higher underbooking behaviour tends to result in less planned lead time and more safety stock. Again, van Kampen et al. (2010) showed that in negative biased forecast situations with low and high levels of demand quantity uncertainty, a safety lead time leads to a higher service level at a comparable inventory level, which is different from the results of Altendorfer (2019) and Buzacott and Shanthikumar (1994), who suggested increasing safety stock levels. Enns (2002) showed that in underbooking scenarios, setting safety stock is preferable to setting a safety lead time, which is in line with Altendorfer (2019) and Buzacott and Shanthikumar (1994). However, there is no clear evidence from Enns (2002) to determine if this also holds true for overbooking scenarios. In addition, Molinder (1997) found that in the case of low lead time variability, the use of safety stock instead of safety lead time leads to the lowest costs. Overall, these studies provide insights into the complex interrelation between demand uncertainty, safety lead time, and safety stock in production planning systems.\n\n",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 15521,
+              "end_char": 17457,
+              "chunk_index": 11,
+              "section_index": 8,
+              "section_title": "2.2.3 Interrelation between Safety Stock and Planned Lead Times",
+              "method": "recursive",
+              "token_count": 406
+            },
+            "embedding": null
+          },
+          {
+            "id": "55bf3dff-ace1-58e5-a838-2942a982bdac",
+            "content": "6.3.1. Unbiased Forecast\n\nTable 7 presents a comprehensive comparison of all 21 test instances for unbiased forecasts, evaluating the performance of the MRP standard and the MRP safety stock exploitation heuristic, with the lot-sizing policy yielding the lowest overall costs consistently reported. Overall, the results of Table 7 show that the MRP safety stock exploitation heuristic leads to a significant cost reductions compared to the MRP standard across all tested scenarios. Most of these cost reductions are highly statistically significant (**), providing strong evidence that the heuristic consistently outperforms the standard approach. However, in scenarios with both high utilization and high forecast uncertainty ( ≥0.10), statistical significance is not observed, indicating that performance differences are less pronounced under these conditions.\n\nAs seen in Table 7, higher shop load, in general, leads to higher overall costs, which is an intuitive result and supports model validity. For the MRP standard, higher forecast uncertainty leads to higher optimal lotsizes, which implies that more buffer is included in the production orders. For the MRP standard, the optimal planned lead time and safety stocks show that for higher shop loads and higher forecast uncertainty, the production system does not benefit from uncertain demand forecasts. These observations closely align with the “Buffering Law” from Hopp and Spearman (2011), where failing to invest in reducing uncertainty inevitably results in performance\n\nSST PLT FOP\n\nOverall\n\nCosts\n\n[CU]\n\n# of prod.\n\nBackorder Costs [CU]\n\nService\n\nLevel\n\nLeadtime Final Prod SST PLT Lotsize\n\nOverall\n\nCosts\n\n[CU]\n\n# of prod.\n\nBackorder Costs [CU]\n\nService\n\nLevel\n\nLeadtime Final Prod",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 23,
+              "end_page_number": 23,
+              "start_char": 59487,
+              "end_char": 61236,
+              "chunk_index": 45,
+              "section_index": 28,
+              "section_title": "6.3.1. Unbiased Forecast",
+              "method": "recursive",
+              "token_count": 334
+            },
+            "embedding": null
+          },
+          {
+            "id": "b22d46c0-5c94-5632-97f7-6ea1939a43ed",
+            "content": "f)\n\n21\n\nproducts. An intuitive result is that higher forecast uncertainty leads to higher overall costs, which is in line with Altendorfer et al. (2016) and Enns (2002). In detail, the results illustrate that FOQ consistently outperforms FOP lotsizing related to costs. An interesting result is that PLT=1 and FOP=1 is optimal for all -settings when FOP is applied. This means that for FOP lotsizing, MRP tries to mimic a make-to-stock system without benefiting from demand forecast information. For FOQ, the optimal planned lead time for low to medium forecast uncertainty is significantly higher than the realized lead time of final products production orders, i.e., when FOQ is applied, MRP benefits from demand forecasts. We conjecture that this is the reason why FOQ outperforms FOP in all instances. However, for higher forecast uncertainties (≥0.1), PLT=1 and SST=1.5 are optimal for FOQ. This trend is less clear when considering only the service level, as FOP achieves higher service levels at lower forecast uncertainties (≤0.08). However, focusing solely on service level can be misleading. For example, at =0.08, although FOP achieves a better service level, it results in higher backorder costs. This discrepancy arises because service level calculations do not account for the order quantity or the associated tardiness duration, both of which directly impact overall cost performance. In addition to the reported test instances, =0 has also been tested, and the lowest costs there are CU 4.158, which are equal for FOQ and FOP (since both lead to a constant lotsize of 800 pcs). This shows that information uncertainty leads to significant additional costs, even if the uncertainty is very low. Comparing the standard deviation of the production lead time between FOP and FOQ shows that, specifically for higher -values, the FOP policy has significantly higher uncertainties in production lead time which implies higher system nervousness. From a managerial point of view, this leads to the following insight: Insight 1: When applying MRP standard without manual planner interaction, the FOP lotsizing policy leads to additional MRP nervousness and MRP cannot benefit from uncertain forecast information; hence, the FOQ lotsizing policy should be favoured.",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 20,
+              "end_page_number": 21,
+              "start_char": 52504,
+              "end_char": 54785,
+              "chunk_index": 40,
+              "section_index": 25,
+              "section_title": "6.1.2. Optimal Planning Parameters at Low Utilization",
+              "method": "recursive",
+              "token_count": 511
+            },
+            "embedding": null
+          },
+          {
+            "id": "57c6f7a6-4ac0-50be-835b-9c79b49e8185",
+            "content": "6.3.3. Temporary forecast bias\n\nTo provide a comprehensive picture of systematic forecasting behaviour, the results for temporary overbooking and underbooking are shown in this section. Temporary means that the long-term demand fits the average order amount, but the forecast updates include either a temporary demand increase or a decrease in addition to the unsystematic error. Here, this means that not each update includes an information gain, but some updates also distort the information provided. The increase can be based on rationing objectives of the customer while the decrease might be a systematic effect in the customers planning system.\n\nThe respective results in Table 9 for MRP safety stock exploitation heuristic show a similar behaviour than the ones in Table 8. In general, statistical significance remains strong in the temporary underbooking scenarios (**), while in temporary overbooking, a similar result as in the permanent overbooking case is observed, with no improvement for low  values and some statistically not significant scenarios at high utilization. An examination of the optimal planning parameters shows that in this temporary overbooking and underbooking case, the make-to-stock setting with low planned lead time and high safety stocks is used for more test instances than in the permanent forecast bias case, specifically for medium to high unsystematic uncertainties. This might be related to the additional disturbance created by having firstly an increase/decrease of forecasts and then a decrease/increase respectively, and the fact that not all forecast updates include an information gain. Wijngaard (2004) supports this observation, noting the limited improvement from advanced demand information in tight capacity situations. However, his study focused on a single-stage, single-item production system without integrating demand information updates. This observation leads to the following insight:\n\nInsight 7: For production systems with high congestion, temporary biased forecasts, and high uncertainty in forecasts, the MRP changes to a make-to-stock planning system, ignoring future forecast information, in which only stock withdrawals are re-produced.\n\n29\n\nTable 9: Comparison of optimal overall costs and planning parameters for temporary forecast bias.\n\n",
+            "metadata": {
+              "document_id": "dd7610ec-bcd9-50d4-bde0-372196a02d25",
+              "source": "2403.11010v3.pdf",
+              "arxiv_id": "2403.11010v3",
+              "page_number": 28,
+              "end_page_number": 29,
+              "start_char": 72438,
+              "end_char": 74749,
+              "chunk_index": 56,
+              "section_index": 30,
+              "section_title": "6.3.3. Temporary forecast bias",
+              "method": "recursive",
+              "token_count": 413
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 1.0
+      },
+      "error": null,
+      "retrieval_seconds": 0.007,
+      "generation_seconds": 0.657,
+      "prompt_tokens": 2686,
+      "completion_tokens": 103
+    },
+    {
+      "query_id": "7dc98320-b491-40cc-875d-b9e8ea5ab3c5",
+      "query": "How does scaling horizontal and vertical distances affect ascent time and \\( P_K\\)?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "ed057ee7-38c9-5a40-a86e-1100fd0b1b01",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 15,
+          "section_title": "Power estimate for changes in kinetic energy"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fd9673a1-8e4b-5c59-9f75-7df5243e4419",
+          "score": 0.6499318153324409,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 7,
+          "section_title": "Application to arbitrary ascents"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "a5f287ff-922d-56e5-b799-8ad68d2dc8c0",
+          "score": 0.5524107441264977,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 19,
+          "section_title": "Constant ascent speed"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "57a69f48-9326-5944-b8ff-2a5db407a567",
+          "score": 0.5440640831802469,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 10,
+          "section_title": "Discussion and conclusions"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "bb0159c7-93e5-5089-baec-85b4a9476e18",
+          "score": 0.539000524702964,
+          "retriever_type": "hybrid",
+          "source": "2403.03363v6.pdf",
+          "page_number": 18,
+          "section_title": "Constant ascent speed"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 12.089,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "query_id": "41d68de9-7ef9-4dbd-8a08-31075b374b30",
+      "query": "How do liquidity providers interact with an auction-managed AMM?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "5674b29b-16d8-50ff-b294-0bf58fd2fbe9",
+          "score": 0.9504297621842352,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 1,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "85dd6b06-5ae8-57b0-975f-edbea558f19d",
+          "score": 0.8584578642779797,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 1,
+          "section_title": "Front matter"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "66add36e-97a5-502d-bdb9-914f10efc05f",
+          "score": 0.8433348860497745,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "3598509d-aa48-55b0-aaf2-3502ed46e861",
+          "score": 0.7684011154148132,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 12,
+          "section_title": "Discussion"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "f5c83e6a-4129-599a-bf9a-5cf7beee4360",
+          "score": 0.75613266539913,
+          "retriever_type": "hybrid",
+          "source": "2403.03367v4.pdf",
+          "page_number": 12,
+          "section_title": "Discussion"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.005,
+      "generation_seconds": 10.454,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "query_id": "24e70880-7bc4-40be-b0b4-5ca8d0076a23",
+      "query": "What does the predicted ideal measurement set (PIMS) include?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "aa555e54-c677-5ea5-8b5c-db53e20d7c7c",
+          "score": 1.0,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "B. Calculation of the predicted ideal measurement set (PIMS)"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "78dc7495-b604-54d1-8283-6c616275a7ea",
+          "score": 0.42284842398000094,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "A. Estimation"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "3520746e-0046-571f-9c4e-76d9b8c5817b",
+          "score": 0.22866096300697863,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 6,
+          "section_title": "C. Pseudo-update and fusion"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "53e6a576-637d-5e2f-8d1c-8dee526d682f",
+          "score": 0.16508561270735506,
+          "retriever_type": "hybrid",
+          "source": "2401.14085v2.pdf",
+          "page_number": 7,
+          "section_title": "D. Objective Function"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "1139d5c6-b3be-536f-a147-39e773cc5132",
+          "score": 0.13629615726623695,
+          "retriever_type": "hybrid",
+          "source": "2402.02272v2.pdf",
+          "page_number": 8,
+          "section_title": "Predicted counts and visualizing the fit of the models"
+        }
+      ],
+      "response": {
+        "query": "What does the predicted ideal measurement set (PIMS) include?",
+        "answer": "The predicted ideal measurement set (PIMS) includes hypothesized measurement sets that ideally would be returned by each sensor node, assuming no measurement noise, false alarm, or miss-detection, and corresponding to all estimated existing objects [1]. These sets are generated with zero noise for hypothetical control actions [3].",
+        "citations": [
+          {
+            "chunk_id": "aa555e54-c677-5ea5-8b5c-db53e20d7c7c",
+            "source": "2401.14085v2.pdf",
+            "page_number": 6,
+            "text_snippet": "Such sets are ideal in the sense that they include no measurement noise, false alarm or miss-detection, and correspond to all the objects estimated to be existing.",
+            "relevance_score": 1.0
+          },
+          {
+            "chunk_id": "3520746e-0046-571f-9c4e-76d9b8c5817b",
+            "source": "2401.14085v2.pdf",
+            "page_number": 6,
+            "text_snippet": "“Pseudo” refers to the hypothetical nature of the measurements generated with zero noise for hypothetical control actions.",
+            "relevance_score": 0.22866096300697863
+          }
+        ],
+        "chunks_used": [
+          {
+            "id": "aa555e54-c677-5ea5-8b5c-db53e20d7c7c",
+            "content": "B. Calculation of the predicted ideal measurement set (PIMS)\n\nThe next step is to compute hypothesized measurements sets that could ideally be returned by each sensor node. Such sets are ideal in the sense that they include no measurement noise, false alarm or miss-detection, and correspond to all the objects estimated to be existing. An example is shown in Figure 6. Consider an object that is predicted by sensor node s′, to exist at an estimated location of (ˆpx,k|k−1,s′, ˆpy,k|k−1,s′). As shown in Figure 6(a), without any sensor action (zero control command), ideally the object would be detected, returning a measurement that is comprised of the horizontal and vertical distance from the object to the sensor, denoted by\n\ñz = ( ̃zx,k,s′, ̃zy,k,s′). If a hypothesized control command in the form of a 2D translation and rotation is applied to the sensor, the measurements will change – see Figure 6(b). Due to the sensor’s limited field of view, it is also possible that a predicted object is entirely missed by the sensor – see Figure 6(c).\n\n",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 27852,
+              "end_char": 28904,
+              "chunk_index": 19,
+              "section_index": 14,
+              "section_title": "B. Calculation of the predicted ideal measurement set (PIMS)",
+              "method": "recursive",
+              "token_count": 250
+            },
+            "embedding": null
+          },
+          {
+            "id": "78dc7495-b604-54d1-8283-6c616275a7ea",
+            "content": "PIMS Calculation\n\nFigure 5: The proposed architecture of the contents of multi-sensor control block executing at sensor node s, in the overall schematics shown in Figure 2.",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 27678,
+              "end_char": 27850,
+              "chunk_index": 18,
+              "section_index": 13,
+              "section_title": "A. Estimation",
+              "method": "recursive",
+              "token_count": 36
+            },
+            "embedding": null
+          },
+          {
+            "id": "3520746e-0046-571f-9c4e-76d9b8c5817b",
+            "content": "C. Pseudo-update and fusion\n\nOnce the PIMS are generated for each sensor node (self and neighboring nodes), a pseudo-update step is run. “Pseudo” refers to the hypothetical nature of the measurements generated with zero noise for hypothetical control actions. The results are the multi-object posteriors that would be generated locally in each sensor node if the node’s locally acquired measurements were the PIMS generated in node s for them.\n\nThe pseudo-posteriors are then fused using the same fusion scheme that would be used in the update step after actual measurement acquisition by the sensor. In our experiments, with LMB filters running in each sensor node, fusion rules (6) and (5) are used, as also used in the update step.\n\n",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 6,
+              "end_page_number": 6,
+              "start_char": 28904,
+              "end_char": 29640,
+              "chunk_index": 20,
+              "section_index": 15,
+              "section_title": "C. Pseudo-update and fusion",
+              "method": "recursive",
+              "token_count": 150
+            },
+            "embedding": null
+          },
+          {
+            "id": "53e6a576-637d-5e2f-8d1c-8dee526d682f",
+            "content": "⊤ቁ\n\nuuxx\n\nuuyy\n\nuuθθ\n\npp̂xx,kk|kk−1,ss′ oo\n\npp̂yy,kk|kk−1,ss′\n\nuuxx\n\nuuyy\n\nuuθθ\n\npp̂xx,kk|kk−1,ss′\n\n(a) (b) (c)\n\nFigure 6: PIMS measurement returned for an object with hypothesized (a) zero control command, (b) a non-zero translation and rotation control command, and (c) another control command with the translation being same as in (b) but larger rotation that leads to the object being missed.\n\nIn the case that both densities are LMB, denoting them by:\n\ñπfused,k,s =\n\nn\n\ñr(l)\n\nfused,k,s, ̃p(l)\n\nfused,k,s\n\no\n\nl∈Lk,s\n\nπk|k−1,s =\n\nn\n\nr(l)\n\nk|k−1,s, p(l)\n\nk|k−1,s\n\no\n\nl∈Lk|k−1,s\n\nthe integral has a closed form given by [53]:\n\nν\n\nπk|k−1,s(·), ̃πfused,k,s(·; us)\n\n=\n\nX\n\nl∈Lk|k−1,s\n\n\"\n\ñr(l)\n\nfused,k,s log\n\n\n\n ̃r(l)\n\nfused,k,s r(l)\n\nk|k−1,s\n\n\n\n+\n\nh\n\n1 − ̃r(l) fused,k,s\n\ni\n\n×\n\nlog\n\n\n\n1 − ̃r(l)\n\nfused,k,s 1 −r(l) k|k−1,s\n\n\n\n+ ̃r(l)\n\nfused,k,sDKL( ̃p(l)\n\nfused,k,s || p(l)\n\nk|k−1,s)\n\n#\n\n.\n\n(12)\n\nThe KLD between two LMB densities can be approximated to reduce the computation time in the following manner. Consider an example scenario of two normal distributions over a one-dimensional state, P and Q, with probability density functions p = N(x; μp, σp) and q = N(x; μq, σq). The KLD between two univariate normal distributions is given by:\n\nDKL(P || Q) = log\n\nσq\n\nσp\n\n+ σ2\n\np + (μp −μq)2",
+            "metadata": {
+              "document_id": "a55a22ac-92f8-5d2f-bd5c-e92db92f1722",
+              "source": "2401.14085v2.pdf",
+              "arxiv_id": "2401.14085v2",
+              "page_number": 7,
+              "end_page_number": 7,
+              "start_char": 32542,
+              "end_char": 33839,
+              "chunk_index": 23,
+              "section_index": 16,
+              "section_title": "D. Objective Function",
+              "method": "recursive",
+              "token_count": 509
+            },
+            "embedding": null
+          },
+          {
+            "id": "1139d5c6-b3be-536f-a147-39e773cc5132",
+            "content": "4.6 Predicted counts and visualizing the fit of the models\n\nA model’s predicted counts are obtained by evaluating its probability mass function (such as equation 8) at each ˆλi (and ˆωi if relevant), and summing. This is facilitated in the oneinfl package using the pred() function.\n\nVisualizing the data and predicted counts is an important diagnostic tool, as often the presence of one-inflation is immediately apparent. The oneplot() function in the oneinfl\n\n8\n\npackage generates a barplot of the actual data, as well as plotting the predicted counts for up to four models: positive Poisson (PP), one-inflated positive Poisson (OIPP), zero truncated negative binomial (ZTNB), and one-inflated zero truncated negative binomial (OIZTNB). Figures 1 - 4 show the result of applying oneplot() to ZTNB and OIZTNB models.\n\n",
+            "metadata": {
+              "document_id": "b25e3445-ff7f-5fc1-9249-81f93f8f9ee7",
+              "source": "2402.02272v2.pdf",
+              "arxiv_id": "2402.02272v2",
+              "page_number": 8,
+              "end_page_number": 9,
+              "start_char": 24100,
+              "end_char": 24919,
+              "chunk_index": 24,
+              "section_index": 20,
+              "section_title": "Predicted counts and visualizing the fit of the models",
+              "method": "recursive",
+              "token_count": 200
+            },
+            "embedding": null
+          }
+        ],
+        "confidence": 0.95
+      },
+      "error": null,
+      "retrieval_seconds": 0.004,
+      "generation_seconds": 0.839,
+      "prompt_tokens": 1997,
+      "completion_tokens": 185
+    },
+    {
+      "query_id": "e713c2e0-628c-485d-ae53-6d1eee1c07fb",
+      "query": "Does the model of the generalized principal-agent problem involve Stackelberg games?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "5aece060-645e-53bd-bf6e-e703ad3a23d5",
+          "score": 0.9446460123702367,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 5,
+          "section_title": "Generalized Principal-Agent Problem with a Learning Agent"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "fc6275da-0dd2-5ec0-8bb5-93d15d2ec923",
+          "score": 0.8404331188982064,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 6,
+          "section_title": "Generalized Principal-Agent Problem"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "1c8648b6-2f09-577a-9e29-ac49ea82af54",
+          "score": 0.8347637954900227,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 5,
+          "section_title": "Related Works"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "fd95f036-8495-5e6d-94d7-d9072c9d226c",
+          "score": 0.8264417599733711,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 15,
+          "section_title": "Generalized Principal-Agent Problems with Approximate Best Response"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "18d4f6bd-1211-5afd-b4d1-97d034d9a3fe",
+          "score": 0.7617707782579178,
+          "retriever_type": "hybrid",
+          "source": "2402.09721v6.pdf",
+          "page_number": 2,
+          "section_title": "Introduction"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.005,
+      "generation_seconds": 9.94,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    },
+    {
+      "query_id": "8b8ca9ad-5bb0-4cf5-9b2c-4cf69635e060",
+      "query": "Is the sentiment scoring system for product reviews the same as for movie reviews?",
+      "retrieved": [
+        {
+          "rank": 1,
+          "chunk_id": "0144001e-0926-55c8-8c9e-8df3e19e3b3e",
+          "score": 0.7928836872455283,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 8,
+          "section_title": "Method Movies Prods. BIRD PDMX Beer FEVER SQuAD"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "e0463738-aad0-5d34-9a8d-299b38aa42bf",
+          "score": 0.7119810326034275,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 14,
+          "section_title": "PROMPTS"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "64d4bbce-8a9d-5786-9ca3-38cee11faee0",
+          "score": 0.6900402798194667,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 12,
+          "section_title": "QUERY EXAMPLES"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "5d8a7dd2-41ad-5ab4-8b95-41eb5b14a9e0",
+          "score": 0.5233274631181805,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 13,
+          "section_title": "QUERY EXAMPLES"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "f5ac1767-2f11-50ba-98b6-a30aca31d01e",
+          "score": 0.5074239679394845,
+          "retriever_type": "hybrid",
+          "source": "2403.05821v2.pdf",
+          "page_number": 7,
+          "section_title": "Evaluation Benchmark"
+        }
+      ],
+      "response": null,
+      "error": "InstructorRetryException: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'google/gemini-2.5-flash-lite is temporarily rate-limited upstream. Please retry shortly, or add your own key to accumulate your rate limits: https://openrouter.ai/settings/integrations', 'provider_name': 'Google AI Studio', 'is_byok': False, 'provider_error_code': '429', 'limit_source': 'upstream_provider_shared_pool', 'remedy_hint': 'Retry shortly, add your own provider key (https://openrouter.ai/settings/integrations), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing'}}, 'user_id': 'user_3GpRt9LAwIn3MPFnsg6avXTQDjd'}",
+      "retrieval_seconds": 0.006,
+      "generation_seconds": 9.777,
+      "prompt_tokens": null,
+      "completion_tokens": null
+    }
+  ]
+}

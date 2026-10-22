@@ -1,0 +1,12 @@
+{
+  "parser": "pymupdf",
+  "chunker": "semantic",
+  "chunk_size": 512,
+  "overlap": 0,
+  "tokenizer": "cl100k_base",
+  "min_overlap_sentences": null,
+  "max_overlap_sentences": null,
+  "boundary_embedding_model": "all-MiniLM-L6-v2",
+  "breakpoint_percentile": 95.0,
+  "min_tokens": 50
+}

@@ -1,0 +1,72 @@
+{
+  "iteration": 1,
+  "judge": "deepseek/deepseek-v4-flash",
+  "queries": 12,
+  "configurations": [
+    "fixed-bm25",
+    "fixed-minilm-dense",
+    "fixed-mpnet-dense",
+    "fixed-minilm-hybrid",
+    "fixed-mpnet-hybrid",
+    "recursive-bm25",
+    "recursive-minilm-dense",
+    "recursive-mpnet-dense",
+    "recursive-minilm-hybrid",
+    "recursive-mpnet-hybrid",
+    "semantic-bm25",
+    "semantic-minilm-dense",
+    "semantic-mpnet-dense",
+    "semantic-minilm-hybrid",
+    "semantic-mpnet-hybrid"
+  ],
+  "generators": {
+    "anthropic/claude-haiku-5.5": {
+      "answers": 180,
+      "answer_errors": 2,
+      "judged": 178,
+      "judge_errors": 0,
+      "mean_generation_seconds": 6.46,
+      "prompt_tokens": 1488045,
+      "completion_tokens": 246811,
+      "relevance": 4.742,
+      "accuracy": 4.5,
+      "completeness": 4.331,
+      "citation_quality": 4.596,
+      "overall": 4.542,
+      "overall_abstractive": 4.498,
+      "overall_extractive": 4.634
+    },
+    "openai/gpt-6-luna": {
+      "answers": 180,
+      "answer_errors": 2,
+      "judged": 178,
+      "judge_errors": 0,
+      "mean_generation_seconds": 6.92,
+      "prompt_tokens": 494807,
+      "completion_tokens": 81018,
+      "relevance": 4.77,
+      "accuracy": 4.545,
+      "completeness": 4.287,
+      "citation_quality": 4.652,
+      "overall": 4.563,
+      "overall_abstractive": 4.562,
+      "overall_extractive": 4.565
+    },
+    "google/gemini-2.5-flash-lite": {
+      "answers": 180,
+      "answer_errors": 13,
+      "judged": 167,
+      "judge_errors": 0,
+      "mean_generation_seconds": 2.62,
+      "prompt_tokens": 514318,
+      "completion_tokens": 60034,
+      "relevance": 4.491,
+      "accuracy": 4.425,
+      "completeness": 3.886,
+      "citation_quality": 4.126,
+      "overall": 4.232,
+      "overall_abstractive": 4.206,
+      "overall_extractive": 4.287
+    }
+  }
+}

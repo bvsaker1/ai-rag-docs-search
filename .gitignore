@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*/__pycache__/
+.venv/
+.pytest_cache/
+
+# Secrets — never commit (API keys); .env.example documents the settings
+.env
+.env.*
+!.env.example
+
+# Dataset (3.8 GB): re-download with src/download_pdfs.py
+data/papers/
+data/pdf/
+
+# Ingestion artifacts (~340 MB): rebuilt by `python pipeline.py ingest`
+data/parsed_*.jsonl
+data/chunks_*.jsonl
+data/embeddings_*.npz
+data/faiss_*.index
+data/bm25_*.pkl
+
+data/backups
+.DS_Store
+
+# Benchmark source repo (separate git clone of huggingface.co/datasets/vectara/open_ragbench)
+open_ragbench/

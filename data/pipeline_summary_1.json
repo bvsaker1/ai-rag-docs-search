@@ -1,0 +1,237 @@
+{
+  "iteration": 1,
+  "tasks": [
+    {
+      "label": "parsing",
+      "step": "parsing",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/parsed_1.jsonl"
+      ],
+      "error": null
+    },
+    {
+      "label": "chunking / fixed",
+      "step": "chunking",
+      "method": "fixed",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunks_1_fixed.jsonl",
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunking_config_1_fixed.json"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / fixed / bm25",
+      "step": "indexing",
+      "method": "fixed",
+      "index": "bm25",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/bm25_1_fixed.pkl"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / fixed / all-MiniLM-L6-v2",
+      "step": "embedding",
+      "method": "fixed",
+      "model": "all-MiniLM-L6-v2",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_fixed_all-MiniLM-L6-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / fixed / all-MiniLM-L6-v2 / faiss",
+      "step": "indexing",
+      "method": "fixed",
+      "model": "all-MiniLM-L6-v2",
+      "index": "faiss",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_fixed_all-MiniLM-L6-v2.index"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / fixed / all-mpnet-base-v2",
+      "step": "embedding",
+      "method": "fixed",
+      "model": "all-mpnet-base-v2",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_fixed_all-mpnet-base-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / fixed / all-mpnet-base-v2 / faiss",
+      "step": "indexing",
+      "method": "fixed",
+      "model": "all-mpnet-base-v2",
+      "index": "faiss",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_fixed_all-mpnet-base-v2.index"
+      ],
+      "error": null
+    },
+    {
+      "label": "chunking / recursive",
+      "step": "chunking",
+      "method": "recursive",
+      "status": "ran",
+      "duration_seconds": 1.04,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunks_1_recursive.jsonl",
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunking_config_1_recursive.json"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / recursive / bm25",
+      "step": "indexing",
+      "method": "recursive",
+      "index": "bm25",
+      "status": "ran",
+      "duration_seconds": 0.38,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/bm25_1_recursive.pkl"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / recursive / all-MiniLM-L6-v2",
+      "step": "embedding",
+      "method": "recursive",
+      "model": "all-MiniLM-L6-v2",
+      "status": "ran",
+      "duration_seconds": 14.75,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_recursive_all-MiniLM-L6-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / recursive / all-MiniLM-L6-v2 / faiss",
+      "step": "indexing",
+      "method": "recursive",
+      "model": "all-MiniLM-L6-v2",
+      "index": "faiss",
+      "status": "ran",
+      "duration_seconds": 0.05,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_recursive_all-MiniLM-L6-v2.index"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / recursive / all-mpnet-base-v2",
+      "step": "embedding",
+      "method": "recursive",
+      "model": "all-mpnet-base-v2",
+      "status": "ran",
+      "duration_seconds": 75.41,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_recursive_all-mpnet-base-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / recursive / all-mpnet-base-v2 / faiss",
+      "step": "indexing",
+      "method": "recursive",
+      "model": "all-mpnet-base-v2",
+      "index": "faiss",
+      "status": "ran",
+      "duration_seconds": 0.01,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_recursive_all-mpnet-base-v2.index"
+      ],
+      "error": null
+    },
+    {
+      "label": "chunking / semantic",
+      "step": "chunking",
+      "method": "semantic",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunks_1_semantic.jsonl",
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/chunking_config_1_semantic.json"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / semantic / bm25",
+      "step": "indexing",
+      "method": "semantic",
+      "index": "bm25",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/bm25_1_semantic.pkl"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / semantic / all-MiniLM-L6-v2",
+      "step": "embedding",
+      "method": "semantic",
+      "model": "all-MiniLM-L6-v2",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_semantic_all-MiniLM-L6-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / semantic / all-MiniLM-L6-v2 / faiss",
+      "step": "indexing",
+      "method": "semantic",
+      "model": "all-MiniLM-L6-v2",
+      "index": "faiss",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_semantic_all-MiniLM-L6-v2.index"
+      ],
+      "error": null
+    },
+    {
+      "label": "embedding / semantic / all-mpnet-base-v2",
+      "step": "embedding",
+      "method": "semantic",
+      "model": "all-mpnet-base-v2",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/embeddings_1_semantic_all-mpnet-base-v2.npz"
+      ],
+      "error": null
+    },
+    {
+      "label": "indexing / semantic / all-mpnet-base-v2 / faiss",
+      "step": "indexing",
+      "method": "semantic",
+      "model": "all-mpnet-base-v2",
+      "index": "faiss",
+      "status": "skipped",
+      "duration_seconds": 0.0,
+      "outputs": [
+        "/Users/bvsaker/Dev/ai-bootcamp/mini-project4/data/faiss_1_semantic_all-mpnet-base-v2.index"
+      ],
+      "error": null
+    }
+  ]
+}

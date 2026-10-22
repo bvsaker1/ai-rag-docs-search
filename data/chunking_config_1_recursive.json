@@ -1,0 +1,17 @@
+{
+  "parser": "pymupdf",
+  "chunker": "recursive",
+  "chunk_size": 512,
+  "overlap": 75,
+  "tokenizer": "cl100k_base",
+  "separators": [
+    "section",
+    "paragraph",
+    "sentence",
+    "word",
+    "token"
+  ],
+  "boundary_embedding_model": null,
+  "breakpoint_percentile": null,
+  "min_tokens": 50
+}
