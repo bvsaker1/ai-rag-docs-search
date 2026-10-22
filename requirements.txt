@@ -20,3 +20,4 @@ ranx>=0.3.20
 rich>=14.0.0
 pymupdf>=1.24.0
 tiktoken>=0.7.0
+streamlit>=1.40.0

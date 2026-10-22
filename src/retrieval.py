@@ -215,24 +215,61 @@ def make_reranker(name: str) -> Optional[Reranker]:
     return RERANKERS[name.lower()]()
 
 
+# ── Merging ───────────────────────────────────────────────────────────────────
+
+class MergedRetriever(Retriever):
+    """Several retrievers over different chunk collections (e.g. the corpus and a session's
+    uploaded PDFs), fused by reciprocal rank: score = Σ 1 / (rrf_k + rank). Their own scores
+    aren't comparable — BM25 depends on each collection's statistics — but ranks are."""
+
+    def __init__(self, retrievers: list[Retriever], rrf_k: int = 60) -> None:
+        if not retrievers:
+            raise ValueError("MergedRetriever needs at least one retriever")
+        self.retrievers, self.rrf_k = retrievers, rrf_k
+        self.retriever_type = retrievers[0].retriever_type
+
+    def retrieve(self, query: str, k: int) -> list[RetrievalResult]:
+        fused: dict = {}
+        for retriever in self.retrievers:
+            for rank, r in enumerate(retriever.retrieve(query, k), 1):
+                score, _ = fused.get(r.chunk.id, (0.0, r))
+                fused[r.chunk.id] = (score + 1.0 / (self.rrf_k + rank), r)
+        ranked = sorted(fused.values(), key=lambda item: -item[0])[:k]
+        return [r.model_copy(update={"score": score}) for score, r in ranked]
+
+
 # ── Factory ───────────────────────────────────────────────────────────────────
+
+def build_retriever(method: str | RetrieverType, chunks: list[Chunk], bm25_index: Optional[Index] = None,
+                    faiss_index: Optional[Index] = None, embedder: Optional[Embedder] = None,
+                    alpha: float = HYBRID_ALPHA, candidates: int = HYBRID_CANDIDATES) -> Retriever:
+    """The first-stage retriever for a method name (bm25 | dense | hybrid) over loaded indexes."""
+    kind = RetrieverType(method.lower() if isinstance(method, str) else method)
+
+    def bm25() -> Retriever:
+        if bm25_index is None:
+            raise ValueError("BM25 retrieval needs a BM25 index")
+        return BM25Retriever(chunks, bm25_index)
+
+    def dense() -> Retriever:
+        if embedder is None or faiss_index is None:
+            raise ValueError("Dense retrieval needs the chunks' embedding model and vector index")
+        return DenseRetriever(chunks, faiss_index, embedder)
+
+    return {RetrieverType.BM25: bm25, RetrieverType.DENSE: dense,
+            RetrieverType.HYBRID: lambda: HybridRetriever(bm25(), dense(), alpha, candidates)}[kind]()
+
 
 def make_retriever(method: str | RetrieverType, chunks: list[Chunk], bm25_path: Optional[Path] = None,
                    faiss_path: Optional[Path] = None, embedder: Optional[Embedder] = None,
                    alpha: float = HYBRID_ALPHA, candidates: int = HYBRID_CANDIDATES,
                    reranker: Optional[Reranker] = None, rerank_candidates: int = 20) -> Retriever:
-    """The retriever for a .env method name (bm25 | dense | hybrid) over saved indexes,
-    wrapped in `reranker` when given."""
+    """The retriever for a method name over saved indexes, wrapped in `reranker` when given.
+    Only the indexes the method needs are loaded."""
     kind = RetrieverType(method.lower() if isinstance(method, str) else method)
-
-    def bm25() -> Retriever:
-        return BM25Retriever(chunks, BM25Index.load(bm25_path))
-
-    def dense() -> Retriever:
-        if embedder is None:
-            raise ValueError("Dense retrieval needs the chunks' embedding model")
-        return DenseRetriever(chunks, FaissIndex.load(faiss_path), embedder)
-
-    retriever = {RetrieverType.BM25: bm25, RetrieverType.DENSE: dense,
-                 RetrieverType.HYBRID: lambda: HybridRetriever(bm25(), dense(), alpha, candidates)}[kind]()
+    if kind is not RetrieverType.BM25 and embedder is None:
+        raise ValueError("Dense retrieval needs the chunks' embedding model")
+    bm25_index = BM25Index.load(bm25_path) if kind is not RetrieverType.DENSE else None
+    faiss_index = FaissIndex.load(faiss_path) if kind is not RetrieverType.BM25 else None
+    retriever = build_retriever(kind, chunks, bm25_index, faiss_index, embedder, alpha, candidates)
     return RerankedRetriever(retriever, reranker, rerank_candidates) if reranker else retriever

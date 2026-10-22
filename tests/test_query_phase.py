@@ -50,7 +50,7 @@ def settings(tmp_path, papers_dir, benchmark, fake_models) -> QuerySettings:
     ingest(IngestSettings(iteration=1, papers_dir=papers_dir, qrels_path=benchmark["qrels"], max_papers=3,
                           models=["fake-a", "fake-b"], chunk_size=40, overlap=8, semantic_model="fake-a",
                           data_dir=data, log_path=tmp_path / "log.jsonl"))
-    return QuerySettings(iteration=1, models=["fake-a", "fake-b"], top_k=3, query_count=3, query_abstractive=2,
+    return QuerySettings(iteration=1, models=["fake-a", "fake-b"], reranker="none", top_k=3, query_count=3, query_abstractive=2,
                          query_source_mix="text:1.0", queries_path=benchmark["queries"],
                          qrels_path=benchmark["qrels"], answers_path=benchmark["answers"], concurrency=2,
                          data_dir=data, log_path=tmp_path / "log.jsonl")
@@ -61,7 +61,7 @@ def generator(model: str = "vendor/gen-a", **kw) -> LLMGenerator:
 
 
 def test_fifteen_configurations_with_bm25_once_per_chunking_method():
-    configs = configurations(QuerySettings(models=["all-MiniLM-L6-v2", "all-mpnet-base-v2"]))
+    configs = configurations(QuerySettings(models=["all-MiniLM-L6-v2", "all-mpnet-base-v2"], reranker="none"))
     names = [c.name for c in configs]
     assert len(configs) == 15
     assert Counter(c.retrieval_method.value for c in configs) == {"bm25": 3, "dense": 6, "hybrid": 6}
@@ -69,7 +69,7 @@ def test_fifteen_configurations_with_bm25_once_per_chunking_method():
     assert all(c.hybrid_alpha is None for c in configs if c.retrieval_method.value != "hybrid")
     assert configurations(QuerySettings(reranker="cohere"))[0].name == "fixed-bm25-rerank-cohere"
     with pytest.raises(ValueError, match="Unknown configuration"):
-        find_configuration(QuerySettings(), "fixed-mpnet-bm25")
+        find_configuration(QuerySettings(reranker="none"), "fixed-mpnet-bm25")
 
 
 def test_query_set_is_selected_once_from_ingested_papers_and_reused(settings):

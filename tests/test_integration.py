@@ -115,7 +115,7 @@ def test_query_phase_on_real_papers_and_benchmark_queries(tmp_path, small_papers
     ingest_settings = settings_for(tmp_path, small_papers, list(embedders))
     assert all(r.status == "ran" for r in ingest(ingest_settings))
 
-    s = QuerySettings(iteration=1, models=list(embedders), top_k=5, query_count=2, query_abstractive=1,
+    s = QuerySettings(iteration=1, models=list(embedders), reranker="none", top_k=5, query_count=2, query_abstractive=1,
                       query_source_mix="text:1.0", data_dir=ingest_settings.data_dir, log_path=tmp_path / "log.jsonl")
     paths = run_query_phase(s, LLMGenerator("vendor/fake", client=FakeLLMClient(cite_first_source)))
     assert len(paths) == 15
